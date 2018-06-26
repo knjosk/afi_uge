@@ -1,0 +1,903 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="https://github.com/gridengine/gridengine/raw/master/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+    <job_list state="running">
+      <JB_job_number>1325</JB_job_number>
+      <JAT_prio>0.61000</JAT_prio>
+      <JB_name>MPI_16J2-6600000cells-60s-WithoutWallfunc-U-20180606</JB_name>
+      <JB_owner>FMa031</JB_owner>
+      <state>dr</state>
+      <JAT_start_time>2018-06-06T11:34:29.252</JAT_start_time>
+      <queue_name>mpi1.q@afidma048</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>640</slots>
+      <full_job_name>MPI_16J2-6600000cells-60s-WithoutWallfunc-U-20180606</full_job_name>
+      <requested_pe name="impi_fillup">640</requested_pe>
+      <granted_pe name="impi_fillup">640</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1064</JB_job_number>
+      <JAT_prio>0.54671</JAT_prio>
+      <JB_name>dan2_2-5</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T19:31:07.957</JAT_start_time>
+      <queue_name>smp1.q@afismb105</queue_name>
+      <jclass_name>smp1.E</jclass_name>
+      <slots>240</slots>
+      <full_job_name>dan2_2-5</full_job_name>
+      <requested_pe name="OpenMP">240</requested_pe>
+      <granted_pe name="OpenMP">240</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1237</JB_job_number>
+      <JAT_prio>0.54671</JAT_prio>
+      <JB_name>IC1_7.5</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T10:31:17.645</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.E</jclass_name>
+      <slots>240</slots>
+      <full_job_name>IC1_7.5</full_job_name>
+      <requested_pe name="impi_fillup">240</requested_pe>
+      <granted_pe name="impi_fillup">240</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1238</JB_job_number>
+      <JAT_prio>0.54671</JAT_prio>
+      <JB_name>IC1_10</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T10:31:24.654</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.E</jclass_name>
+      <slots>240</slots>
+      <full_job_name>IC1_10</full_job_name>
+      <requested_pe name="impi_fillup">240</requested_pe>
+      <granted_pe name="impi_fillup">240</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1239</JB_job_number>
+      <JAT_prio>0.54671</JAT_prio>
+      <JB_name>IC0.75_10</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T10:31:24.690</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.E</jclass_name>
+      <slots>240</slots>
+      <full_job_name>IC0.75_10</full_job_name>
+      <requested_pe name="impi_fillup">240</requested_pe>
+      <granted_pe name="impi_fillup">240</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1240</JB_job_number>
+      <JAT_prio>0.54671</JAT_prio>
+      <JB_name>IC0.75_7.5</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T10:38:33.419</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.E</jclass_name>
+      <slots>240</slots>
+      <full_job_name>IC0.75_7.5</full_job_name>
+      <requested_pe name="impi_fillup">240</requested_pe>
+      <granted_pe name="impi_fillup">240</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1313</JB_job_number>
+      <JAT_prio>0.53405</JAT_prio>
+      <JB_name>IC1_1050</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T09:57:28.996</JAT_start_time>
+      <queue_name>mpi1.q@afidma018</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>160</slots>
+      <full_job_name>IC1_1050</full_job_name>
+      <requested_pe name="impi_fillup">160</requested_pe>
+      <granted_pe name="impi_fillup">160</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1318</JB_job_number>
+      <JAT_prio>0.53405</JAT_prio>
+      <JB_name>IC1_1020</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T10:07:26.672</JAT_start_time>
+      <queue_name>mpi1.q@afidma063</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>160</slots>
+      <full_job_name>IC1_1020</full_job_name>
+      <requested_pe name="impi_fillup">160</requested_pe>
+      <granted_pe name="impi_fillup">160</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1331</JB_job_number>
+      <JAT_prio>0.53405</JAT_prio>
+      <JB_name>IC1_1080</JB_name>
+      <JB_owner>NIa032</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T13:31:10.565</JAT_start_time>
+      <queue_name>mpi1.q@afidma041</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>160</slots>
+      <full_job_name>IC1_1080</full_job_name>
+      <requested_pe name="impi_fillup">160</requested_pe>
+      <granted_pe name="impi_fillup">160</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1371</JB_job_number>
+      <JAT_prio>0.52139</JAT_prio>
+      <JB_name>MPI_16J0-550000cells-60s-20180605</JB_name>
+      <JB_owner>FMa031</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-07T09:49:49.034</JAT_start_time>
+      <queue_name>mpi1.q@afidma032</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>80</slots>
+      <full_job_name>MPI_16J0-550000cells-60s-20180605</full_job_name>
+      <requested_pe name="impi_fillup">80</requested_pe>
+      <granted_pe name="impi_fillup">80</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1375</JB_job_number>
+      <JAT_prio>0.52139</JAT_prio>
+      <JB_name>MPI_36J0-55000cells-30s-RANS-20180607</JB_name>
+      <JB_owner>FMa031</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-07T10:12:10.062</JAT_start_time>
+      <queue_name>mpi1.q@afidma051</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>80</slots>
+      <full_job_name>MPI_36J0-55000cells-30s-RANS-20180607</full_job_name>
+      <requested_pe name="impi_fillup">80</requested_pe>
+      <granted_pe name="impi_fillup">80</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1173</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>job</JB_name>
+      <JB_owner>RFa036</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T11:43:39.118</JAT_start_time>
+      <queue_name>smp2.q@afismb131</queue_name>
+      <jclass_name>smp2.B</jclass_name>
+      <slots>40</slots>
+      <full_job_name>job</full_job_name>
+      <requested_pe name="openmpi_fillup">40</requested_pe>
+      <granted_pe name="openmpi_fillup">40</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1183</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan1_3-5</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T14:54:17.265</JAT_start_time>
+      <queue_name>mpi1.q@afidma026</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan1_3-5</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1191</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan1_3-4</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T15:15:42.403</JAT_start_time>
+      <queue_name>mpi1.q@afidma043</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan1_3-4</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1198</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>p0.999-0.1</JB_name>
+      <JB_owner>FMa024</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T15:57:40.971</JAT_start_time>
+      <queue_name>mpi1.q@afidma017</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>p0.999-0.1</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1201</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan2_3-5a</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:00:08.763</JAT_start_time>
+      <queue_name>mpi1.q@afidma003</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan2_3-5a</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1202</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>p0.999-0.001</JB_name>
+      <JB_owner>FMa024</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:00:12.176</JAT_start_time>
+      <queue_name>mpi1.q@afidma013</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>p0.999-0.001</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1203</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan1_4-5</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:02:12.236</JAT_start_time>
+      <queue_name>mpi1.q@afidma012</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan1_4-5</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1204</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>p0.999-1000</JB_name>
+      <JB_owner>FMa024</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:03:09.797</JAT_start_time>
+      <queue_name>mpi1.q@afidma008</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>p0.999-1000</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1205</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>joran2-3-4</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:03:30.760</JAT_start_time>
+      <queue_name>mpi1.q@afidma071</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>joran2-3-4</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1207</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan2_2-5a</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T16:07:15.957</JAT_start_time>
+      <queue_name>mpi1.q@afidma011</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan2_2-5a</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1241</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>job</JB_name>
+      <JB_owner>RFa001</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T11:27:54.279</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.B</jclass_name>
+      <slots>40</slots>
+      <full_job_name>job</full_job_name>
+      <requested_pe name="openmpi_fillup">40</requested_pe>
+      <granted_pe name="openmpi_fillup">40</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1242</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>job</JB_name>
+      <JB_owner>RFa036</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T11:30:51.210</JAT_start_time>
+      <queue_name>smp.q@afisma001</queue_name>
+      <jclass_name>smp.B</jclass_name>
+      <slots>40</slots>
+      <full_job_name>job</full_job_name>
+      <requested_pe name="openmpi_fillup">40</requested_pe>
+      <granted_pe name="openmpi_fillup">40</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">16.30G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1244</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>job</JB_name>
+      <JB_owner>RFa001</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T11:45:34.828</JAT_start_time>
+      <queue_name>smp2.q@afismb131</queue_name>
+      <jclass_name>smp2.B</jclass_name>
+      <slots>40</slots>
+      <full_job_name>job</full_job_name>
+      <requested_pe name="openmpi_fillup">40</requested_pe>
+      <granted_pe name="openmpi_fillup">40</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1247</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>dan2_3-4a</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T12:25:47.547</JAT_start_time>
+      <queue_name>mpi1.q@afidma022</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>dan2_3-4a</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1252</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>joran2-3-6</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T15:48:08.375</JAT_start_time>
+      <queue_name>mpi1.q@afidma019</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>joran2-3-6</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1267</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>trail-0.5</JB_name>
+      <JB_owner>FMa024</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T17:04:39.353</JAT_start_time>
+      <queue_name>mpi1.q@afidma065</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>trail-0.5</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1287</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>lead-0.5</JB_name>
+      <JB_owner>FMa024</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-05T20:17:33.157</JAT_start_time>
+      <queue_name>mpi1.q@afidma047</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>lead-0.5</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1350</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>MHD_SB005</JB_name>
+      <JB_owner>FMa001</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T18:42:01.743</JAT_start_time>
+      <queue_name>mpi1.q@afidma068</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>MHD_SB005</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <granted_pe name="OpenMP">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">180000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1373</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>job03</JB_name>
+      <JB_owner>RFa057</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-07T10:06:36.386</JAT_start_time>
+      <queue_name>smp1.q@afismb105</queue_name>
+      <jclass_name>smp1.B</jclass_name>
+      <slots>40</slots>
+      <full_job_name>job03</full_job_name>
+      <requested_pe name="openmpi_fillup">40</requested_pe>
+      <granted_pe name="openmpi_fillup">40</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1175</JB_job_number>
+      <JAT_prio>0.51190</JAT_prio>
+      <JB_name>dan2_2-3a</JB_name>
+      <JB_owner>FMa030</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-04T14:14:41.955</JAT_start_time>
+      <queue_name>smp2.q@afismb131</queue_name>
+      <jclass_name>smp2.A</jclass_name>
+      <slots>20</slots>
+      <full_job_name>dan2_2-3a</full_job_name>
+      <requested_pe name="OpenMP">20</requested_pe>
+      <granted_pe name="OpenMP">20</granted_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1322</JB_job_number>
+      <JAT_prio>0.51190</JAT_prio>
+      <JB_name>PCyl2_0096</JB_name>
+      <JB_owner>FMa029</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T10:43:17.974</JAT_start_time>
+      <queue_name>mpi1.q@afidma021</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>20</slots>
+      <full_job_name>PCyl2_0096</full_job_name>
+      <requested_pe name="OpenMP">20</requested_pe>
+      <granted_pe name="OpenMP">20</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>1323</JB_job_number>
+      <JAT_prio>0.51190</JAT_prio>
+      <JB_name>PCyl2_0097</JB_name>
+      <JB_owner>FMa029</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-06-06T10:45:27.247</JAT_start_time>
+      <queue_name>mpi1.q@afidma001</queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>20</slots>
+      <full_job_name>PCyl2_0097</full_job_name>
+      <requested_pe name="OpenMP">20</requested_pe>
+      <granted_pe name="OpenMP">20</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+  </queue_info>
+  <job_info>
+    <job_list state="pending">
+      <JB_job_number>1253</JB_job_number>
+      <JAT_prio>0.54291</JAT_prio>
+      <JB_name>lammps_a400</JB_name>
+      <JB_owner>NIa046</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-05T16:01:10.271</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp2.E</jclass_name>
+      <slots>216</slots>
+      <full_job_name>lammps_a400</full_job_name>
+      <requested_pe name="impi_fillup">216</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.56G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1280</JB_job_number>
+      <JAT_prio>0.54291</JAT_prio>
+      <JB_name>lammps_a800</JB_name>
+      <JB_owner>NIa046</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-05T17:47:43.007</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp1.E</jclass_name>
+      <slots>216</slots>
+      <full_job_name>lammps_a800</full_job_name>
+      <requested_pe name="impi_fillup">216</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.56G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1286</JB_job_number>
+      <JAT_prio>0.52139</JAT_prio>
+      <JB_name>aoa140</JB_name>
+      <JB_owner>FIa159</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-05T19:07:38.532</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp2.C</jclass_name>
+      <slots>80</slots>
+      <full_job_name>aoa140</full_job_name>
+      <requested_pe name="OpenMP">80</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1281</JB_job_number>
+      <JAT_prio>0.51886</JAT_prio>
+      <JB_name>lammps_aa800</JB_name>
+      <JB_owner>NIa046</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-05T17:49:34.730</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp.D</jclass_name>
+      <slots>64</slots>
+      <full_job_name>lammps_aa800</full_job_name>
+      <requested_pe name="impi_fillup">64</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">30.56G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1338</JB_job_number>
+      <JAT_prio>0.51823</JAT_prio>
+      <JB_name>job1_CH4</JB_name>
+      <JB_owner>RFa001</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-06T14:32:06.273</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp1.C</jclass_name>
+      <slots>60</slots>
+      <full_job_name>job1_CH4</full_job_name>
+      <requested_pe name="openmpi_fillup">60</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">5.47G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1366</JB_job_number>
+      <JAT_prio>0.51506</JAT_prio>
+      <JB_name>n3</JB_name>
+      <JB_owner>FIg023</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-07T00:11:44.621</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>mpi1.default</jclass_name>
+      <slots>40</slots>
+      <full_job_name>n3</full_job_name>
+      <requested_pe name="OpenMP">40</requested_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">86400</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">5G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>mpi1.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1351</JB_job_number>
+      <JAT_prio>0.51380</JAT_prio>
+      <JB_name>phi1.2</JB_name>
+      <JB_owner>RFa061</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-06T20:05:24.086</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp2.B</jclass_name>
+      <slots>32</slots>
+      <full_job_name>phi1.2</full_job_name>
+      <requested_pe name="openmpi_fillup">32</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">5.12G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1377</JB_job_number>
+      <JAT_prio>0.51000</JAT_prio>
+      <JB_name>test</JB_name>
+      <JB_owner>CFb004</JB_owner>
+      <state>Eqw</state>
+      <JB_submission_time>2018-06-07T10:18:58.930</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp2.A</jclass_name>
+      <slots>10</slots>
+      <full_job_name>test</full_job_name>
+      <requested_pe name="OpenMP">10</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">8.20G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp2.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>1379</JB_job_number>
+      <JAT_prio>0.51000</JAT_prio>
+      <JB_name>test</JB_name>
+      <JB_owner>CFb004</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-06-07T10:25:50.315</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smp.A</jclass_name>
+      <slots>8</slots>
+      <full_job_name>test</full_job_name>
+      <requested_pe name="OpenMP">8</requested_pe>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">40.75G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smp.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+  </job_info>
+</job_info>

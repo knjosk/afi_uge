@@ -1,0 +1,595 @@
+job-ID     prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
+------------------------------------------------------------------------------------------------------------------------------------------------
+      1325 0.61000 MPI_16J2-6 FMa031       dr    06/06/2018 11:34:29 mpi1.q@afidma048               mpi1.default                     640        
+       Full jobname:     MPI_16J2-6600000cells-60s-WithoutWallfunc-U-20180606
+       Master Queue:     mpi1.q@afidma048
+       Requested PE:     impi_fillup 640
+       Granted PE:       impi_fillup 640
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=36000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1064 0.54671 dan2_2-5   FMa030       r     06/05/2018 19:31:07 smp1.q@afismb105               smp1.E                           240        
+       Full jobname:     dan2_2-5
+       Master Queue:     smp1.q@afismb105
+       Requested PE:     OpenMP 240
+       Granted PE:       OpenMP 240
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp1.q
+       Binding:          NONE
+      1237 0.54671 IC1_7.5    NIa032       r     06/05/2018 10:31:17 smp.q@afisma001                smp.E                            240        
+       Full jobname:     IC1_7.5
+       Master Queue:     smp.q@afisma001
+       Requested PE:     impi_fillup 240
+       Granted PE:       impi_fillup 240
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1238 0.54671 IC1_10     NIa032       r     06/05/2018 10:31:24 smp.q@afisma001                smp.E                            240        
+       Full jobname:     IC1_10
+       Master Queue:     smp.q@afisma001
+       Requested PE:     impi_fillup 240
+       Granted PE:       impi_fillup 240
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1239 0.54671 IC0.75_10  NIa032       r     06/05/2018 10:31:24 smp.q@afisma001                smp.E                            240        
+       Full jobname:     IC0.75_10
+       Master Queue:     smp.q@afisma001
+       Requested PE:     impi_fillup 240
+       Granted PE:       impi_fillup 240
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1240 0.54671 IC0.75_7.5 NIa032       r     06/05/2018 10:38:33 smp.q@afisma001                smp.E                            240        
+       Full jobname:     IC0.75_7.5
+       Master Queue:     smp.q@afisma001
+       Requested PE:     impi_fillup 240
+       Granted PE:       impi_fillup 240
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1313 0.53405 IC1_1050   NIa032       r     06/06/2018 09:57:28 mpi1.q@afidma018               mpi1.default                     160        
+       Full jobname:     IC1_1050
+       Master Queue:     mpi1.q@afidma018
+       Requested PE:     impi_fillup 160
+       Granted PE:       impi_fillup 160
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1318 0.53405 IC1_1020   NIa032       r     06/06/2018 10:07:26 mpi1.q@afidma063               mpi1.default                     160        
+       Full jobname:     IC1_1020
+       Master Queue:     mpi1.q@afidma063
+       Requested PE:     impi_fillup 160
+       Granted PE:       impi_fillup 160
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1331 0.53405 IC1_1080   NIa032       r     06/06/2018 13:31:10 mpi1.q@afidma041               mpi1.default                     160        
+       Full jobname:     IC1_1080
+       Master Queue:     mpi1.q@afidma041
+       Requested PE:     impi_fillup 160
+       Granted PE:       impi_fillup 160
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1371 0.52139 MPI_16J0-5 FMa031       r     06/07/2018 09:49:49 mpi1.q@afidma032               mpi1.default                      80        
+       Full jobname:     MPI_16J0-550000cells-60s-20180605
+       Master Queue:     mpi1.q@afidma032
+       Requested PE:     impi_fillup 80
+       Granted PE:       impi_fillup 80
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=36000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1375 0.52139 MPI_36J0-5 FMa031       r     06/07/2018 10:12:10 mpi1.q@afidma051               mpi1.default                      80        
+       Full jobname:     MPI_36J0-55000cells-30s-RANS-20180607
+       Master Queue:     mpi1.q@afidma051
+       Requested PE:     impi_fillup 80
+       Granted PE:       impi_fillup 80
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=36000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1173 0.51506 job        RFa036       r     06/05/2018 11:43:39 smp2.q@afismb131               smp2.B                            40        
+       Full jobname:     job
+       Master Queue:     smp2.q@afismb131
+       Requested PE:     openmpi_fillup 40
+       Granted PE:       openmpi_fillup 40
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1183 0.51506 dan1_3-5   FMa030       r     06/04/2018 14:54:17 mpi1.q@afidma026               mpi1.default                      40        
+       Full jobname:     dan1_3-5
+       Master Queue:     mpi1.q@afidma026
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1191 0.51506 dan1_3-4   FMa030       r     06/04/2018 15:15:42 mpi1.q@afidma043               mpi1.default                      40        
+       Full jobname:     dan1_3-4
+       Master Queue:     mpi1.q@afidma043
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1198 0.51506 p0.999-0.1 FMa024       r     06/04/2018 15:57:40 mpi1.q@afidma017               mpi1.default                      40        
+       Full jobname:     p0.999-0.1
+       Master Queue:     mpi1.q@afidma017
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1201 0.51506 dan2_3-5a  FMa030       r     06/04/2018 16:00:08 mpi1.q@afidma003               mpi1.default                      40        
+       Full jobname:     dan2_3-5a
+       Master Queue:     mpi1.q@afidma003
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1202 0.51506 p0.999-0.0 FMa024       r     06/04/2018 16:00:12 mpi1.q@afidma013               mpi1.default                      40        
+       Full jobname:     p0.999-0.001
+       Master Queue:     mpi1.q@afidma013
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1203 0.51506 dan1_4-5   FMa030       r     06/04/2018 16:02:12 mpi1.q@afidma012               mpi1.default                      40        
+       Full jobname:     dan1_4-5
+       Master Queue:     mpi1.q@afidma012
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1204 0.51506 p0.999-100 FMa024       r     06/04/2018 16:03:09 mpi1.q@afidma008               mpi1.default                      40        
+       Full jobname:     p0.999-1000
+       Master Queue:     mpi1.q@afidma008
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1205 0.51506 joran2-3-4 FMa030       r     06/04/2018 16:03:30 mpi1.q@afidma071               mpi1.default                      40        
+       Full jobname:     joran2-3-4
+       Master Queue:     mpi1.q@afidma071
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1207 0.51506 dan2_2-5a  FMa030       r     06/04/2018 16:07:15 mpi1.q@afidma011               mpi1.default                      40        
+       Full jobname:     dan2_2-5a
+       Master Queue:     mpi1.q@afidma011
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1241 0.51506 job        RFa001       r     06/05/2018 11:27:54 smp.q@afisma001                smp.B                             40        
+       Full jobname:     job
+       Master Queue:     smp.q@afisma001
+       Requested PE:     openmpi_fillup 40
+       Granted PE:       openmpi_fillup 40
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1242 0.51506 job        RFa036       r     06/05/2018 11:30:51 smp.q@afisma001                smp.B                             40        
+       Full jobname:     job
+       Master Queue:     smp.q@afisma001
+       Requested PE:     openmpi_fillup 40
+       Granted PE:       openmpi_fillup 40
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=16.30G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1244 0.51506 job        RFa001       r     06/05/2018 11:45:34 smp2.q@afismb131               smp2.B                            40        
+       Full jobname:     job
+       Master Queue:     smp2.q@afismb131
+       Requested PE:     openmpi_fillup 40
+       Granted PE:       openmpi_fillup 40
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1247 0.51506 dan2_3-4a  FMa030       r     06/05/2018 12:25:47 mpi1.q@afidma022               mpi1.default                      40        
+       Full jobname:     dan2_3-4a
+       Master Queue:     mpi1.q@afidma022
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1252 0.51506 joran2-3-6 FMa030       r     06/05/2018 15:48:08 mpi1.q@afidma019               mpi1.default                      40        
+       Full jobname:     joran2-3-6
+       Master Queue:     mpi1.q@afidma019
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1267 0.51506 trail-0.5  FMa024       r     06/05/2018 17:04:39 mpi1.q@afidma065               mpi1.default                      40        
+       Full jobname:     trail-0.5
+       Master Queue:     mpi1.q@afidma065
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1287 0.51506 lead-0.5   FMa024       r     06/05/2018 20:17:33 mpi1.q@afidma047               mpi1.default                      40        
+       Full jobname:     lead-0.5
+       Master Queue:     mpi1.q@afidma047
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1350 0.51506 MHD_SB005  FMa001       r     06/06/2018 18:42:01 mpi1.q@afidma068               mpi1.default                      40        
+       Full jobname:     MHD_SB005
+       Master Queue:     mpi1.q@afidma068
+       Requested PE:     OpenMP 40
+       Granted PE:       OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=180000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1373 0.51506 job03      RFa057       r     06/07/2018 10:06:36 smp1.q@afismb105               smp1.B                            40        
+       Full jobname:     job03
+       Master Queue:     smp1.q@afismb105
+       Requested PE:     openmpi_fillup 40
+       Granted PE:       openmpi_fillup 40
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp1.q
+       Binding:          NONE
+      1175 0.51190 dan2_2-3a  FMa030       r     06/04/2018 14:14:41 smp2.q@afismb131               smp2.A                            20        
+       Full jobname:     dan2_2-3a
+       Master Queue:     smp2.q@afismb131
+       Requested PE:     OpenMP 20
+       Granted PE:       OpenMP 20
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1322 0.51190 PCyl2_0096 FMa029       r     06/06/2018 10:43:17 mpi1.q@afidma021               mpi1.default                      20        
+       Full jobname:     PCyl2_0096
+       Master Queue:     mpi1.q@afidma021
+       Requested PE:     OpenMP 20
+       Granted PE:       OpenMP 20
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1323 0.51190 PCyl2_0097 FMa029       r     06/06/2018 10:45:27 mpi1.q@afidma001               mpi1.default                      20        
+       Full jobname:     PCyl2_0097
+       Master Queue:     mpi1.q@afidma001
+       Requested PE:     OpenMP 20
+       Granted PE:       OpenMP 20
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=2.159G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1253 0.54291 lammps_a40 NIa046       qw    06/05/2018 16:01:10                                smp2.E                           216        
+       Full jobname:     lammps_a400
+       Requested PE:     impi_fillup 216
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.56G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1280 0.54291 lammps_a80 NIa046       qw    06/05/2018 17:47:43                                smp1.E                           216        
+       Full jobname:     lammps_a800
+       Requested PE:     impi_fillup 216
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.56G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp1.q
+       Binding:          NONE
+      1286 0.52139 aoa140     FIa159       qw    06/05/2018 19:07:38                                smp2.C                            80        
+       Full jobname:     aoa140
+       Requested PE:     OpenMP 80
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=4.10G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1281 0.51886 lammps_aa8 NIa046       qw    06/05/2018 17:49:34                                smp.D                             64        
+       Full jobname:     lammps_aa800
+       Requested PE:     impi_fillup 64
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=30.56G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE
+      1338 0.51823 job1_CH4   RFa001       qw    06/06/2018 14:32:06                                smp1.C                            60        
+       Full jobname:     job1_CH4
+       Requested PE:     openmpi_fillup 60
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=5.47G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp1.q
+       Binding:          NONE
+      1366 0.51506 n3         FIg023       qw    06/07/2018 00:11:44                                mpi1.default                      40        
+       Full jobname:     n3
+       Requested PE:     OpenMP 40
+       Hard Resources:   njobinstances=1 (0.000000)
+                         njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=86400 (0.000000)
+                         m_mem_free=5G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: mpi1.q
+       Binding:          NONE
+      1351 0.51380 phi1.2     RFa061       qw    06/06/2018 20:05:24                                smp2.B                            32        
+       Full jobname:     phi1.2
+       Requested PE:     openmpi_fillup 32
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=5.12G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1377 0.51000 test       CFb004       Eqw   06/07/2018 10:18:58                                smp2.A                            10        
+       Full jobname:     test
+       Requested PE:     OpenMP 10
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=8.20G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp2.q
+       Binding:          NONE
+      1379 0.51000 test       CFb004       qw    06/07/2018 10:25:50                                smp.A                              8        
+       Full jobname:     test
+       Requested PE:     OpenMP 8
+       Hard Resources:   njobs=1 (0.000000)
+                         h_core=0 (0.000000)
+                         h_rt=360000 (0.000000)
+                         m_mem_free=40.75G (0.000000)
+       Master Hard Res.: 
+       njobs=1 (default)
+       Soft Resources:   
+       Hard requested queues: smp.q
+       Binding:          NONE

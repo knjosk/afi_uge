@@ -1,0 +1,757 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="https://github.com/gridengine/gridengine/raw/master/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+    <Queue-List>
+      <name>inter.q@afidma035</name>
+      <qtype>IP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>inter.q@afidma036</name>
+      <qtype>IP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma001</name>
+      <qtype>BP</qtype>
+      <slots_used>20</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.43800</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">20</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma002</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04625</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma003</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99850</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma004</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma005</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma006</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma007</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04425</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma008</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99725</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma009</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma010</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma011</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99275</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma012</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.98900</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma013</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00125</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma014</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04675</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma015</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04650</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma016</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04200</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma017</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99625</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma018</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma019</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.97075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma020</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma021</name>
+      <qtype>BP</qtype>
+      <slots_used>20</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.42675</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">20</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma022</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99950</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma023</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma024</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma025</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma026</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.98525</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma027</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma028</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04700</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma029</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma030</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma031</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04350</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma032</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma037</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma038</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma039</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma040</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma041</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma042</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.91150</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma043</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99925</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma044</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma045</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04325</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma046</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma047</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma048</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <arch>lx-amd64</arch>
+      <state>au</state>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma049</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma050</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04550</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma051</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma052</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04650</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma053</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00100</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma054</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04450</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma055</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma056</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04425</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma057</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma058</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma059</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04250</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma060</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00100</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma061</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00050</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma062</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00100</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma063</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma064</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04725</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma065</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.99525</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma066</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma067</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00725</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma068</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00100</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma069</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.04500</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma070</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma071</name>
+      <qtype>BP</qtype>
+      <slots_used>40</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>1.00000</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi1.q@afidma072</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi2.q@afidma033</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00025</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>mpi2.q@afidma034</name>
+      <qtype>BP</qtype>
+      <slots_used>0</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>40</slots_total>
+      <np_load_avg>0.00075</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">40</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>smp.q@afisma001</name>
+      <qtype>BP</qtype>
+      <slots_used>1040</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>1040</slots_total>
+      <np_load_avg>1.00386</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">0</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>smp1.q@afismb105</name>
+      <qtype>BP</qtype>
+      <slots_used>240</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>320</slots_total>
+      <np_load_avg>0.35572</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">80</resource>
+    </Queue-List>
+    <Queue-List>
+      <name>smp2.q@afismb131</name>
+      <qtype>BP</qtype>
+      <slots_used>100</slots_used>
+      <slots_resv>0</slots_resv>
+      <slots_total>320</slots_total>
+      <np_load_avg>0.32122</np_load_avg>
+      <arch>lx-amd64</arch>
+      <resource name="slots" type="qc">220</resource>
+    </Queue-List>
+  </queue_info>
+  <job_info>
+  </job_info>
+</job_info>
