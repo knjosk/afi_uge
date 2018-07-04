@@ -28,21 +28,15 @@ WJOBSTAT=wjobstat.txt
 WJOB_FILE=${WJOBSTAT_DIR}/${WJOBSTAT}-${f_timestamp}
 WJOBSTAT_FILE=${WJOBSTAT_DIR}/${WJOBSTAT}
 
-# Input files ( test mode )
-QSTAT_GC_EXT_XML_FILE=./qstat-gc-ext-xml.txt
-QSTAT_R_XML_FILE=./qstat-r-xml.txt
-WJOBSTAT=./wjobstat.py
-WJOB_FILE=./wjobstat.txt
-
-echo " [ ${timestamp} ]" | tee ${WJOB_FILE}
-echo " Job-ID    prior   name       user      jclass                estimate start time" | tee -a ${WJOB_FILE}
-echo " --------- ------- ---------- --------- --------------------- -------------------"| tee -a ${WJOB_FILE}
+echo "[ ${timestamp} (update every 15 minits)]" > ${WJOB_FILE}
+echo "Job-ID     prior   name       user       jclass               estimate start time" >> ${WJOB_FILE}
+echo "---------- ------- ---------- ---------- -------------------- -------------------" >> ${WJOB_FILE}
 #echo "123456789012345678901234567890123456789012345678901234567890123456789012345678901" | tee -a ${WJOB_FILE}
 
 ${WJOBSTAT} ${QSTAT_GC_EXT_XML_FILE} ${QSTAT_R_XML_FILE}\
     | sort -k 6\
-    | awk '{printf "%10d %-.5f %-10.10s %-10.10s %-20.20s %10s %8s\n",$1,$2,$3,$4,$5,$6,$7}'\
-    | tee -a ${WJOB_FILE}
+    | awk '{printf "%-10d %-.5f %-10.10s %-10.10s %-20.20s %10s %8s\n",$1,$2,$3,$4,$5,$6,$7}'\
+    >> ${WJOB_FILE}
 
 rm -f ${WJOBSTAT_FILE}
 ln -s ${WJOB_FILE} ${WJOBSTAT_FILE}
