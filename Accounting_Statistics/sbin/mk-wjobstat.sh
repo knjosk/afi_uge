@@ -21,7 +21,7 @@ ${QSTAT_CMD} -g c -ext -xml > ${QSTAT_GC_EXT_XML_FILE}
 ${QSTAT_CMD} -r -u '*' -xml > ${QSTAT_R_XML_FILE}
 
 # Excetute command
-WJOBSTAT=${UGE_AS_DIR}/sbin/wjobstat.py
+WJOBSTAT_CMD=${UGE_AS_DIR}/sbin/wjobstat.py
 
 # Output files
 WJOBSTAT=wjobstat.txt
@@ -31,9 +31,8 @@ WJOBSTAT_FILE=${WJOBSTAT_DIR}/${WJOBSTAT}
 echo "[ ${timestamp} (update every 15 minits)]" > ${WJOB_FILE}
 echo "Job-ID     prior   name       user       jclass               estimate start time" >> ${WJOB_FILE}
 echo "---------- ------- ---------- ---------- -------------------- -------------------" >> ${WJOB_FILE}
-#echo "123456789012345678901234567890123456789012345678901234567890123456789012345678901" | tee -a ${WJOB_FILE}
 
-${WJOBSTAT} ${QSTAT_GC_EXT_XML_FILE} ${QSTAT_R_XML_FILE}\
+${WJOBSTAT_CMD} ${QSTAT_GC_EXT_XML_FILE} ${QSTAT_R_XML_FILE}\
     | sort -k 6\
     | awk '{printf "%-10d %-.5f %-10.10s %-10.10s %-20.20s %10s %8s\n",$1,$2,$3,$4,$5,$6,$7}'\
     >> ${WJOB_FILE}
