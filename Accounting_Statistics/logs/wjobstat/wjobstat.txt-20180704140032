@@ -1,0 +1,18 @@
+[ Wed Jul  4 14:00:25 JST 2018 (update every 15 minits)]
+Job-ID     prior   name       user       jclass               estimate start time
+---------- ------- ---------- ---------- -------------------- -------------------
+1533       0.61000 MPI_16J2-1 FMa031     mpi1.default         2018/06/06 21:34:29
+1253       0.54365 lammps_a40 NIa046     smp2.E               2018/06/08 18:14:41
+1485       0.55992 IC0.75_10  NIa032     mpi1.default         2018/06/08 19:15:42
+1366       0.51610 n3         FIg023     mpi1.default         2018/06/08 20:00:08
+1534       0.51610 VRA01      FMa001     mpi1.default         2018/06/08 20:02:12
+1535       0.51610 VRB01      FMa001     mpi1.default         2018/06/08 20:03:30
+1286       0.52236 aoa140     FIa159     smp2.C               2018/06/09 15:45:34
+1520       0.51297 spl        MHa024     mpi1.default         2018/06/09 16:25:47
+1280       0.54365 lammps_a80 NIa046     smp1.E               2018/06/09 23:31:07
+1521       0.51297 spl        MHa024     mpi1.default         2018/06/10 11:40:03
+1522       0.51297 spl        MHa024     mpi1.default         2018/06/10 19:19:42
+1523       0.51297 spl        MHa024     mpi1.default         2018/06/11 20:57:56
+1400       0.51610 VR301      FMa001     smp2.B               2018/06/11 20:57:59
+1524       0.51297 spl        MHa024     mpi1.default         2018/06/11 21:20:39
+1537       0.51297 mpirank_sa ZZa011     mpi1.default         2018/06/12 13:55:07
