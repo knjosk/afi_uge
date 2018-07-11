@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
-try:   #rhel5 doesn't have json
-   import json
+try:  # rhel5 doesn't have json
+    import json
 except ImportError:
    import simplejson as json
 from collections import defaultdict
@@ -295,9 +295,15 @@ def calc_accounting(filename,start_utime, end_utime):
    writer = csv.writer(used_f, lineterminator='\n')
    writer.writerows(prj_used_list)
 
+   exceeded_f = open('prj_exceeded_pm.txt', 'w')
+   for x in prj_exceeded_list:
+      exceeded_f.write(str(x) + "\n")
+
+   exceeded_f.close()
    f.close()
    limit_f.close()
    used_f.close()
+   
 __doc__ = """{f}
 
 Usage:
