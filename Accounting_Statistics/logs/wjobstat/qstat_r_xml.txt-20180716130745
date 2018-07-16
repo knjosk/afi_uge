@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="https://github.com/gridengine/gridengine/raw/master/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+    <job_list state="running">
+      <JB_job_number>5426</JB_job_number>
+      <JAT_prio>0.56412</JAT_prio>
+      <JB_name>aoa140</JB_name>
+      <JB_owner>fj-hasimoto</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-07-16T12:20:44.583</JAT_start_time>
+      <queue_name>smb.q@afismb105</queue_name>
+      <jclass_name>smb.E</jclass_name>
+      <slots>1040</slots>
+      <full_job_name>aoa140</full_job_name>
+      <requested_pe name="OpenMP">1040</requested_pe>
+      <granted_pe name="OpenMP">1040</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="hostname" resource_contribution="0.000000">afismb105</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smb.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>5424</JB_job_number>
+      <JAT_prio>0.55191</JAT_prio>
+      <JB_name>aoa140</JB_name>
+      <JB_owner>fj-hasimoto</JB_owner>
+      <state>r</state>
+      <JAT_start_time>2018-07-16T12:10:07.188</JAT_start_time>
+      <queue_name>smb.q@afismb131</queue_name>
+      <jclass_name>smb.C</jclass_name>
+      <slots>256</slots>
+      <full_job_name>aoa140</full_job_name>
+      <requested_pe name="OpenMP">256</requested_pe>
+      <granted_pe name="OpenMP">256</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="hostname" resource_contribution="0.000000">afismb131</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">360000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">5.12G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smb.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+    <job_list state="running">
+      <JB_job_number>5173</JB_job_number>
+      <JAT_prio>0.52994</JAT_prio>
+      <JB_name>HybridJ</JB_name>
+      <JB_owner>fjse02</JB_owner>
+      <state>dr</state>
+      <JAT_start_time>2018-07-14T13:25:33.138</JAT_start_time>
+      <queue_name>dma_01@afidma017</queue_name>
+      <jclass_name>dma.A</jclass_name>
+      <slots>40</slots>
+      <full_job_name>HybridJ</full_job_name>
+      <requested_pe name="hybrid-omp40-ompi2">40</requested_pe>
+      <granted_pe name="hybrid-omp40-ompi2">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>dma_*</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+  </queue_info>
+  <job_info>
+    <job_list state="pending">
+      <JB_job_number>5425</JB_job_number>
+      <JAT_prio>0.54947</JAT_prio>
+      <JB_name>smb</JB_name>
+      <JB_owner>fj-okada</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-07-16T12:12:28.734</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>smb.A</jclass_name>
+      <slots>80</slots>
+      <full_job_name>smb</full_job_name>
+      <requested_pe name="OpenMP">80</requested_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="hostname" resource_contribution="0.000000">afismb053</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">4.10G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>smb.q</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+  </job_info>
+</job_info>
