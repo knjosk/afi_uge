@@ -28,14 +28,4 @@ WJOBSTAT=wjobstat.txt
 WJOB_FILE=${WJOBSTAT_DIR}/${WJOBSTAT}-${f_timestamp}
 WJOBSTAT_FILE=${WJOBSTAT_DIR}/${WJOBSTAT}
 
-echo "[ ${timestamp} (update every 15 minits)]" > ${WJOB_FILE}
-echo "Job-ID     prior   name       user       jclass               estimate start time" >> ${WJOB_FILE}
-echo "---------- ------- ---------- ---------- -------------------- -------------------" >> ${WJOB_FILE}
-
-${WJOBSTAT_CMD} ${QSTAT_GC_EXT_XML_FILE} ${QSTAT_R_XML_FILE}\
-    | sort -k 6\
-    | awk '{printf "%-10d %-.5f %-10.10s %-10.10s %-20.20s %10s %8s\n",$1,$2,$3,$4,$5,$6,$7}'\
-    >> ${WJOB_FILE}
-
-rm -f ${WJOBSTAT_FILE}
-ln -s ${WJOB_FILE} ${WJOBSTAT_FILE}
+${WJOBSTAT_CMD} ${QSTAT_GC_EXT_XML_FILE} ${QSTAT_R_XML_FILE}
