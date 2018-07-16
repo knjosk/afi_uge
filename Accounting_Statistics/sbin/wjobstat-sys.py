@@ -36,6 +36,9 @@ q_dma_group_tuple = ('dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06',
                      'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37')
 jc_dma_group_tuple = ('dma.default', 'dma.A')
 
+number_of_jobs_running_on_queue_dict = defaultdict(int)
+number_of_jobs_waiting_on_queue_dict = defaultdict(int)
+
 
 def parse():
     now = datetime.datetime.now()
@@ -50,7 +53,6 @@ def parse():
     #--- qstat -g -c -xml ---
     qstat_g_c_dict = xmltodict.parse(xmlString)
     l_qstat_g_c_dict = len(qstat_g_c_dict["job_info"]["cluster_queue_summary"])
-    print l_qstat_g_c_dict
 
     i = 0
     avail_cores_dict = defaultdict(int)
@@ -134,22 +136,23 @@ def parse():
 
         else:
             running_job_number = qstat_r_dict["job_info"]["queue_info"]["job_list"]["JB_job_number"]
-            prio = float(qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["JAT_prio"])
-            job_name = qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["JB_name"]
-            owner = qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["JB_owner"]
-            state = qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["state"]
+            prio = float(qstat_r_dict["job_info"]["queue_info"]["job_list"]["JAT_prio"])
+            job_name = qstat_r_dict["job_info"]["queue_info"]["job_list"]["JB_name"]
+            owner = qstat_r_dict["job_info"]["queue_info"]["job_list"]["JB_owner"]
+            state = qstat_r_dict["job_info"]["queue_info"]["job_list"]["state"]
             start_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["queue_info"]["job_list"]["JAT_start_time"], '%Y-%m-%dT%H:%M:%S.%f')
             start_utime = int(time.mktime(start_time.timetuple()))
-            queue_name = qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["queue_name"]
+            queue_name = qstat_r_dict["job_info"]["queue_info"]["job_list"]["queue_name"]
             exec_queue_name = qstat_r_dict["job_info"]["queue_info"]["job_list"]["queue_name"].split("@")[0]
             job_jcl = qstat_r_dict["job_info"]["queue_info"]["job_list"]["jclass_name"]
             used_cores = int(qstat_r_dict["job_info"]["queue_info"]["job_list"]["slots"])
+            l_hard_request_list = len(qstat_r_dict["job_info"]["queue_info"]["job_list"]["hard_request"])
 
             elaps = 0
             j = 0
             while j < l_hard_request_list:
-                if qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["hard_request"][j]["@name"] == "h_rt":
-                    elaps = int(qstat_r_dict["job_info"]["queue_info"]["job_list"][i]["hard_request"][j]["#text"])
+                if qstat_r_dict["job_info"]["queue_info"]["job_list"]["hard_request"][j]["@name"] == "h_rt":
+                    elaps = int(qstat_r_dict["job_info"]["queue_info"]["job_list"]["hard_request"][j]["#text"])
                 j += 1
 
             end_utime = start_utime + elaps
@@ -204,7 +207,7 @@ def parse():
                 waiting_job_user = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_owner"]
                 waiting_job_state = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["state"]
                 waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"]["jclass_name"]
-                waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
+                waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
 
                 if waiting_job_jcl == "dma.L":
                     waiting_queue_name = "dmaL.q"
@@ -294,6 +297,9 @@ def parse():
                 number_of_jobs_running_on_queue = len(running_job_dict[q])
                 number_of_jobs_waiting_on_queue = len(waiting_job_dict[q])
 
+                number_of_jobs_running_on_queue_dict[q] = number_of_jobs_running_on_queue
+                number_of_jobs_waiting_on_queue_dict[q] = number_of_jobs_waiting_on_queue
+
                 l_estimate_start_dict = len(estimate_start_dict[q])
                 print("================================================================================")
                 print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
@@ -338,6 +344,9 @@ def parse():
             number_of_jobs_running_on_queue = len(running_job_dict[q])
             number_of_jobs_waiting_on_queue = len(waiting_job_dict[q])
 
+            number_of_jobs_running_on_queue_dict[q] = number_of_jobs_running_on_queue
+            number_of_jobs_waiting_on_queue_dict[q] = number_of_jobs_waiting_on_queue
+
             estimate_start_dict[q].sort(key=itemgetter(4, 7))
 
             l_estimate_start_dict = len(estimate_start_dict[q])
@@ -370,6 +379,177 @@ def parse():
                 print('{0[0]:>10} {0[1]:<7} {0[2]:<10} {0[3]:<12} {0[4]:<5} {0[6]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(estimate_start_dict[q][i]))
                 i += 1
             print("")
+
+        else:
+            for q in q_no_group_tuple:
+                number_of_jobs_running_on_queue = len(running_job_dict[q])
+                number_of_jobs_running_on_queue_dict[q] = number_of_jobs_running_on_queue
+
+                print("================================================================================")
+                print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
+                print("================================================================================")
+
+                print('{:<31} {} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
+                                                                             total_dict[q], aoacds_dict[q], cdsue_dict[q]))
+                i = 0
+                print("### RUNNING JOBS  ###")
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                print("job-ID     prior   name       user         state start at            queue                          jclass                         slots ja-task-ID")
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                while i < number_of_jobs_running_on_queue:
+                    print('{0[3]:>10} {0[4]:<7} {0[5]:<10} {0[6]:<12} {0[7]:<5} {0[8]:%m/%d/%Y %H:%M:%S} {0[9]:<30} {0[10]:<30} {0[1]:>5}'.format(running_job_dict[q][i]))
+                    i += 1
+                i = 0
+                print("### NO PENDING JOBS ###")
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                print("")
+
+            print("================================================================================")
+            print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
+            print("================================================================================")
+
+            for q in q_dma_group_tuple:
+                print('{:<31} {:.4f} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
+                                                                                 total_dict[q], aoacds_dict[q], cdsue_dict[q]))
+
+            q = "dma.q"
+            number_of_jobs_running_on_queue = len(running_job_dict[q])
+            number_of_jobs_running_on_queue_dict[q] = number_of_jobs_running_on_queue
+
+            i = 0
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("### RUNNING JOBS ###")
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("job-ID     prior   name       user         state start at            queue                          jclass                         slots ja-task-ID")
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            while i < number_of_jobs_running_on_queue:
+                print('{0[3]:>10} {0[4]:<7} {0[5]:<10} {0[6]:<12} {0[7]:<5} {0[8]:%m/%d/%Y %H:%M:%S} {0[9]:<30} {0[10]:<30} {0[1]:>5}'.format(running_job_dict[q][i]))
+                i += 1
+
+            i = 0
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("### NO PENDING JOBS ###")
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("")
+    else:
+        waiting_job_dict = {}
+        for i in queue_tuple:
+            waiting_job_dict[i] = []
+        waiting_job_dict["dma.q"] = []
+
+        if qstat_r_dict["job_info"]["job_info"] != None:
+            l_job_info_qstat_r_dict = len(qstat_r_dict["job_info"]["job_info"]["job_list"])
+            if type(qstat_r_dict["job_info"]["job_info"]["job_list"]) == list:
+                i = 0
+                list2 = []
+                while i < l_job_info_qstat_r_dict:
+                    waiting_job_number = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_job_number"]
+                    waiting_job_prio = float(qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JAT_prio"])
+                    waiting_job_name = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_name"]
+                    waiting_job_user = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_owner"]
+                    waiting_job_state = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["state"]
+                    waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["jclass_name"]
+                    waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
+
+                    if waiting_job_jcl == "dma.L":
+                        waiting_queue_name = "dmaL.q"
+                    elif waiting_job_jcl == "dma.M":
+                        waiting_queue_name = "dmaM.q"
+                    else:
+                        waiting_queue_name = waiting_job_jcl.split(".")[0] + '.q'
+
+                    waiting_cores = int(qstat_r_dict["job_info"]["job_info"]["job_list"][i]["slots"])
+                    waiting_job_dict[waiting_queue_name].append([waiting_job_number, waiting_job_prio, waiting_job_name, waiting_job_user,
+                                                                 waiting_job_state, waiting_job_jcl,
+                                                                 waiting_job_submission_time, waiting_cores])
+                    i += 1
+            else:
+                waiting_job_number = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_job_number"]
+                waiting_job_prio = float(qstat_r_dict["job_info"]["job_info"]["job_list"]["JAT_prio"])
+                waiting_job_name = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_name"]
+                waiting_job_user = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_owner"]
+                waiting_job_state = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["state"]
+                waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"]["jclass_name"]
+                waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
+
+                if waiting_job_jcl == "dma.L":
+                    waiting_queue_name = "dmaL.q"
+                elif waiting_job_jcl == "dma.M":
+                    waiting_queue_name = "dmaM.q"
+                else:
+                    waiting_queue_name = waiting_job_jcl.split(".")[0] + '.q'
+
+                waiting_cores = int(qstat_r_dict["job_info"]["job_info"]["job_list"]["slots"])
+                waiting_job_dict[waiting_queue_name].append([waiting_job_number, waiting_job_prio, waiting_job_name, waiting_job_user,
+                                                             waiting_job_state, waiting_job_jcl,
+                                                             waiting_job_submission_time, waiting_cores])
+
+            for q in queue_tuple:
+                waiting_job_dict[q].sort(key=lambda x: (-x[1], x[0]))
+            waiting_job_dict["dma.q"].sort(key=lambda x: (-x[1], x[0]))
+
+            for q in q_no_group_tuple:
+                number_of_jobs_waiting_on_queue = len(waiting_job_dict[q])
+                number_of_jobs_waiting_on_queue_dict[q] = number_of_jobs_waiting_on_queue
+
+                print("================================================================================")
+                print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
+                print("================================================================================")
+
+                print('{:<31} {} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
+                                                                             total_dict[q], aoacds_dict[q], cdsue_dict[q]))
+                print("### NO RUNNING JOBS  ###")
+                i = 0
+                print("### PENDING JOBS ###")
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                print("job-ID     prior   name       user         state submit at           queue                          jclass                         slots ja-task-ID")
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                while i < number_of_jobs_waiting_on_queue:
+                    print('{0[0]:>10} {0[1]:<7} {0[2]:<10} {0[3]:<12} {0[4]:<5} {0[6]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(waiting_job_dict[q][i]))
+                    i += 1
+                i = 0
+                print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+                print("")
+
+            print("================================================================================")
+            print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
+            print("================================================================================")
+
+            for q in q_dma_group_tuple:
+                print('{:<31} {:.4f} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
+                                                                                 total_dict[q], aoacds_dict[q], cdsue_dict[q]))
+            q = "dma.q"
+            number_of_jobs_waiting_on_queue = len(waiting_job_dict[q])
+            number_of_jobs_waiting_on_queue_dict[q] = number_of_jobs_waiting_on_queue
+
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("### NO RUNNING JOBS ###")
+
+            i = 0
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("### PENDING JOBS ###")
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("job-ID     prior   name       user         state submit at           queue                          jclass                         slots ja-task-ID")
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            while i < number_of_jobs_waiting_on_queue:
+                print('{0[0]:>10} {0[1]:<7} {0[2]:<10} {0[3]:<12} {0[4]:<5} {0[6]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(waiting_job_dict[q][i]))
+                i += 1
+            print("---------------------------------------------------------------------------------------------------------------------------------------------------")
+            print("")
+
+    print("RUNNING JOBS----------------------------")
+    print("QUEUE                           Number  ")
+    print("----------------------------------------")
+    for key in number_of_jobs_running_on_queue_dict:
+        print('{:<31} {:>6}'.format(key, number_of_jobs_running_on_queue_dict[key]))
+    print("----------------------------------------")
+
+    print("PENDING JOBS----------------------------")
+    print("QUEUE                           Number  ")
+    print("----------------------------------------")
+    for key in number_of_jobs_waiting_on_queue_dict:
+        print('{:<31} {:>6}'.format(key, number_of_jobs_running_on_queue_dict[key]))
+    print("----------------------------------------")
 
 if __name__ == '__main__':
     parse()
