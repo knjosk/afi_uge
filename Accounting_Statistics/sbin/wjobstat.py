@@ -202,7 +202,7 @@ def parse():
                 waiting_job_prio = float(qstat_r_dict["job_info"]["job_info"]["job_list"]["JAT_prio"])
                 waiting_job_name = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_name"]
                 waiting_job_user = qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_owner"]
-                waiting_job_state = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["state"]
+                waiting_job_state = qstat_r_dict["job_info"]["job_info"]["job_list"]["state"]
                 waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"]["jclass_name"]
                 waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
 
