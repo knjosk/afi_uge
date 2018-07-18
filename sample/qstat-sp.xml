@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="https://github.com/gridengine/gridengine/raw/master/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+  </queue_info>
+  <job_info>
+    <job_list state="pending">
+      <JB_job_number>6413</JB_job_number>
+      <JAT_prio>0.52994</JAT_prio>
+      <JB_name>fds660</JB_name>
+      <JB_owner>fj-aoyagi</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-07-18T11:07:33.189</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>dma.A</jclass_name>
+      <slots>16</slots>
+    </job_list>
+    <job_list state="pending">
+      <JB_job_number>6415</JB_job_number>
+      <JAT_prio>0.52994</JAT_prio>
+      <JB_name>of50</JB_name>
+      <JB_owner>fj-aoyagi</JB_owner>
+      <state>qw</state>
+      <JB_submission_time>2018-07-18T11:11:22.377</JB_submission_time>
+      <queue_name></queue_name>
+      <jclass_name>dma.A</jclass_name>
+      <slots>8</slots>
+    </job_list>
+  </job_info>
+</job_info>

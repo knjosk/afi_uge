@@ -270,37 +270,69 @@ def calc_accounting(filename, start_utime, end_utime):
 
     # make Table 2-3-1 CPU usage per group
     print "--- Table 2.3 Usage per group ---"
+
+    group_out_list = []
     group_list = group_count_dict.keys()
     # print "group_list"
     # print group_list
+    group_out_list_0 = []
+
     group_total_cputime = 0
     for grp in group_list:
         group_total_cputime += group_cputime_dict.get(grp)
     # print queue_tuple
     for grp in group_list:
+        group_out_list0 = []
         print grp,
         for q in queue_tuple:
             key = grp + '_' + q
+            group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
             print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
-
+        group_out_list0.extend([group_cputime_dict.get(grp, 0), (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100])
+        group_out_list0.insert(0, grp)
         print group_cputime_dict.get(grp, 0),
         print (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100
 
+        group_out_list.append(group_out_list0)
+
+    print group_out_list
+
+    grou_out_f = open('group_out.csv', 'w')
+    writer = csv.writer(grou_out_f, lineterminator='\n')
+    writer.writerows(group_out_list)
+
     print "--- Table 2.4 Usage per project ---"
+
     prj_list = prj_count_dict.keys()
+    prj_out_list = []
     prj_total_cputime_dict = 0
     for prj in prj_list:
         prj_total_cputime_dict += prj_cputime_dict.get(prj)
     # print prj_list
     for prj in prj_list:
+        prj_out_list0 = []
         print prj,
         for q in queue_tuple:
             key = prj + '_' + q
+            prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
+
             print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
+        prj_out_list0.extend([prj_cputime_dict.get(prj, 0), (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100])
+        prj_out_list0.insert(0, prj)
+
         print prj_cputime_dict.get(prj, 0),
         print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
 
+        prj_out_list.append(prj_out_list0)
+
+    prj_out_f = open('prj_out.csv', 'w')
+    writer = csv.writer(prj_out_f, lineterminator='\n')
+    writer.writerows(prj_out_list)
+
     print "--- Table 2-8 Usage per job class ---"
+
+    jc_out_list = []
+
     jc_list = jc_count_dict.keys()
     jc_total_cputime_dict = 0
     for jc in jc_list:
@@ -310,11 +342,21 @@ def calc_accounting(filename, start_utime, end_utime):
     for key in jc_list:
         print key,
         print jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
-        print jc_cputime_dict.get(key, 0),
         print jc_ocutime_dict.get(key, 0),
         print jc_slots_dict.get(key, 0) / jc_count_dict.get(key, 0),
         print jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
         print jc_maxvmem_dict.get(key, 0) / 1000000000
+
+        jc_out_list.append([key,
+                            jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
+                            jc_ocutime_dict.get(key, 0),
+                            jc_slots_dict.get(key, 0) / jc_count_dict.get(key, 0),
+                            jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
+                            jc_maxvmem_dict.get(key, 0) / 1000000000])
+
+    jc_out_f = open('jc_out.csv', 'w')
+    writer = csv.writer(jc_out_f, lineterminator='\n')
+    writer.writerows(jc_out_list)
 
     print "--- Exceeded limit project ---"
     # print "prj_limit_dict"

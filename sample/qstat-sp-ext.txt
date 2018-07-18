@@ -1,0 +1,4 @@
+job-ID     prior   ntckts  name       user         project          department state cpu        mem     io      tckts ovrts otckt ftckt stckt share queue                          jclass                         slots ja-task-ID 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      6413 0.52994 1.00000 fds660     fj-aoyagi    general          defaultdep qw                                1000     0  1000     0     0 0.50                                 dma.A                             16        
+      6415 0.52994 1.00000 of50       fj-aoyagi    general          defaultdep qw                                1000     0  1000     0     0 0.50                                 dma.A                              8        
