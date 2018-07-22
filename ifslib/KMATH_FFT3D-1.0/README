@@ -1,0 +1,50 @@
+------------------------------------------------------------------------------
+README file for KMATH_FFT3D
+------------------------------------------------------------------------------
+
+VERSION 1.0 : Dec. 20, 2014
+
+KMATH_FFT3D is the 3D-FFT API for cubic-distributed data.
+
+KMATH_RANDOM is Open Source Software (OSS).
+See the copyright form 'LICENCE.txt'.
+
+
+Getting Started
+
+1) Do configure.
+
+  % ./configure
+
+  If you need to compile it on a cross-compiling environment,
+  set up appropriate compiler options and configure options.
+
+  Followings are example on K computer
+  % export FC=mpifrtpx  
+  % export FCFLAGS='-Kopenmp -Cpp -Kfast'  
+  % export F77=mpifrtpx  
+  % export FFLAGS='-Kopenmp -Cpp -Kfast'  
+  % export LDFLAGS='-Kopenmp'
+  % ./configure --host=K
+
+  Followings are example on a general PC cluster with Intel compiler
+  % export FC=mpif90  
+  % export FCFLAGS='-openmp -fpp -O3 -Free'  
+  % export F77=mpif90  
+  % export FFLAGS='-openmp -fpp -O3 -Free  
+  % export LDFLAGS='-openmp'
+  % ./configure 
+
+  If something troubls happen when you do the configure script,
+  please run the script auto.sh beforehand.
+
+2) Do make, then libkmath_fft_3d.a will be build.
+
+  % make
+
+
+For bug report or additional information,
+please contact the corresponding developper.
+
+imamura.toshiyuki[at]riken.jp
+

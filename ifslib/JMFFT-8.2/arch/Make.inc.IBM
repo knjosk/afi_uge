@@ -1,0 +1,18 @@
+############################ -*- Mode: Makefile -*- ###########################
+## Make.inc.IBM --- Makefile dependant de la plate-forme IBM SP4
+## 
+## Auteur          : Jean-Marie Teuler <Jean-Marie.Teuler@idris.fr>
+## Créé le         : Fri Jul 30 12:48:12 1999
+## Dern. mod. par  : Jean-Michel Dupays (CNRS/IDRIS) 
+##                   <jean-michel.dupays@idris.fr>
+## Dern. mod. le   : Thu May 13 14:48:32 2004
+###############################################################################
+
+FC	= xlf_r
+FFLAGS	= -qrealsize=8 -qfree=f90 -qsuffix=f=f90 -O3
+LD	= xlf_r
+LDFLAGS	=
+AR	= ar
+ARFLAGS = rv
+RM      = rm
+RMFLAGS = -f

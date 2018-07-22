@@ -1,0 +1,24 @@
+<Staging Information>
+---(Stage-In  Detail Information)---
+stgin "rank=0 /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/.d0005469278 ./ confirm=no" 2016-11-04 17:07:30          421("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/.d0005469278" -> "/work/bench_km_fft3d_K.sh.5469278/0/.d0005469278")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[0-2]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[9-14]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[21-23]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[24-26]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[33-38]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[45-47]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[3-8]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[15-20]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[27-32]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5469278/[39-44]/bench_km_fft3d")
+---(Stage-Out Detail Information)---
+[WARN] stgout "rank=0 ./_dif_fft3d_dft3d1 ./" : /work/bench_km_fft3d_K.sh.5469278/0/_dif_fft3d_dft3d1 /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/_dif_fft3d_dft3d1 : No such file or directory (code=2:S-E:O:--)
+stgout "rank=0 ../.d0005469278_stdout /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/%n.o5469278" 2016-11-04 17:08:23           23("/work/bench_km_fft3d_K.sh.5469278/.d0005469278_stdout" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.o5469278")
+stgout "rank=0 ./_out_fft3d ./" 2016-11-04 17:08:33      8643393("/work/bench_km_fft3d_K.sh.5469278/0/_out_fft3d" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/_out_fft3d")
+stgout "rank=0 ../.d0005469278_stderr /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/%n.e5469278" 2016-11-04 17:08:23            0("/work/bench_km_fft3d_K.sh.5469278/.d0005469278_stderr" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.e5469278")
+
+------------------------------------------------------
+<Error Information>
+---(Stage-In  Error Information)---
+---(Stage-Out Error Information)---
+[WARN] stgout "rank=0 ./_dif_fft3d_dft3d1 ./" : /work/bench_km_fft3d_K.sh.5469278/0/_dif_fft3d_dft3d1 /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/_dif_fft3d_dft3d1 : No such file or directory (code=2:S-E:O:--)

@@ -1,0 +1,3 @@
+Env_base: K-1.2.0-20-1
+ KMATH ERR:  FFT3D_Init> # of process is not nproc x*y*z.:  64
+ 

@@ -1,0 +1,15 @@
+<Staging Information>
+---(Stage-In  Detail Information)---
+stgin "rank=0 /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/.d0005468682 ./ confirm=no" 2016-11-04 10:53:48          420("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/.d0005468682" -> "/work/bench_km_fft3d_K.sh.5468682/0/.d0005468682")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5468682/[0-23]/bench_km_fft3d")
+stgin "rank=* ./bench_km_fft3d %r:./" 2016-11-02 14:41:38      1199045("/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d" -> "/work/bench_km_fft3d_K.sh.5468682/[24-47]/bench_km_fft3d")
+---(Stage-Out Detail Information)---
+stgout "rank=0 ../.d0005468682_stdout /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/%n.o5468682" 2016-11-04 10:55:29           23("/work/bench_km_fft3d_K.sh.5468682/.d0005468682_stdout" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.o5468682")
+stgout "rank=0 ./_out_fft3d ./" 2016-11-04 10:55:41      8643393("/work/bench_km_fft3d_K.sh.5468682/0/_out_fft3d" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/_out_fft3d")
+stgout "rank=0 ./_dif_fft3d_dft3d ./" 2016-11-04 10:55:42     10367791("/work/bench_km_fft3d_K.sh.5468682/0/_dif_fft3d_dft3d" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/_dif_fft3d_dft3d")
+stgout "rank=0 ../.d0005468682_stderr /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/%n.e5468682" 2016-11-04 10:55:29            0("/work/bench_km_fft3d_K.sh.5468682/.d0005468682_stderr" -> "/volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.e5468682")
+
+------------------------------------------------------
+<Error Information>
+---(Stage-In  Error Information)---
+---(Stage-Out Error Information)---

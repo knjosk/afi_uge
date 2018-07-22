@@ -1,0 +1,1184 @@
+Job Information
+
+ JOB ID                    : 5468872
+ JOB NAME                  : bench_km_fft3d_K.sh
+ JOB TYPE                  : BATCH
+ JOB MODEL                 : NM
+ RETRY NUM                 : 0
+ SUB JOB NUM               : -
+ USER                      : a03364
+ GROUP                     : ra000005
+ RESOURCE UNIT             : common
+ RESOURCE GROUP            : small
+ PRIORITY                  : 90
+ SHELL                     : /bin/bash
+ COMMENT                   : 
+ LAST STATE                : SOT
+ STATE                     : EXT
+ PRM DATE                  : 2016/11/04 13:51:05
+ EXIT CODE                 : 0
+ SIGNAL NO                 : 0
+ PJM CODE                  : 0
+ REASON                    : -
+ MAIL SEND FLAG            : ----
+ MAIL ADDRESS              : a03364
+ STEP DEPENDENCY EXP       : -
+ STEP EXITING WAIT MODE    : -
+ FILE MASK                 : 0022
+ STANDARD OUT FILE         : /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.o5468872
+ STANDARD ERR FILE         : /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.e5468872
+ INFORMATION FILE          : /volume1/home/ra000005/a03364/KMATH_FFT3D-1.0/bench/bench_km_fft3d_K.sh.i5468872
+ ACCEPT DATE               : 2016/11/04 13:48:50
+ QUEUED DATE               : 2016/11/04 13:48:50
+ EXIT DATE                 : 2016/11/04 13:51:43
+ LAST HOLD USER            : 
+ HOLD NUM                  : 0
+ HOLD TIME                 : 00:00:00 (0)
+ JOB START DATE            : 2016/11/04 13:50:51
+ JOB END DATE              : 2016/11/04 13:51:05
+ STAGE IN START DATE       : 2016/11/04 13:49:33
+ STAGE IN END DATE         : 2016/11/04 13:49:38
+ STAGE IN SIZE             : 57.6 MB (57554580)
+ STAGE OUT START DATE      : 2016/11/04 13:51:23
+ STAGE OUT END DATE        : 2016/11/04 13:51:27
+ STAGE OUT SIZE            : 19.1 MB (19011207)
+ NODE NUM (REQUIRE)        : 48
+ CPU NUM (REQUIRE)         : 384
+ ELAPSE TIME (LIMIT)       : 02:00:00 (7200)
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ PROC CPU LIMIT            : unlimited <DEFAULT>
+ PROC COREFILE LIMIT       : 0.0 MB (0) <DEFAULT>
+ PROC CREATE PROC LIMIT    : 1280 <DEFAULT>
+ PROC DATA LIMIT           : unlimited <DEFAULT>
+ PROC LOCKED MEMORY LIMIT  : unlimited <DEFAULT>
+ PROC MESSAGE QUEUE LIMIT  : unlimited <DEFAULT>
+ PROC OPEN FILES LIMIT     : 1024 <DEFAULT>
+ PROC PENDING SIGNAL LIMIT : unlimited <DEFAULT>
+ PROC PERMFILE LIMIT       : unlimited <DEFAULT>
+ PROC STACK LIMIT          : 14252.7 MiB (14945000000) <DEFAULT>
+ PROC VIRTUAL MEMORY LIMIT : unlimited <DEFAULT>
+ NODE NUM (ALLOC)          : 48:2x3x8
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 384
+ ELAPSE TIME (USE)         : 00:00:15 (15)
+ NODE NUM (UNUSED)         : 0
+ NODE NUM (USE)            : 48
+ NODE ID (USE)             : 0x02050040 0x02050041 0x02050042 0x02050043 0x02050044 0x02050045 0x02050046 0x02050047 0x02050048 0x02050049 0x0205004A 0x0205004B 0x0205004C 0x0205004D 0x0205004E 0x0205004F 0x02050050 0x02050051 0x02050052 0x02050053 0x02050054 0x02050055 0x02050056 0x02050057 0x02050058 0x02050059 0x0205005A 0x0205005B 0x0205005C 0x0205005D 0x0205005E 0x0205005F 0x02050060 0x02050061 0x02050062 0x02050063 0x02050064 0x02050065 0x02050066 0x02050067 0x02050068 0x02050069 0x0205006A 0x0205006B 0x0205006C 0x0205006D 0x0205006E 0x0205006F 
+ TOFU COORDINATE (USE)     : (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,8) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,7) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,6) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) (14,0,5) 
+ MAX MEMORY SIZE (USE)     : 64.3 MiB (67330048)
+ CPU NUM (USE)             : 106
+ USER CPU TIME (USE)       : 403640 ms
+ SYSTEM CPU TIME (USE)     : 72820 ms
+ CPU TIME (TOTAL)          : 476460 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 79.7 MB (79615054)
+ FILE I/O SIZE             : 79.0 MB (78935637)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 1913381990
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050040
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8230 ms
+ SYSTEM CPU TIME (USE)     : 1670 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40051293
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050041
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8380 ms
+ SYSTEM CPU TIME (USE)     : 1510 ms
+ CPU TIME (TOTAL)          : 9890 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39529065
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050042
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8290 ms
+ SYSTEM CPU TIME (USE)     : 1650 ms
+ CPU TIME (TOTAL)          : 9940 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40049379
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050043
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1550 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39804650
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050044
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8400 ms
+ SYSTEM CPU TIME (USE)     : 1530 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998407)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39800990
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050045
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8470 ms
+ SYSTEM CPU TIME (USE)     : 1440 ms
+ CPU TIME (TOTAL)          : 9910 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39808032
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050046
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8320 ms
+ SYSTEM CPU TIME (USE)     : 1580 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40048259
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050047
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8630 ms
+ SYSTEM CPU TIME (USE)     : 1300 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39527763
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050048
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 1
+ USER CPU TIME (USE)       : 8350 ms
+ SYSTEM CPU TIME (USE)     : 1530 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40049928
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050049
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8340 ms
+ SYSTEM CPU TIME (USE)     : 1540 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39806574
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004A
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8410 ms
+ SYSTEM CPU TIME (USE)     : 1510 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39531839
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004B
+ TOFU COORDINATE           : (14,0,8)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1530 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39524204
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004C
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8420 ms
+ SYSTEM CPU TIME (USE)     : 1500 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998407)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39802725
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004D
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8420 ms
+ SYSTEM CPU TIME (USE)     : 1480 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39524411
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004E
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8400 ms
+ SYSTEM CPU TIME (USE)     : 1500 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39529766
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205004F
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8440 ms
+ SYSTEM CPU TIME (USE)     : 1470 ms
+ CPU TIME (TOTAL)          : 9910 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40050105
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050050
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8260 ms
+ SYSTEM CPU TIME (USE)     : 1620 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998412)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39524305
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050051
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8190 ms
+ SYSTEM CPU TIME (USE)     : 1730 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40051557
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050052
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8410 ms
+ SYSTEM CPU TIME (USE)     : 1520 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39805068
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050053
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8340 ms
+ SYSTEM CPU TIME (USE)     : 1570 ms
+ CPU TIME (TOTAL)          : 9910 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39802001
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050054
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1540 ms
+ CPU TIME (TOTAL)          : 9910 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998412)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39525814
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050055
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8350 ms
+ SYSTEM CPU TIME (USE)     : 1540 ms
+ CPU TIME (TOTAL)          : 9890 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39807568
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050056
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1550 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39802119
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050057
+ TOFU COORDINATE           : (14,0,7)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1550 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39529247
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050058
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8330 ms
+ SYSTEM CPU TIME (USE)     : 1570 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998412)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39799695
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050059
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8400 ms
+ SYSTEM CPU TIME (USE)     : 1500 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39804499
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005A
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 61.3 MiB (64233472)
+ CPU NUM (USE)             : 1
+ USER CPU TIME (USE)       : 8310 ms
+ SYSTEM CPU TIME (USE)     : 1590 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40052929
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005B
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 1
+ USER CPU TIME (USE)       : 8520 ms
+ SYSTEM CPU TIME (USE)     : 1380 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39523493
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005C
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8250 ms
+ SYSTEM CPU TIME (USE)     : 1620 ms
+ CPU TIME (TOTAL)          : 9870 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998407)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39526625
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005D
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8350 ms
+ SYSTEM CPU TIME (USE)     : 1550 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40047580
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005E
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8360 ms
+ SYSTEM CPU TIME (USE)     : 1530 ms
+ CPU TIME (TOTAL)          : 9890 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39807476
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205005F
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8330 ms
+ SYSTEM CPU TIME (USE)     : 1560 ms
+ CPU TIME (TOTAL)          : 9890 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39806885
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050060
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8310 ms
+ SYSTEM CPU TIME (USE)     : 1610 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998412)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40049148
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050061
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8470 ms
+ SYSTEM CPU TIME (USE)     : 1430 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39523669
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050062
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8330 ms
+ SYSTEM CPU TIME (USE)     : 1590 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39530550
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050063
+ TOFU COORDINATE           : (14,0,6)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1510 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40069232
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050064
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8420 ms
+ SYSTEM CPU TIME (USE)     : 1510 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998407)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39526013
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050065
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8490 ms
+ SYSTEM CPU TIME (USE)     : 1440 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40050590
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050066
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8440 ms
+ SYSTEM CPU TIME (USE)     : 1440 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39807517
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050067
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8360 ms
+ SYSTEM CPU TIME (USE)     : 1530 ms
+ CPU TIME (TOTAL)          : 9890 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40049217
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050068
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8400 ms
+ SYSTEM CPU TIME (USE)     : 1480 ms
+ CPU TIME (TOTAL)          : 9880 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998412)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40047635
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x02050069
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8370 ms
+ SYSTEM CPU TIME (USE)     : 1560 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40051960
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006A
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8360 ms
+ SYSTEM CPU TIME (USE)     : 1540 ms
+ CPU TIME (TOTAL)          : 9900 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39527101
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006B
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8300 ms
+ SYSTEM CPU TIME (USE)     : 1610 ms
+ CPU TIME (TOTAL)          : 9910 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40049139
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006C
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 64.3 MiB (67330048)
+ CPU NUM (USE)             : 8
+ USER CPU TIME (USE)       : 10340 ms
+ SYSTEM CPU TIME (USE)     : 520 ms
+ CPU TIME (TOTAL)          : 10860 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 32.7 MB (32689714)
+ FILE I/O SIZE             : 32.7 MB (32647546)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 42846670
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006D
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8270 ms
+ SYSTEM CPU TIME (USE)     : 1650 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40025211
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006E
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 53.3 MiB (55844864)
+ CPU NUM (USE)             : 3
+ USER CPU TIME (USE)       : 8420 ms
+ SYSTEM CPU TIME (USE)     : 1500 ms
+ CPU TIME (TOTAL)          : 9920 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998409)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 39526544
+
+--------------------------------------------------------------------------------
+Node Information
+
+ NODE ID                   : 0x0205006F
+ TOFU COORDINATE           : (14,0,5)
+ NODE AVAILABLE            : available
+ ARCHI INFORMATION         : MP
+ MEMORY SIZE (LIMIT)       : 14252.7 MiB (14945000000) <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : 14000.0 MB (14000000000) <DEFAULT>
+ MEMORY SIZE (ALLOC)       : 14252.7 MiB (14945001472)
+ CPU NUM (ALLOC)           : 8
+ MAX MEMORY SIZE (USE)     : 57.3 MiB (60039168)
+ CPU NUM (USE)             : 2
+ USER CPU TIME (USE)       : 8240 ms
+ SYSTEM CPU TIME (USE)     : 1690 ms
+ CPU TIME (TOTAL)          : 9930 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 1.0 MB (998414)
+ FILE I/O SIZE             : 1.0 MB (984853)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 40045950
+

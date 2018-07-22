@@ -240,7 +240,7 @@ def parse():
                     while j < number_of_jobs_waiting_on_queue:
                         req_cores = waiting_job_dict[q][j][-1]
                         if avail_cores_dict[q] >= req_cores:
-                            # print q, waiting_job_dict[q][j], running_job_dict[q][i][2]
+                            print q, waiting_job_dict[q][j], running_job_dict[q][i][2]
 
                             '''
                             print('{} {} {} {} {}'.format(*waiting_job_dict[q][j])
@@ -329,7 +329,7 @@ def parse():
                 print("job-ID     prior   name       user         state estimate start at   queue                          jclass                         slots ja-task-ID")
                 print("---------------------------------------------------------------------------------------------------------------------------------------------------")
                 while i < l_estimate_start_dict:
-                    print('{0[0]:>10} {0[1]:.5f} {0[2]:10s} {0[3]:<12} {0[4]:<5} {0[6]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(estimate_start_dict[q][i]))
+                    print('{0[0]:>10} {0[1]:.5f} {0[2]:10s} {0[3]:<12} {0[4]:<5} {0[8]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(estimate_start_dict[q][i]))
                     i += 1
                 print("---------------------------------------------------------------------------------------------------------------------------------------------------")
                 print("")
@@ -347,7 +347,7 @@ def parse():
             number_of_jobs_running_on_queue = len(running_job_dict[q])
             number_of_jobs_waiting_on_queue = len(waiting_job_dict[q])
 
-            estimate_start_dict[q].sort(key=itemgetter(4, 7))
+            estimate_start_dict[q].sort(key=itemgetter(4, 8))
 
             l_estimate_start_dict = len(estimate_start_dict[q])
 
@@ -376,7 +376,7 @@ def parse():
             print("---------------------------------------------------------------------------------------------------------------------------------------------------")
             print("job-ID     prior   name       user         state estimate start at   queue                          jclass                         slots ja-task-ID")
             while i < l_estimate_start_dict:
-                print('{0[0]:>10} {0[1]:.5f} {0[2]:10s} {0[3]:<12} {0[4]:<5} {0[6]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(estimate_start_dict[q][i]))
+                print('{0[0]:>10} {0[1]:.5f} {0[2]:10s} {0[3]:<12} {0[4]:<5} {0[8]:%m/%d/%Y %H:%M:%S}                                {0[5]:<30} {0[7]:>5}'.format(estimate_start_dict[q][i]))
                 i += 1
             print("---------------------------------------------------------------------------------------------------------------------------------------------------")
             print("")

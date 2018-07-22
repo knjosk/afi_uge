@@ -116,6 +116,7 @@ group_ocutime_dict = defaultdict(float)
 group_queue_ocutime_dict = defaultdict(float)
 jc_ocutime_dict = defaultdict(float)
 owner_ocutime_dict = defaultdict(float)
+owner_prj_ocutime_dict = defaultdict(float)
 prj_ocutime_dict = defaultdict(float)
 prj_queue_ocutime_dict = defaultdict(float)
 
@@ -140,9 +141,11 @@ group_used_list = []
 
 act_group_cputime_dict = defaultdict(float)
 act_owner_cputime_dict = defaultdict(float)
+act_owner_prj_cputime_dict = defaultdict(float)
 act_prj_cputime_dict = defaultdict(float)
 act_group_tss_cputime_dict = defaultdict(float)
 act_owner_tss_cputime_dict = defaultdict(float)
+act_owner_prj_tss_cputime_dict = defaultdict(float)
 act_prj_tss_cputime_dict = defaultdict(float)
 
 
@@ -159,12 +162,6 @@ def calc_accounting(filename, start_utime, end_utime):
     header = next(reader)
     for row in reader:
         prj_limit_dict[row[0]] = float(row[1])
-        # print prj_limit_dict
-        # print "row"
-        # print row
-
-    # print start_utime
-    # print end_utime
 
     group_limit_f = open('group_limit_pm.csv', 'r')
 
@@ -257,30 +254,30 @@ def calc_accounting(filename, start_utime, end_utime):
                 prj_queue_slots_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += int(account_data_list[i_slots])
 
                 if queue_name not in queue_cpu_tuple:
-                    owner_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
+                    owner_ocutime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_wallclock]) * nodes
+                    owner_prj_ocutime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_ru_wallclock]) * nodes
                     jc_ocutime_dict[account_data_list[i_job_class]] += float(account_data_list[i_ru_wallclock]) * nodes
                     prj_ocutime_dict[account_data_list[i_project]] += float(account_data_list[i_ru_wallclock]) * nodes
                     prj_queue_ocutime_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
                 elif queue_name not in queue_tss_tuple:
                     act_prj_cputime_dict[account_data_list[i_project]] += float(account_data_list[i_cpu])
                     act_owner_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
+                    act_owner_prj_cputime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_cpu])
                 else:
                     act_prj_tss_cputime_dict[account_data_list[i_project]] += float(account_data_list[i_cpu])
                     act_owner_tss_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
+                    act_owner_prj_tss_cputime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_cpu])
 
     # make Table 2-3-1 CPU usage per group
     print "--- Table 2.3 Usage per group ---"
 
     group_out_list = []
     group_list = group_count_dict.keys()
-    # print "group_list"
-    # print group_list
     group_out_list_0 = []
 
     group_total_cputime = 0
     for grp in group_list:
         group_total_cputime += group_cputime_dict.get(grp)
-    # print queue_tuple
     for grp in group_list:
         group_out_list0 = []
         print grp,
@@ -308,7 +305,6 @@ def calc_accounting(filename, start_utime, end_utime):
     prj_total_cputime_dict = 0
     for prj in prj_list:
         prj_total_cputime_dict += prj_cputime_dict.get(prj)
-    # print prj_list
     for prj in prj_list:
         prj_out_list0 = []
         print prj,
@@ -338,7 +334,6 @@ def calc_accounting(filename, start_utime, end_utime):
     for jc in jc_list:
         jc_total_cputime_dict += jc_cputime_dict.get(jc)
 
-    # print jc_list, jc_total_cputime_dict
     for key in jc_list:
         print key,
         print jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
@@ -359,10 +354,7 @@ def calc_accounting(filename, start_utime, end_utime):
     writer.writerows(jc_out_list)
 
     print "--- Exceeded limit project ---"
-    # print "prj_limit_dict"
-    # print prj_limit_dict
     for key in prj_limit_dict:
-        # print key
         prj_used_list.append([key,
                               prj_limit_dict.get(key, 0),
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
@@ -370,11 +362,8 @@ def calc_accounting(filename, start_utime, end_utime):
                               (act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60])
         if (prj_limit_dict.get(key, 0) * 60 * 60) <= (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
             prj_exceeded_list.append(key)
-            # print key, prj_limit_dict.get(key,0),  prj_wallclock_dict.get(key,0)
             print prj_exceeded_list
 
-    # print  "prj_used_list"
-    # print  prj_used_list
     used_f = open('prj_used_pm.csv', 'w')
 
     writer = csv.writer(used_f, lineterminator='\n')
@@ -405,6 +394,17 @@ def calc_accounting(filename, start_utime, end_utime):
     group_exceeded_f = open('group_exceeded_pm.txt', 'w')
     for x in group_exceeded_list:
         group_exceeded_f.write(str(x) + "\n")
+
+    print "--- prj usage by owner ---"
+    for key in prj_limit_dict:
+        owner_prj_ocutime_dict
+        act_owner_prj_cputime_dict
+        act_owner_prj_tss_cputime_dict
+
+    used_f = open('prj_used_pm.csv', 'w')
+
+    writer = csv.writer(used_f, lineterminator='\n')
+    writer.writerows(prj_used_list)
 
     exceeded_f.close()
     f.close()

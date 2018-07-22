@@ -1,0 +1,16 @@
+############################ -*- Mode: Makefile -*- ###########################
+## Make.inc.SX8 --- Makefile dependant de la plate-forme SX8 de NEC
+## 
+## Auteur          : Jean-michel Dupays <Jean-michel Dupays>
+## Créé le         : 26/06/2007
+## Dern. mod. par  : Jean-michel Dupays (CNRS/IDRIS) <Jean-michel.Dupays@idris.fr>
+###############################################################################
+
+FC	= sxf90
+FFLAGS	= -C hopt -pi noauto
+LD	= sxf90
+LDFLAGS	=             
+AR	= sxar
+ARFLAGS	= rv
+RM	= rm
+RMFLAGS = -f
