@@ -53,6 +53,10 @@ queue_node_dm_tuple = ('dmaL.q', 'dmaM.q', 'dma_01', 'dma_02', 'dma_03', 'dma_04
                        'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
                        'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37')
 
+queue_dma_tuple = ('dmaL.q', 'dmaM.q', 'dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06', 'dma_07',
+                   'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
+                   'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37', 'single.q')
+
 queue_cpu_tuple = ('single.q', 'intsmp.q', 'intmpi.q')
 queue_tss_tuple = ('intsmp.q', 'intmpi.q')
 
@@ -321,10 +325,36 @@ def calc_accounting(filename, start_utime, end_utime):
     for grp in group_list:
         group_out_list0 = []
         print grp,
-        for q in queue_tuple:
+        dma_utime_total = 0
+        dma_stime_total = 0
+        dma_cputime_total = 0
+        dma_ocutime_total = 0
+        for q in queue_node_sm_tuple:
             key = grp + '_' + q
             group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
+            # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
             print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
+            # print 0, 0, group_queue_cputime_dict.get(key, 0),
+
+        for q in queue_dma_tuple:
+            key = grp + '_' + q
+            dma_utime_total += group_queue_utime_dict.get(key, 0)
+            dma_stime_total += group_queue_stime_dict.get(key, 0)
+            dma_cputime_total += group_queue_cputime_dict.get(key, 0)
+            dma_ocutime_total += group_queue_ocutime_dict.get(key, 0)
+
+        group_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
+        #group_out_list0.extend([0, 0, dma_cputime_total])
+        print dma_utime_total, dma_stime_total, dma_cputime_total,
+        # print 0, 0, dma_cputime_total,
+
+        for q in queue_tss_tuple:
+            key = grp + '_' + q
+            group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
+            # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
+            print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
+            # print 0, 0, group_queue_cputime_dict.get(key, 0),
+
         group_out_list0.extend([group_cputime_dict.get(grp, 0), (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100])
         group_out_list0.insert(0, grp)
         print group_cputime_dict.get(grp, 0),
@@ -344,22 +374,46 @@ def calc_accounting(filename, start_utime, end_utime):
     prj_out_list = []
     prj_total_cputime_dict = 0
     for prj in prj_list:
-        prj_total_cputime_dict += prj_cputime_dict.get(prj)
+        if prj != "general":
+            prj_total_cputime_dict += prj_cputime_dict.get(prj)
     for prj in prj_list:
-        prj_out_list0 = []
-        print prj,
-        for q in queue_tuple:
-            key = prj + '_' + q
-            prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
+        if prj != "general":
 
-            print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
-        prj_out_list0.extend([prj_cputime_dict.get(prj, 0), (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100])
-        prj_out_list0.insert(0, prj)
+            prj_out_list0 = []
+            print prj,
 
-        print prj_cputime_dict.get(prj, 0),
-        print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
+            dma_utime_total = 0
+            dma_stime_total = 0
+            dma_cputime_total = 0
+            dma_ocutime_total = 0
 
-        prj_out_list.append(prj_out_list0)
+            for q in queue_node_sm_tuple:
+                key = prj + '_' + q
+                prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
+                print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
+
+            for q in queue_dma_tuple:
+                key = prj + '_' + q
+                dma_utime_total += prj_queue_utime_dict.get(key, 0)
+                dma_stime_total += prj_queue_stime_dict.get(key, 0)
+                dma_cputime_total += prj_queue_cputime_dict.get(key, 0)
+                dma_ocutime_total += prj_queue_ocutime_dict.get(key, 0)
+
+            prj_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
+            print dma_utime_total, dma_stime_total, dma_cputime_total,
+
+            for q in queue_tss_tuple:
+                key = prj + '_' + q
+                prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
+                print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
+
+            prj_out_list0.extend([prj_cputime_dict.get(prj, 0), (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100])
+            prj_out_list0.insert(0, prj)
+
+            print prj_cputime_dict.get(prj, 0),
+            print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
+
+            prj_out_list.append(prj_out_list0)
 
     prj_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_out.csv', 'w')
     writer = csv.writer(prj_out_f, lineterminator='\n')
@@ -395,11 +449,17 @@ def calc_accounting(filename, start_utime, end_utime):
 
     print "--- Exceeded limit project ---"
     for key in prj_limit_dict:
+        prj_total_sec = prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)
+        prj_ratio = 0.0
+        if prj_limit_dict.get(key, 0) != 0.0:
+            prj_ratio = (prj_total_sec / (prj_limit_dict.get(key, 0) * 60 * 60)) * 100
+
         prj_used_list.append([key,
                               prj_limit_dict.get(key, 0),
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0)) / 60 / 60,
-                              (act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60])
+                              (act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
+                              prj_ratio])
         if (prj_limit_dict.get(key, 0) * 60 * 60) <= (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
             prj_exceeded_list.append(key)
             print prj_exceeded_list
@@ -415,11 +475,18 @@ def calc_accounting(filename, start_utime, end_utime):
 
     print "--- Exceeded limit user ---"
     for key in user_limit_dict:
+        user_total_sec = (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0))
+        user_ratio = 0.0
+        if user_limit_dict.get(key, 0) != 0.0:
+            user_ratio = (user_total_sec / (user_limit_dict.get(key, 0) * 60 * 60)) * 100
+
         user_used_list.append([key,
                                user_limit_dict.get(key, 0),
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0)) / 60 / 60,
-                               (act_user_tss_cputime_dict.get(key, 0)) / 60 / 60])
+                               (act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
+                               user_ratio])
+
         if (user_limit_dict.get(key, 0) * 60 * 60) <= (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)):
             user_exceeded_list.append(key)
             print user_exceeded_list
