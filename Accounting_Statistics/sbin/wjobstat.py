@@ -240,7 +240,7 @@ def parse():
                     while j < number_of_jobs_waiting_on_queue:
                         req_cores = waiting_job_dict[q][j][-1]
                         if avail_cores_dict[q] >= req_cores:
-                            print q, waiting_job_dict[q][j], running_job_dict[q][i][2]
+                            # print q, waiting_job_dict[q][j], running_job_dict[q][i][2]
 
                             '''
                             print('{} {} {} {} {}'.format(*waiting_job_dict[q][j])

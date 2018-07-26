@@ -76,6 +76,7 @@ group_count_dict = defaultdict(int)
 group_queue_count_dict = defaultdict(int)
 jc_count_dict = defaultdict(int)
 owner_count_dict = defaultdict(int)
+user_count_dict = defaultdict(int)
 prj_count_dict = defaultdict(int)
 prj_queue_count_dict = defaultdict(int)
 
@@ -84,6 +85,7 @@ group_utime_dict = defaultdict(float)
 group_queue_utime_dict = defaultdict(float)
 jc_utime_dict = defaultdict(float)
 owner_utime_dict = defaultdict(float)
+user_utime_dict = defaultdict(float)
 prj_utime_dict = defaultdict(float)
 prj_queue_utime_dict = defaultdict(float)
 
@@ -92,6 +94,7 @@ group_stime_dict = defaultdict(float)
 group_queue_stime_dict = defaultdict(float)
 jc_stime_dict = defaultdict(float)
 owner_stime_dict = defaultdict(float)
+user_stime_dict = defaultdict(float)
 prj_stime_dict = defaultdict(float)
 prj_queue_stime_dict = defaultdict(float)
 
@@ -100,6 +103,7 @@ group_cputime_dict = defaultdict(float)
 group_queue_cputime_dict = defaultdict(float)
 jc_cputime_dict = defaultdict(float)
 owner_cputime_dict = defaultdict(float)
+user_cputime_dict = defaultdict(float)
 prj_cputime_dict = defaultdict(float)
 prj_queue_cputime_dict = defaultdict(float)
 
@@ -108,6 +112,7 @@ group_wallclock_dict = defaultdict(float)
 group_queue_wallclock_dict = defaultdict(float)
 jc_wallclock_dict = defaultdict(float)
 owner_wallclock_dict = defaultdict(float)
+user_wallclock_dict = defaultdict(float)
 prj_wallclock_dict = defaultdict(float)
 prj_queue_wallclock_dict = defaultdict(float)
 
@@ -117,6 +122,8 @@ group_queue_ocutime_dict = defaultdict(float)
 jc_ocutime_dict = defaultdict(float)
 owner_ocutime_dict = defaultdict(float)
 owner_prj_ocutime_dict = defaultdict(float)
+user_ocutime_dict = defaultdict(float)
+user_prj_ocutime_dict = defaultdict(float)
 prj_ocutime_dict = defaultdict(float)
 prj_queue_ocutime_dict = defaultdict(float)
 
@@ -125,6 +132,7 @@ group_slots_dict = defaultdict(int)
 group_queue_slots_dict = defaultdict(int)
 jc_slots_dict = defaultdict(int)
 owner_slots_dict = defaultdict(int)
+user_slots_dict = defaultdict(int)
 prj_slots_dict = defaultdict(int)
 prj_queue_slots_dict = defaultdict(int)
 
@@ -139,13 +147,21 @@ group_limit_dict = defaultdict(float)
 group_exceeded_list = []
 group_used_list = []
 
+user_limit_dict = defaultdict(float)
+user_exceeded_list = []
+user_used_list = []
+
 act_group_cputime_dict = defaultdict(float)
 act_owner_cputime_dict = defaultdict(float)
 act_owner_prj_cputime_dict = defaultdict(float)
+act_user_cputime_dict = defaultdict(float)
+act_user_prj_cputime_dict = defaultdict(float)
 act_prj_cputime_dict = defaultdict(float)
 act_group_tss_cputime_dict = defaultdict(float)
 act_owner_tss_cputime_dict = defaultdict(float)
 act_owner_prj_tss_cputime_dict = defaultdict(float)
+act_user_tss_cputime_dict = defaultdict(float)
+act_user_prj_tss_cputime_dict = defaultdict(float)
 act_prj_tss_cputime_dict = defaultdict(float)
 
 
@@ -156,19 +172,29 @@ def calc_accounting(filename, start_utime, end_utime):
         sys.stderr.write("failed to open" + filename + "\n")
         sys.exit(-1)
 
-    limit_f = open('prj_limit_pm.csv', 'r')
+    limit_f = open('/opt/uge/Accounting_Statistics/etc/prj_limit_pm.csv', 'r')
 
     reader = csv.reader(limit_f)
     header = next(reader)
     for row in reader:
         prj_limit_dict[row[0]] = float(row[1])
 
-    group_limit_f = open('group_limit_pm.csv', 'r')
+    group_limit_f = open('/opt/uge/Accounting_Statistics/etc/group_limit_pm.csv', 'r')
 
     reader = csv.reader(group_limit_f)
     header = next(reader)
     for row in reader:
         group_limit_dict[row[0]] = float(row[1])
+        # print prj_limit_dict
+        # print "row"
+        # print row
+
+    user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py.csv', 'r')
+
+    reader = csv.reader(user_limit_f)
+    header = next(reader)
+    for row in reader:
+        user_limit_dict[row[0]] = float(row[1])
         # print prj_limit_dict
         # print "row"
         # print row
@@ -198,6 +224,13 @@ def calc_accounting(filename, start_utime, end_utime):
                         queue_ocutime_dict[account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
 
                 if account_data_list[i_project] == "general":
+                    user_count_dict[account_data_list[i_owner]] += 1
+                    user_utime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_utime])
+                    user_stime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_stime])
+                    user_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
+                    user_wallclock_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_wallclock])
+                    user_slots_dict[account_data_list[i_owner]] += int(account_data_list[i_slots])
+
                     group_count_dict[account_data_list[i_group]] += 1
                     group_utime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_utime])
                     group_stime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_stime])
@@ -212,12 +245,19 @@ def calc_accounting(filename, start_utime, end_utime):
                     group_queue_wallclock_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock])
                     group_queue_slots_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += int(account_data_list[i_slots])
 
-                    if queue_name not in queue_cpu_tuple:
+                    if queue_name in queue_node_sm_tuple:
+                        user_ocutime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_ru_wallclock]) * nodes
                         group_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
                         group_queue_ocutime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    elif queue_name not in queue_tss_tuple:
+                    elif queue_name in queue_node_dm_tuple:
+                        user_ocutime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_ru_wallclock]) * nodes
+                        group_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
+                        group_queue_ocutime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
+                    elif queue_name in queue_cpu_tuple:
+                        act_user_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
                         act_group_cputime_dict[account_data_list[i_group]] += float(account_data_list[i_cpu])
                     else:
+                        act_user_tss_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
                         act_group_tss_cputime_dict[account_data_list[i_group]] += float(account_data_list[i_cpu])
 
                 owner_count_dict[account_data_list[i_owner]] += 1
@@ -294,7 +334,7 @@ def calc_accounting(filename, start_utime, end_utime):
 
     print group_out_list
 
-    grou_out_f = open('group_out.csv', 'w')
+    grou_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_out.csv', 'w')
     writer = csv.writer(grou_out_f, lineterminator='\n')
     writer.writerows(group_out_list)
 
@@ -321,7 +361,7 @@ def calc_accounting(filename, start_utime, end_utime):
 
         prj_out_list.append(prj_out_list0)
 
-    prj_out_f = open('prj_out.csv', 'w')
+    prj_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_out.csv', 'w')
     writer = csv.writer(prj_out_f, lineterminator='\n')
     writer.writerows(prj_out_list)
 
@@ -349,7 +389,7 @@ def calc_accounting(filename, start_utime, end_utime):
                             jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
                             jc_maxvmem_dict.get(key, 0) / 1000000000])
 
-    jc_out_f = open('jc_out.csv', 'w')
+    jc_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/jc_out.csv', 'w')
     writer = csv.writer(jc_out_f, lineterminator='\n')
     writer.writerows(jc_out_list)
 
@@ -364,14 +404,30 @@ def calc_accounting(filename, start_utime, end_utime):
             prj_exceeded_list.append(key)
             print prj_exceeded_list
 
-    used_f = open('prj_used_pm.csv', 'w')
+    used_f = open('/opt/uge/Accounting_Statistics/etc/prj_used_pm.csv', 'w')
 
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)
 
-    exceeded_f = open('prj_exceeded_pm.txt', 'w')
+    exceeded_f = open('/opt/uge/Accounting_Statistics/etc/prj_exceeded_pm.txt', 'w')
     for x in prj_exceeded_list:
         exceeded_f.write(str(x) + "\n")
+
+    print "--- Exceeded limit user ---"
+    for key in user_limit_dict:
+        user_used_list.append([key,
+                               user_limit_dict.get(key, 0),
+                               (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
+                               (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0)) / 60 / 60,
+                               (act_user_tss_cputime_dict.get(key, 0)) / 60 / 60])
+        if (user_limit_dict.get(key, 0) * 60 * 60) <= (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)):
+            user_exceeded_list.append(key)
+            print user_exceeded_list
+
+    user_used_f = open('/opt/uge/Accounting_Statistics/etc/user_used_pm.csv', 'w')
+
+    writer = csv.writer(user_used_f, lineterminator='\n')
+    writer.writerows(user_used_list)
 
     print "--- Exceeded limit group ---"
     for key in group_limit_dict:
@@ -386,12 +442,12 @@ def calc_accounting(filename, start_utime, end_utime):
             # print key, prj_limit_dict.get(key,0),  prj_wallclock_dict.get(key,0)
             print group_exceeded_list
 
-    group_used_f = open('group_used_pm.csv', 'w')
+    group_used_f = open('/opt/uge/Accounting_Statistics/etc/group_used_pm.csv', 'w')
 
     writer = csv.writer(group_used_f, lineterminator='\n')
     writer.writerows(group_used_list)
 
-    group_exceeded_f = open('group_exceeded_pm.txt', 'w')
+    group_exceeded_f = open('/opt/uge/Accounting_Statistics/etc/group_exceeded_pm.txt', 'w')
     for x in group_exceeded_list:
         group_exceeded_f.write(str(x) + "\n")
 
@@ -401,7 +457,7 @@ def calc_accounting(filename, start_utime, end_utime):
         act_owner_prj_cputime_dict
         act_owner_prj_tss_cputime_dict
 
-    used_f = open('prj_used_pm.csv', 'w')
+    used_f = open('/opt/uge/Accounting_Statistics/etc/prj_used_pm.csv', 'w')
 
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)

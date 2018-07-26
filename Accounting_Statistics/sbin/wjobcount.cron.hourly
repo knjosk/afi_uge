@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+
+export LANG=C
+export LC_ALL=C
+
+f_timestamp=`date +%Y%m%d%H%M%S`
+
+UGE_AS_DIR=/opt/uge/Accounting_Statistics
+QSTAT_CMD=/opt/uge/8.5.5/bin/lx-amd64/qstat
+
+LOGS_DIR="/opt/uge/Accounting_Statistics/logs/wjobcount"
+if [ ! -d ${LOGS_DIR} ]; then
+    mkdir -p ${LOGS_DIR}
+fi
+
+# Input files
+QSTAT_SP_EXT_XML_FILE=${LOGS_DIR}/qstat_sp_ext.xml-${f_timestamp}
+
+# Output
+NUMBER_OF_WAITING_JOBS_JSONFILE=${LOGS_DIR}/number_of_waiting_jobs.json
+
+${QSTAT_CMD} -s p -u '*' -ext -xml > ${QSTAT_SP_EXT_XML_FILE}
+
+# Excetute command
+WJOBCOUNT_CMD=${UGE_AS_DIR}/sbin/wjobcount.py
+
+${WJOBCOUNT_CMD} ${QSTAT_SP_EXT_XML_FILE} ${NUMBER_OF_WAITING_JOBS_JSONFILE}
+

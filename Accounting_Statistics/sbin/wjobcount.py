@@ -40,9 +40,14 @@ jc_dma_group_tuple = ('dma.default', 'dma.A')
 
 def parse():
     now = datetime.datetime.now()
+    unix_time = int(time.mktime(now.timetuple()))
     args = docopt(__doc__)
-    input_filename = args['<qstat_sp_ext_xmlfile>']
-    with open(filename, 'r') as f1:
+    if args['<qstat_sp_ext_xmlfile>']:
+        input_filename = args['<qstat_sp_ext_xmlfile>']
+    if args['<number_of_waiting_jobs_jsonfile>']:
+        output_filename = args['<number_of_waiting_jobs_jsonfile>']
+
+    with open(input_filename, 'r') as f1:
         xmlString = f1.read()
 
     #--- qstat -s p -u '*' -ext -xml ---
@@ -50,6 +55,7 @@ def parse():
 
     number_of_waiting_jobs_dict = defaultdict(int)
     number_of_waiting_jobs_dict['Date'] = now.strftime('%Y-%m-%d %H:%M:%S')
+    number_of_waiting_jobs_dict['UTime'] = unix_time
 
     if qstat_s_p_dict["job_info"]["job_info"] != None:
 
@@ -75,11 +81,12 @@ def parse():
         # print number_of_waiting_jobs_dict
 
     else:
-        print "No Waiting Jobs"
+        number_of_waiting_jobs_dict['Total'] = 0
+        # print "No Waiting Jobs"
 
     out = json.JSONEncoder().encode(number_of_waiting_jobs_dict)
 
-    number_of_waiting_jobs_f = open('number_of_waiting_jobs.json', 'a')
+    number_of_waiting_jobs_f = open(output_filename, 'a')
     number_of_waiting_jobs_f.write(out + "\n")
     number_of_waiting_jobs_f.close
 
