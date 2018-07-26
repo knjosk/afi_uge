@@ -459,7 +459,7 @@ def calc_accounting(filename, start_utime, end_utime):
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0)) / 60 / 60,
                               (act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
-                              prj_ratio])
+                              '{0:.2f}'.format(prj_ratio)])
         if (prj_limit_dict.get(key, 0) * 60 * 60) <= (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
             prj_exceeded_list.append(key)
             print prj_exceeded_list
@@ -485,7 +485,7 @@ def calc_accounting(filename, start_utime, end_utime):
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0)) / 60 / 60,
                                (act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
-                               user_ratio])
+                               '{0:.2f}'.format(user_ratio)])
 
         if (user_limit_dict.get(key, 0) * 60 * 60) <= (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)):
             user_exceeded_list.append(key)
