@@ -27,9 +27,22 @@ for row in reader:
         exceed_list.append(row)
 
 l_exceed_list = len(exceed_list)
-message = ""
+body = ""
 i = 0
 while i < l_exceed_list:
-    message += '{0[0]} is exceeded threshold {0[5]} % of limit {0[1]}(hours).\n'.format(exceed_list[i])
+
+    prj_name = exceed_list[i][0].split("-")[0]
+    sys_code = exceed_list[i][0].split("-")[1]
+
+    if sys_code == "s":
+        sys_name = "vSMP"
+    else:
+        sys_name = "PCCL"
+
+    exceeded_p = exceed_list[i][5]
+
+    # print prj_name, sys_name
+    # body += '{[0]} is exceeded threshold {0[5]} % of limit {0[1]}(hours).\n'.format(exceed_list[i], prj_name, sys_name)
+    body += '{} exceeded the threshold in {} and became {}%.\n'.format(prj_name, sys_name, exceeded_p)
     i += 1
-print message
+print body

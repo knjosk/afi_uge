@@ -26,6 +26,11 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 
 
+def create_body(filename):
+
+    return body
+
+
 def create_message(from_addr, from_addr_name, to_addr, cc_addr, subject, body):
 
     cset = 'utf-8'
@@ -46,12 +51,14 @@ def send(from_addr, to_addrs, cc_addrs, msg):
     smtp.close()
 
 if __name__ == '__main__':
-    from_addr = "osk@alien.ks-lapislazuli.jp"
-    from_addr_name = "Kenji Osaki"
-    to_addr = "osk@ks-lapislazuli.jp"
-    cc_addr = "knjosk@mac.com"
-    subject = u"テスト"
-    body = u"テスト"
+    from_addr = "Admin@ifs.tohoku.ac.jp"
+    from_addr_name = "Administrator"
+    # to_addr = "afi-office@ifs.tohoku.ac.jp"
+    to_addr = "fjse02@afifep001.ifs.ac.jp"
+    subject = "Accout Report"
+    filename = "/opt/uge/Accounting_Statistics/etc/prj_limit_pm.csv"
 
-    msg = create_message(from_addr, from_addr_name, to_addr, cc_addr, subject, body)
-    send(from_addr, to_addr, cc_addr, msg)
+    body = create_body(filename)
+
+    msg = create_message(from_addr, from_addr_name, to_addr, subject, body)
+    send(from_addr, to_addr, msg)

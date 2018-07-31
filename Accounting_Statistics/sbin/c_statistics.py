@@ -555,7 +555,7 @@ import time
 
 def parse():
     start_utime = 0
-    now = datetime.datetime.now()
+    #now = datetime.datetime.now()
     end_utime = int(time.mktime(now.timetuple()))
     args = docopt(__doc__)
     if args['--start']:
@@ -572,4 +572,8 @@ def parse():
     calc_accounting(filename, start_utime, end_utime)
 
 if __name__ == '__main__':
+    now = datetime.datetime.now()
+    month = now.strftime('%Y%m')
+    POSTFIX = '.{}'.format(month)
+
     parse()
