@@ -73,10 +73,10 @@ def parse():
         q_name = qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["name"]
         a_cores = int(qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["available"])
         avail_cores_dict[q_name] = a_cores
-        if q_name != "intsmp.q":
+        if "load" in qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]:
             load_dict[q_name] = float(qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["load"])
         else:
-            load_dict[q_name] = 0.0
+            load_dict[q_name] = 0
         used_dict[q_name] = int(qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["used"])
         resv_dict[q_name] = int(qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["resv"])
         available_dict[q_name] = int(qstat_g_c_dict["job_info"]["cluster_queue_summary"][i]["available"])
@@ -299,7 +299,7 @@ def parse():
                 print("CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE")
                 print("================================================================================")
 
-                print('{:<31} {:.4f} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
+                print('{:<31} {:.3f} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}'.format(q, load_dict[q], used_dict[q], resv_dict[q], available_dict[q],
                                                                                  total_dict[q], aoacds_dict[q], cdsue_dict[q]))
                 print("================================================================================")
 
