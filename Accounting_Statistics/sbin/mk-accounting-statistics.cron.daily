@@ -15,6 +15,11 @@ if [ ! -d ${LOGS_DIR} ]; then
     mkdir -p ${LOGS_DIR}
 fi
 
+LOGS_DIR2="/opt/uge/Accounting_Statistics/logs/statistics"
+if [ ! -d ${LOGS_DIR2} ]; then
+    mkdir -p ${LOGS_DIR2}
+fi
+
 # Input files
 UGE_ACCOUNTING_FILE=${UGE_ACCOUNTING_DIR}/accounting
 
@@ -26,4 +31,31 @@ EXEC_CMD=${UGE_AS_DIR}/sbin/c_statistics.py
 
 cd ${UGE_AS_DIR}
 ${EXEC_CMD} ${UGE_ACCOUNTING_FILE} -s ${START_TIME}
+
+# Project Exceeded file
+PRJ_EXCEEDED_FILE="/opt/uge/Accounting_Statistics/logs/accounting/prj_exceeded_pm.csv"
+
+if [ -s ${PRJ_EXCEEDED_FILE} ]; then
+    CHG_PRJ_OTICHET_CMD=/opt/uge/Accounting_Statistics/sbin/chg_prj_oticket.sh
+    cat ${PRJ_EXCEEDED_FILE} | while read line
+    do
+        ${CHG_PRJ_OTICHET_CMD} $line 0
+    done
+fi
+
+# Project Usage Check 
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm.csv
+CHK_EXCEED_CMD=/opt/uge/Accounting_Statistics/sbin/chk_exceed.py
+
+${CHK_EXCEED_CMD} ${EXCEEDED_FILE}
+
+# User Usage Check 
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm.csv
+CHK_EXCEED_CMD=/opt/uge/Accounting_Statistics/sbin/chk_exceed.py
+
+${CHK_EXCEED_CMD} ${EXCEEDED_FILE}
+
+
+
+
 

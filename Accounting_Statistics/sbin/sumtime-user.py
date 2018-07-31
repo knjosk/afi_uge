@@ -46,7 +46,7 @@ def parse():
     now = datetime.datetime.now()
     month = now.strftime('%Y%m')
 
-    user_usage_file_name_base = "/opt/uge/Accounting_Statistics/etc/user_used_pm."
+    user_usage_file_name_base = "/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm."
     user_usage_file_name = user_usage_file_name_base + month
 
     if args['<month>']:
@@ -58,20 +58,22 @@ def parse():
     for row in reader:
         user_usage_dict[row[0]] = [float(row[1]), float(row[2]), float(row[3]), float(row[4])]
 
-    print('Month : {}'.format(month))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[User Name      :{:>15}]'.format(user_name))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[User Name -s   :{:>15}]'.format(user_name + "-s"))
-    print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
-    print('   [Batch       :{0[2]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
-    print('   [Interactive :{0[3]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[User Name -d   :{:>15}]'.format(user_name + "-d"))
-    print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
-    print('   [Batch       :{0[2]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
-    print('   [Interactive :{0[3]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
-    print("-------------------------------------------------------------------")
+    if user_name + "-s" in user_usage_dict:
+
+        print('Month : {}'.format(month))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[User Name      :{:>15}]'.format(user_name))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[User Name -s   :{:>15}]'.format(user_name + "-s"))
+        print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
+        print('   [Batch       :{0[2]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
+        print('   [Interactive :{0[3]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-s"]))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[User Name -d   :{:>15}]'.format(user_name + "-d"))
+        print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
+        print('   [Batch       :{0[2]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
+        print('   [Interactive :{0[3]:8.2f}(hours)]'.format(user_usage_dict[user_name + "-d"]))
+        print("-------------------------------------------------------------------")
 
 if __name__ == '__main__':
     parse()

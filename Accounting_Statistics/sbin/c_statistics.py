@@ -169,21 +169,21 @@ act_user_prj_tss_cputime_dict = defaultdict(float)
 act_prj_tss_cputime_dict = defaultdict(float)
 
 
-def calc_accounting(filename, start_utime, end_utime):
+def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     try:
         f = open(filename, 'r')
     except:
         sys.stderr.write("failed to open" + filename + "\n")
         sys.exit(-1)
 
-    limit_f = open('/opt/uge/Accounting_Statistics/etc/prj_limit_pm.csv', 'r')
+    limit_f = open('/opt/uge/Accounting_Statistics/etc/prj_limit_pm' + POST_FIX, 'r')
 
     reader = csv.reader(limit_f)
     header = next(reader)
     for row in reader:
         prj_limit_dict[row[0]] = float(row[1])
 
-    group_limit_f = open('/opt/uge/Accounting_Statistics/etc/group_limit_pm.csv', 'r')
+    group_limit_f = open('/opt/uge/Accounting_Statistics/etc/group_limit_pm' + POST_FIX, 'r')
 
     reader = csv.reader(group_limit_f)
     header = next(reader)
@@ -193,7 +193,7 @@ def calc_accounting(filename, start_utime, end_utime):
         # print "row"
         # print row
 
-    user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py.csv', 'r')
+    user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py' + POST_FIX, 'r')
 
     reader = csv.reader(user_limit_f)
     header = next(reader)
@@ -313,7 +313,7 @@ def calc_accounting(filename, start_utime, end_utime):
                     act_owner_prj_tss_cputime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_cpu])
 
     # make Table 2-3-1 CPU usage per group
-    print "--- Table 2.3 Usage per group ---"
+    # print "--- Table 2.3 Usage per group ---"
 
     group_out_list = []
     group_list = group_count_dict.keys()
@@ -324,7 +324,7 @@ def calc_accounting(filename, start_utime, end_utime):
         group_total_cputime += group_cputime_dict.get(grp)
     for grp in group_list:
         group_out_list0 = []
-        print grp,
+        # print grp,
         dma_utime_total = 0
         dma_stime_total = 0
         dma_cputime_total = 0
@@ -333,7 +333,7 @@ def calc_accounting(filename, start_utime, end_utime):
             key = grp + '_' + q
             group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
             # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
-            print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
+            # print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
             # print 0, 0, group_queue_cputime_dict.get(key, 0),
 
         for q in queue_dma_tuple:
@@ -345,30 +345,30 @@ def calc_accounting(filename, start_utime, end_utime):
 
         group_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
         #group_out_list0.extend([0, 0, dma_cputime_total])
-        print dma_utime_total, dma_stime_total, dma_cputime_total,
+        # print dma_utime_total, dma_stime_total, dma_cputime_total,
         # print 0, 0, dma_cputime_total,
 
         for q in queue_tss_tuple:
             key = grp + '_' + q
             group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
             # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
-            print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
+            # print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
             # print 0, 0, group_queue_cputime_dict.get(key, 0),
 
         group_out_list0.extend([group_cputime_dict.get(grp, 0), (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100])
         group_out_list0.insert(0, grp)
-        print group_cputime_dict.get(grp, 0),
-        print (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100
+        # print group_cputime_dict.get(grp, 0),
+        # print (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100
 
         group_out_list.append(group_out_list0)
 
-    print group_out_list
+    # print group_out_list
 
-    grou_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_out.csv', 'w')
+    grou_out_f = open('/opt/uge/Accounting_Statistics/logs/statistics/group_out' + POST_FIX, 'w')
     writer = csv.writer(grou_out_f, lineterminator='\n')
     writer.writerows(group_out_list)
 
-    print "--- Table 2.4 Usage per project ---"
+    # print "--- Table 2.4 Usage per project ---"
 
     prj_list = prj_count_dict.keys()
     prj_out_list = []
@@ -380,7 +380,7 @@ def calc_accounting(filename, start_utime, end_utime):
         if prj != "general":
 
             prj_out_list0 = []
-            print prj,
+            # print prj,
 
             dma_utime_total = 0
             dma_stime_total = 0
@@ -390,7 +390,7 @@ def calc_accounting(filename, start_utime, end_utime):
             for q in queue_node_sm_tuple:
                 key = prj + '_' + q
                 prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
-                print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
+                # print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
 
             for q in queue_dma_tuple:
                 key = prj + '_' + q
@@ -400,26 +400,26 @@ def calc_accounting(filename, start_utime, end_utime):
                 dma_ocutime_total += prj_queue_ocutime_dict.get(key, 0)
 
             prj_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
-            print dma_utime_total, dma_stime_total, dma_cputime_total,
+            # print dma_utime_total, dma_stime_total, dma_cputime_total,
 
             for q in queue_tss_tuple:
                 key = prj + '_' + q
                 prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
-                print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
+                # print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
 
             prj_out_list0.extend([prj_cputime_dict.get(prj, 0), (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100])
             prj_out_list0.insert(0, prj)
 
-            print prj_cputime_dict.get(prj, 0),
-            print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
+            # print prj_cputime_dict.get(prj, 0),
+            # print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
 
             prj_out_list.append(prj_out_list0)
 
-    prj_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_out.csv', 'w')
+    prj_out_f = open('/opt/uge/Accounting_Statistics/logs/statistics/prj_out' + POST_FIX, 'w')
     writer = csv.writer(prj_out_f, lineterminator='\n')
     writer.writerows(prj_out_list)
 
-    print "--- Table 2-8 Usage per job class ---"
+    # print "--- Table 2-8 Usage per job class ---"
 
     jc_out_list = []
 
@@ -429,12 +429,12 @@ def calc_accounting(filename, start_utime, end_utime):
         jc_total_cputime_dict += jc_cputime_dict.get(jc)
 
     for key in jc_list:
-        print key,
-        print jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
-        print jc_ocutime_dict.get(key, 0),
-        print jc_slots_dict.get(key, 0) / jc_count_dict.get(key, 0),
-        print jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
-        print jc_maxvmem_dict.get(key, 0) / 1000000000
+        # print key,
+        # print jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
+        # print jc_ocutime_dict.get(key, 0),
+        # print jc_slots_dict.get(key, 0) / jc_count_dict.get(key, 0),
+        # print jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
+        # print jc_maxvmem_dict.get(key, 0) / 1000000000
 
         jc_out_list.append([key,
                             jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
@@ -443,11 +443,11 @@ def calc_accounting(filename, start_utime, end_utime):
                             jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
                             jc_maxvmem_dict.get(key, 0) / 1000000000])
 
-    jc_out_f = open('/opt/uge/Accounting_Statistics/logs/accounting/jc_out.csv', 'w')
+    jc_out_f = open('/opt/uge/Accounting_Statistics/logs/statistics/jc_out' + POST_FIX, 'w')
     writer = csv.writer(jc_out_f, lineterminator='\n')
     writer.writerows(jc_out_list)
 
-    print "--- Exceeded limit project ---"
+    # print "--- Exceeded limit project ---"
     for key in prj_limit_dict:
         prj_total_sec = prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)
         prj_ratio = 0.0
@@ -462,18 +462,18 @@ def calc_accounting(filename, start_utime, end_utime):
                               '{0:.2f}'.format(prj_ratio)])
         if (prj_limit_dict.get(key, 0) * 60 * 60) <= (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
             prj_exceeded_list.append(key)
-            print prj_exceeded_list
+            # print prj_exceeded_list
 
-    used_f = open('/opt/uge/Accounting_Statistics/etc/prj_used_pm.csv', 'w')
+    used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm' + POST_FIX, 'w')
 
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)
 
-    exceeded_f = open('/opt/uge/Accounting_Statistics/etc/prj_exceeded_pm.txt', 'w')
+    exceeded_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_exceeded_pm' + POST_FIX, 'w')
     for x in prj_exceeded_list:
         exceeded_f.write(str(x) + "\n")
 
-    print "--- Exceeded limit user ---"
+    # print "--- Exceeded limit user ---"
     for key in user_limit_dict:
         user_total_sec = (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0))
         user_ratio = 0.0
@@ -489,14 +489,14 @@ def calc_accounting(filename, start_utime, end_utime):
 
         if (user_limit_dict.get(key, 0) * 60 * 60) <= (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)):
             user_exceeded_list.append(key)
-            print user_exceeded_list
+            # print user_exceeded_list
 
-    user_used_f = open('/opt/uge/Accounting_Statistics/etc/user_used_pm.csv', 'w')
+    user_used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm' + POST_FIX, 'w')
 
     writer = csv.writer(user_used_f, lineterminator='\n')
     writer.writerows(user_used_list)
 
-    print "--- Exceeded limit group ---"
+    # print "--- Exceeded limit group ---"
     for key in group_limit_dict:
         # print key
         group_used_list.append([key,
@@ -507,24 +507,24 @@ def calc_accounting(filename, start_utime, end_utime):
         if (group_limit_dict.get(key, 0) * 60 * 60) <= (group_ocutime_dict.get(key, 0) + act_group_cputime_dict.get(key, 0) + act_group_tss_cputime_dict.get(key, 0)):
             group_exceeded_list.append(key)
             # print key, prj_limit_dict.get(key,0),  prj_wallclock_dict.get(key,0)
-            print group_exceeded_list
+            # print group_exceeded_list
 
-    group_used_f = open('/opt/uge/Accounting_Statistics/etc/group_used_pm.csv', 'w')
+    group_used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_used_pm' + POST_FIX, 'w')
 
     writer = csv.writer(group_used_f, lineterminator='\n')
     writer.writerows(group_used_list)
 
-    group_exceeded_f = open('/opt/uge/Accounting_Statistics/etc/group_exceeded_pm.txt', 'w')
+    group_exceeded_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_exceeded_pm' + POST_FIX, 'w')
     for x in group_exceeded_list:
         group_exceeded_f.write(str(x) + "\n")
 
-    print "--- prj usage by owner ---"
+    # print "--- prj usage by owner ---"
     for key in prj_limit_dict:
         owner_prj_ocutime_dict
         act_owner_prj_cputime_dict
         act_owner_prj_tss_cputime_dict
 
-    used_f = open('/opt/uge/Accounting_Statistics/etc/prj_used_pm.csv', 'w')
+    used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm' + POST_FIX, 'w')
 
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)
@@ -539,12 +539,13 @@ def calc_accounting(filename, start_utime, end_utime):
 __doc__ = """{f}
 
 Usage:
-    {f} <fname> [-s | --start <start_time>] [-e | --end <end_time>]
+    {f} <fname> [-s | --start <start_time>] [-e | --end <end_time>] [-p | --post-fix <post_fix>]
     {f} -h | --help
 
 Options:
     -s --start <START_TIME>  YYYYMMDDhhmmss
     -e --end <END_TIME>      YYYYMMDDhhmmss
+    -p --post-fix <POST_FIX> YYYYMM
     -h --help                Show this screen and exit.
 """.format(f=__file__)
 
@@ -555,8 +556,9 @@ import time
 
 def parse():
     start_utime = 0
-    #now = datetime.datetime.now()
+    now = datetime.datetime.now()
     end_utime = int(time.mktime(now.timetuple()))
+    POST_FIX = ".csv"
     args = docopt(__doc__)
     if args['--start']:
         start_time = datetime.datetime.strptime(args['--start'][0], '%Y%m%d%H%M%S')
@@ -564,16 +566,16 @@ def parse():
     if args['--end']:
         end_time = datetime.datetime.strptime(args['--end'][0], '%Y%m%d%H%M%S')
         end_utime = int(time.mktime(end_time.timetuple()))
+    if args['--post-fix']:
+        POST_FIX = "." + args['--post-fix'][0]
+    # print POST_FIX
     filename = args['<fname>']
 
-    print "start, end"
-    print start_utime, end_utime
+    # print "start, end"
+    # print start_utime, end_utime
 
-    calc_accounting(filename, start_utime, end_utime)
+    calc_accounting(filename, start_utime, end_utime, POST_FIX)
 
 if __name__ == '__main__':
-    now = datetime.datetime.now()
-    month = now.strftime('%Y%m')
-    POSTFIX = '.{}'.format(month)
 
     parse()

@@ -94,12 +94,10 @@ if __name__ == '__main__':
     args = docopt(__doc__)
     filename = args['<used_file>']
 
-    #from_addr = "osk@ks-lapislazuli.jp"
     from_addr = "sc-support@ifs.tohoku.ac.jp"
     from_addr_name = "sc-support"
-    # to_addr = "sc-support@ifs.tohoku.ac.jp"
+    to_addr = "sc-support@ifs.tohoku.ac.jp"
     # to_addr = "afi-office@ifs.tohoku.ac.jp"
-    to_addr = "osaki.kenji@jp.fujitsu.com"
     subject = "Accout Report"
 
     body = create_body(filename)

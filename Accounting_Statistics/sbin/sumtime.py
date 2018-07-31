@@ -42,7 +42,7 @@ def parse():
         res = subprocess.check_output(["id", "-g", "-n"])
         prj_name = res.strip()
 
-    group_usage_file_name = "/opt/uge/Accounting_Statistics/etc/prj_used_pm.csv"
+    group_usage_file_name = "/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm.csv"
     if args['<prj_used_pm.csv>']:
         group_usage_file_name = args['<prj_used_pm.csv>']
 

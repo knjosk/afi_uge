@@ -40,7 +40,7 @@ def parse():
                 sys.exit()
     now = datetime.datetime.now()
     month = now.strftime('%Y%m')
-    prj_usage_file_name_base = "/opt/uge/Accounting_Statistics/etc/prj_used_pm."
+    prj_usage_file_name_base = "/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm."
     prj_usage_file_name = prj_usage_file_name_base + month
     if args['<month>']:
         prj_usage_file_name = prj_usage_file_name_base + args['<month>']
@@ -51,20 +51,22 @@ def parse():
     for row in reader:
         prj_usage_dict[row[0]] = [float(row[1]), float(row[2]), float(row[3]), float(row[4])]
 
-    print('Month : {}'.format(month))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[Project Code   :{:>15}]'.format(prj_name))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[Project -s     :{:>15}]'.format(prj_name + "-s"))
-    print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
-    print('   [Batch       :{0[2]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
-    print('   [Interactive :{0[3]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
-    print("--------------TOTAL CPU HOURS--------------------------------------")
-    print('[Project -d     :{:>15}]'.format(prj_name + "-d"))
-    print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
-    print('   [Batch       :{0[2]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
-    print('   [Interactive :{0[3]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
-    print("-------------------------------------------------------------------")
+    if prj_name + "-s" in prj_usage_dict:
+
+        print('Month : {}'.format(month))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[Project Code   :{:>15}]'.format(prj_name))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[Project -s     :{:>15}]'.format(prj_name + "-s"))
+        print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
+        print('   [Batch       :{0[2]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
+        print('   [Interactive :{0[3]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-s"]))
+        print("--------------TOTAL CPU HOURS--------------------------------------")
+        print('[Project -d     :{:>15}]'.format(prj_name + "-d"))
+        print('[Total          :{0[1]:8.2f}(hours)] [Annual limit : {0[0]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
+        print('   [Batch       :{0[2]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
+        print('   [Interactive :{0[3]:8.2f}(hours)]'.format(prj_usage_dict[prj_name + "-d"]))
+        print("-------------------------------------------------------------------")
 
 if __name__ == '__main__':
     parse()
