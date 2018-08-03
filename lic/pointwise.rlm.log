@@ -1,0 +1,1009 @@
+06/21 13:09 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/21 13:09 (rlm) License server started on afimgr001
+06/21 13:09 (rlm) Server architecture: x64_l1
+06/21 13:09 (rlm) License files:
+06/21 13:09 (rlm) 
+06/21 13:09 (rlm) Using options file rlm.opt
+06/21 13:09 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:12 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:12 (rlm) License server started on afimgr001
+06/26 16:12 (rlm) Server architecture: x64_l1
+06/26 16:12 (rlm) License files:
+06/26 16:12 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:12 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:12 (rlm) 
+06/26 16:12 (rlm) Using options file rlm.opt
+06/26 16:12 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:14 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:14 (rlm) License server started on afimgr001
+06/26 16:14 (rlm) Server architecture: x64_l1
+06/26 16:14 (rlm) License files:
+06/26 16:14 (rlm)     failover_license.lic
+06/26 16:14 (rlm)     pointwise_license.lic
+06/26 16:14 (rlm) 
+06/26 16:14 (rlm) Using options file rlm.opt
+06/26 16:14 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:23 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:23 (rlm) License server started on afimgr001
+06/26 16:23 (rlm) Server architecture: x64_l1
+06/26 16:23 (rlm) License files:
+06/26 16:23 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:23 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:23 (rlm) 
+06/26 16:23 (rlm) Using options file rlm.opt
+06/26 16:23 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:24 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:24 (rlm) License server started on afimgr001
+06/26 16:24 (rlm) Server architecture: x64_l1
+06/26 16:24 (rlm) License files:
+06/26 16:24 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:24 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:24 (rlm) 
+06/26 16:24 (rlm) Using options file rlm.opt
+06/26 16:24 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:25 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:25 (rlm) License server started on afimgr001
+06/26 16:25 (rlm) Server architecture: x64_l1
+06/26 16:25 (rlm) License files:
+06/26 16:25 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:25 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:25 (rlm) 
+06/26 16:25 (rlm) Using options file rlm.opt
+06/26 16:25 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:35 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:35 (rlm) License server started on afimgr001
+06/26 16:35 (rlm) Server architecture: x64_l1
+06/26 16:35 (rlm) License files:
+06/26 16:35 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:35 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:35 (rlm) 
+06/26 16:35 (rlm) Using options file rlm.opt
+06/26 16:35 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:45 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:45 (rlm) License server started on afimgr001
+06/26 16:45 (rlm) Server architecture: x64_l1
+06/26 16:45 (rlm) License files:
+06/26 16:45 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:45 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:45 (rlm) 
+06/26 16:45 (rlm) Using options file rlm.opt
+06/26 16:45 (rlm) Web server starting on port 5054
+(rlm) Cannot bind Web Server port 5054, exiting
+06/26 16:58 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 16:58 (rlm) License server started on afimgr001
+06/26 16:58 (rlm) Server architecture: x64_l1
+06/26 16:58 (rlm) License files:
+06/26 16:58 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 16:58 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 16:58 (rlm) 
+06/26 16:58 (rlm) Using options file rlm.opt
+06/26 16:58 (rlm) Web server starting on port 5154
+06/26 16:58 (rlm) Port 5053 in use, waiting...
+06/26 16:58 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 16:59 (rlm) Port 5053 in use, waiting...
+06/26 17:00 (rlm) Port 5053 in use, waiting...
+06/26 17:00 (rlm) Port 5053 still in use, giving up.
+06/26 17:00 (rlm) RLM processes running on this machine (in the last 24 hours)
+06/26 17:00 (rlm) 
+06/26 17:00 (rlm)     RLM Version: v10.1BL2
+06/26 17:00 (rlm)     Command: /opt/ScaleMP/vsmplmgr/rlm
+06/26 17:00 (rlm)     Working Directory: /opt/ScaleMP/vsmplmgr
+06/26 17:00 (rlm)     PID: 2111
+06/26 17:00 (rlm)     Main TCP/IP port: 5053
+06/26 17:00 (rlm)     Web interface TCP/IP port: 5054
+06/26 17:00 (rlm)     ISV servers: scalemp 
+06/26 17:00 (rlm)     [this instance of rlm]
+06/26 17:02 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+06/26 17:02 (rlm) License server started on afimgr001
+06/26 17:02 (rlm) Server architecture: x64_l1
+06/26 17:02 (rlm) License files:
+06/26 17:02 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 17:02 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 17:02 (rlm) 
+06/26 17:02 (rlm) Using options file rlm.opt
+06/26 17:02 (rlm) Web server starting on port 5154
+06/26 17:02 (rlm) Using TCP/IP port 5153
+06/26 17:02 (rlm) ... error binding TCP port 5053, port in use
+06/26 17:02 (rlm)   This is probably due to another copy of RLM running
+06/26 17:02 (rlm)   While not fatal, this instance of RLM won't respond
+06/26 17:02 (rlm)   to broadcast requests.
+06/26 17:02 (rlm) ... error binding UDP port 5053, port in use
+06/26 17:02 (rlm)   This is probably due to another copy of RLM running
+06/26 17:02 (rlm)   While not fatal, this instance of RLM won't respond
+06/26 17:02 (rlm)   to broadcast requests.
+06/26 17:02 (rlm) Starting ISV server pwid on port 48200
+06/26 17:02 (pwid) RLM License Server Version 12.3BL3 for ISV "pwid"
+06/26 17:02 (pwid) Settings from RLM Version 12.3BL3 for ISV "pwid"
+06/26 17:02 (pwid) Server architecture: x64_l1
+
+    Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+    RLM contains software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit (http://www.openssl.org)
+    Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.
+    Copyright (c) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+
+06/26 17:02 (pwid) ****************************************
+06/26 17:02 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+06/26 17:02 (pwid) using only uncounted and TOKEN_UNLOCKED
+06/26 17:02 (pwid) licenses from this license file
+06/26 17:02 (pwid) hostid: 901b0ee3f135
+06/26 17:02 (pwid) ****************************************
+06/26 17:02 (pwid) 
+06/26 17:02 (pwid) Server started on afimgr001 (hostid: 901b0ee43652) for:
+06/26 17:02 (pwid) 	pointwise 
+06/26 17:02 (pwid) 
+06/26 17:02 (pwid) License files:
+06/26 17:02 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/26 17:02 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/26 17:02 (pwid) 
+06/26 17:02 (pwid) File descriptor limit increased from 1024 to 4096
+06/26 17:17 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 17:17 (pwid) IN: pointwise v18.1 by fj-oda@afifep002 
+06/26 17:17 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 17:21 (pwid) IN: (client exit) pointwise v18.1 by fj-oda@afifep002 
+06/26 17:22 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 17:23 (pwid) IN: (client exit) pointwise v18.1 by fj-oda@afifep002 
+06/26 18:10 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:12 (pwid) IN: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:16 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:16 (pwid) IN: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:40 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:40 (pwid) IN: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:40 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:41 (pwid) IN: pointwise v18.1 by fj-oda@afifep002 
+06/26 18:53 (pwid) OUT: pointwise v18.1 by fj-oda@afifep001 
+06/26 18:53 (pwid) IN: pointwise v18.1 by fj-oda@afifep001 
+06/26 18:54 (pwid) OUT: pointwise v18.1 by fj-oda@afifep001 
+06/26 18:54 (pwid) IN: pointwise v18.1 by fj-oda@afifep001 
+06/26 19:17 (pwid) OUT: pointwise v18.1 by fj-oda@afiaps026 
+06/26 19:17 (pwid) IN: pointwise v18.1 by fj-oda@afiaps026 
+06/27 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+06/27 00:00 (rlm) Sending reread msg to pwid (pid: 193611)
+06/27 00:00 (rlm) ... error binding TCP port 5053, port in use
+06/27 00:00 (rlm)   This is probably due to another copy of RLM running
+06/27 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+06/27 00:00 (rlm)   to broadcast requests.
+06/27 00:00 (rlm) Starting any new ISV servers...
+06/27 00:00 (rlm) Using options file rlm.opt
+06/27 00:00 (pwid) ==== Reread request by automatic@midnight ====
+06/27 00:00 (pwid) ****************************************
+06/27 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+06/27 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+06/27 00:00 (pwid) licenses from this license file
+06/27 00:00 (pwid) hostid: 901b0ee3f135
+06/27 00:00 (pwid) ****************************************
+06/27 00:00 (pwid) 
+06/27 00:00 (pwid) Re-reading license files, supporting products:
+06/27 00:00 (pwid) 	pointwise 
+06/27 00:00 (pwid) 
+06/27 00:00 (pwid) License files:
+06/27 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/27 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/27 00:00 (pwid) 
+06/28 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+06/28 00:00 (rlm) Sending reread msg to pwid (pid: 193611)
+06/28 00:00 (rlm) ... error binding TCP port 5053, port in use
+06/28 00:00 (rlm)   This is probably due to another copy of RLM running
+06/28 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+06/28 00:00 (rlm)   to broadcast requests.
+06/28 00:00 (rlm) Starting any new ISV servers...
+06/28 00:00 (rlm) Using options file rlm.opt
+06/28 00:00 (pwid) ==== Reread request by automatic@midnight ====
+06/28 00:00 (pwid) ****************************************
+06/28 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+06/28 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+06/28 00:00 (pwid) licenses from this license file
+06/28 00:00 (pwid) hostid: 901b0ee3f135
+06/28 00:00 (pwid) ****************************************
+06/28 00:00 (pwid) 
+06/28 00:00 (pwid) Re-reading license files, supporting products:
+06/28 00:00 (pwid) 	pointwise 
+06/28 00:00 (pwid) 
+06/28 00:00 (pwid) License files:
+06/28 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/28 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/28 00:00 (pwid) 
+06/29 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+06/29 00:00 (rlm) Sending reread msg to pwid (pid: 193611)
+06/29 00:00 (rlm) ... error binding TCP port 5053, port in use
+06/29 00:00 (rlm)   This is probably due to another copy of RLM running
+06/29 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+06/29 00:00 (rlm)   to broadcast requests.
+06/29 00:00 (rlm) Starting any new ISV servers...
+06/29 00:00 (rlm) Using options file rlm.opt
+06/29 00:00 (pwid) ==== Reread request by automatic@midnight ====
+06/29 00:00 (pwid) ****************************************
+06/29 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+06/29 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+06/29 00:00 (pwid) licenses from this license file
+06/29 00:00 (pwid) hostid: 901b0ee3f135
+06/29 00:00 (pwid) ****************************************
+06/29 00:00 (pwid) 
+06/29 00:00 (pwid) Re-reading license files, supporting products:
+06/29 00:00 (pwid) 	pointwise 
+06/29 00:00 (pwid) 
+06/29 00:00 (pwid) License files:
+06/29 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/29 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/29 00:00 (pwid) 
+06/30 00:01 (rlm) Reread request (for everyone) by automatic@midnight
+06/30 00:01 (rlm) Sending reread msg to pwid (pid: 193611)
+06/30 00:01 (rlm) ... error binding TCP port 5053, port in use
+06/30 00:01 (rlm)   This is probably due to another copy of RLM running
+06/30 00:01 (rlm)   While not fatal, this instance of RLM won't respond
+06/30 00:01 (rlm)   to broadcast requests.
+06/30 00:01 (rlm) Starting any new ISV servers...
+06/30 00:01 (rlm) Using options file rlm.opt
+06/30 00:01 (pwid) ==== Reread request by automatic@midnight ====
+06/30 00:01 (pwid) ****************************************
+06/30 00:01 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+06/30 00:01 (pwid) using only uncounted and TOKEN_UNLOCKED
+06/30 00:01 (pwid) licenses from this license file
+06/30 00:01 (pwid) hostid: 901b0ee3f135
+06/30 00:01 (pwid) ****************************************
+06/30 00:01 (pwid) 
+06/30 00:01 (pwid) Re-reading license files, supporting products:
+06/30 00:01 (pwid) 	pointwise 
+06/30 00:01 (pwid) 
+06/30 00:01 (pwid) License files:
+06/30 00:01 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+06/30 00:01 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+06/30 00:01 (pwid) 
+07/01 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/01 00:00 (rlm) Sending reread msg to pwid (pid: 193611)
+07/01 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/01 00:00 (rlm)   This is probably due to another copy of RLM running
+07/01 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/01 00:00 (rlm)   to broadcast requests.
+07/01 00:00 (rlm) Starting any new ISV servers...
+07/01 00:00 (rlm) Using options file rlm.opt
+07/01 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/01 00:00 (pwid) ****************************************
+07/01 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/01 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/01 00:00 (pwid) licenses from this license file
+07/01 00:00 (pwid) hostid: 901b0ee3f135
+07/01 00:00 (pwid) ****************************************
+07/01 00:00 (pwid) 
+07/01 00:00 (pwid) Re-reading license files, supporting products:
+07/01 00:00 (pwid) 	pointwise 
+07/01 00:00 (pwid) 
+07/01 00:00 (pwid) License files:
+07/01 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/01 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/01 00:00 (pwid) 
+07/01 18:40 (pwid) select() failure: Interrupted system call
+07/01 18:40 (pwid) Shutdown request by signal@local
+07/01 18:40 (rlm) Shutdown request by signal@local
+07/01 18:40 (rlm) pwid - SHUTDOWN
+07/01 18:40 (rlm) Shutting down rlm
+07/03 18:35 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+07/03 18:35 (rlm) License server started on afimgr001
+07/03 18:35 (rlm) Server architecture: x64_l1
+07/03 18:35 (rlm) License files:
+07/03 18:35 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/03 18:35 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/03 18:35 (rlm) 
+07/03 18:35 (rlm) Using options file rlm.opt
+07/03 18:35 (rlm) Web server starting on port 5154
+07/03 18:35 (rlm) Using TCP/IP port 5153
+07/03 18:35 (rlm) ... error binding TCP port 5053, port in use
+07/03 18:35 (rlm)   This is probably due to another copy of RLM running
+07/03 18:35 (rlm)   While not fatal, this instance of RLM won't respond
+07/03 18:35 (rlm)   to broadcast requests.
+07/03 18:35 (rlm) ... error binding UDP port 5053, port in use
+07/03 18:35 (rlm)   This is probably due to another copy of RLM running
+07/03 18:35 (rlm)   While not fatal, this instance of RLM won't respond
+07/03 18:35 (rlm)   to broadcast requests.
+07/03 18:35 (rlm) Starting ISV server pwid on port 44251
+07/03 18:35 (pwid) RLM License Server Version 12.3BL3 for ISV "pwid"
+07/03 18:35 (pwid) Settings from RLM Version 12.3BL3 for ISV "pwid"
+07/03 18:35 (pwid) Server architecture: x64_l1
+
+    Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+    RLM contains software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit (http://www.openssl.org)
+    Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.
+    Copyright (c) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+
+07/03 18:35 (pwid) ****************************************
+07/03 18:35 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/03 18:35 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/03 18:35 (pwid) licenses from this license file
+07/03 18:35 (pwid) hostid: 901b0ee3f135
+07/03 18:35 (pwid) ****************************************
+07/03 18:35 (pwid) 
+07/03 18:35 (pwid) Server started on afimgr001 (hostid: 901b0ee43652) for:
+07/03 18:35 (pwid) 	pointwise 
+07/03 18:35 (pwid) 
+07/03 18:35 (pwid) License files:
+07/03 18:35 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/03 18:35 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/03 18:35 (pwid) 
+07/03 18:35 (pwid) File descriptor limit increased from 1024 to 4096
+07/04 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/04 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/04 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/04 00:00 (rlm)   This is probably due to another copy of RLM running
+07/04 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/04 00:00 (rlm)   to broadcast requests.
+07/04 00:00 (rlm) Starting any new ISV servers...
+07/04 00:00 (rlm) Using options file rlm.opt
+07/04 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/04 00:00 (pwid) ****************************************
+07/04 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/04 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/04 00:00 (pwid) licenses from this license file
+07/04 00:00 (pwid) hostid: 901b0ee3f135
+07/04 00:00 (pwid) ****************************************
+07/04 00:00 (pwid) 
+07/04 00:00 (pwid) Re-reading license files, supporting products:
+07/04 00:00 (pwid) 	pointwise 
+07/04 00:00 (pwid) 
+07/04 00:00 (pwid) License files:
+07/04 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/04 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/04 00:00 (pwid) 
+07/05 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/05 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/05 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/05 00:00 (rlm)   This is probably due to another copy of RLM running
+07/05 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/05 00:00 (rlm)   to broadcast requests.
+07/05 00:00 (rlm) Starting any new ISV servers...
+07/05 00:00 (rlm) Using options file rlm.opt
+07/05 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/05 00:00 (pwid) ****************************************
+07/05 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/05 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/05 00:00 (pwid) licenses from this license file
+07/05 00:00 (pwid) hostid: 901b0ee3f135
+07/05 00:00 (pwid) ****************************************
+07/05 00:00 (pwid) 
+07/05 00:00 (pwid) Re-reading license files, supporting products:
+07/05 00:00 (pwid) 	pointwise 
+07/05 00:00 (pwid) 
+07/05 00:00 (pwid) License files:
+07/05 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/05 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/05 00:00 (pwid) 
+07/06 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/06 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/06 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/06 00:00 (rlm)   This is probably due to another copy of RLM running
+07/06 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/06 00:00 (rlm)   to broadcast requests.
+07/06 00:00 (rlm) Starting any new ISV servers...
+07/06 00:00 (rlm) Using options file rlm.opt
+07/06 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/06 00:00 (pwid) ****************************************
+07/06 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/06 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/06 00:00 (pwid) licenses from this license file
+07/06 00:00 (pwid) hostid: 901b0ee3f135
+07/06 00:00 (pwid) ****************************************
+07/06 00:00 (pwid) 
+07/06 00:00 (pwid) Re-reading license files, supporting products:
+07/06 00:00 (pwid) 	pointwise 
+07/06 00:00 (pwid) 
+07/06 00:00 (pwid) License files:
+07/06 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/06 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/06 00:00 (pwid) 
+07/06 19:00 (pwid) OUT: pointwise v18.1 by fj-oda@afirws017 
+07/06 19:00 (pwid) IN: pointwise v18.1 by fj-oda@afirws017 
+07/07 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/07 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/07 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/07 00:00 (rlm)   This is probably due to another copy of RLM running
+07/07 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/07 00:00 (rlm)   to broadcast requests.
+07/07 00:00 (rlm) Starting any new ISV servers...
+07/07 00:00 (rlm) Using options file rlm.opt
+07/07 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/07 00:00 (pwid) ****************************************
+07/07 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/07 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/07 00:00 (pwid) licenses from this license file
+07/07 00:00 (pwid) hostid: 901b0ee3f135
+07/07 00:00 (pwid) ****************************************
+07/07 00:00 (pwid) 
+07/07 00:00 (pwid) Re-reading license files, supporting products:
+07/07 00:00 (pwid) 	pointwise 
+07/07 00:00 (pwid) 
+07/07 00:00 (pwid) License files:
+07/07 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/07 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/07 00:00 (pwid) 
+07/08 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/08 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/08 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/08 00:00 (rlm)   This is probably due to another copy of RLM running
+07/08 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/08 00:00 (rlm)   to broadcast requests.
+07/08 00:00 (rlm) Starting any new ISV servers...
+07/08 00:00 (rlm) Using options file rlm.opt
+07/08 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/08 00:00 (pwid) ****************************************
+07/08 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/08 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/08 00:00 (pwid) licenses from this license file
+07/08 00:00 (pwid) hostid: 901b0ee3f135
+07/08 00:00 (pwid) ****************************************
+07/08 00:00 (pwid) 
+07/08 00:00 (pwid) Re-reading license files, supporting products:
+07/08 00:00 (pwid) 	pointwise 
+07/08 00:00 (pwid) 
+07/08 00:00 (pwid) License files:
+07/08 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/08 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/08 00:00 (pwid) 
+07/09 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/09 00:00 (rlm) Error connecting to isv server pwid on port 44251, status: -111
+07/09 00:00 (rlm) rh->error: -111, rh->syserr: 115, rh->msgerr: -4 
+07/09 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/09 00:00 (rlm)   This is probably due to another copy of RLM running
+07/09 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/09 00:00 (rlm)   to broadcast requests.
+07/09 00:00 (rlm) Starting any new ISV servers...
+07/09 00:00 (rlm) Using options file rlm.opt
+07/09 17:21 (pwid) OUT: pointwise v18.1 by fj-oda@afirws017 
+07/09 17:25 (pwid) IN: pointwise v18.1 by fj-oda@afirws017 
+07/10 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/10 00:00 (rlm) Sending reread msg to pwid (pid: 166301)
+07/10 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/10 00:00 (rlm)   This is probably due to another copy of RLM running
+07/10 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/10 00:00 (rlm)   to broadcast requests.
+07/10 00:00 (rlm) Starting any new ISV servers...
+07/10 00:00 (rlm) Using options file rlm.opt
+07/10 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/10 00:00 (pwid) ****************************************
+07/10 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/10 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/10 00:00 (pwid) licenses from this license file
+07/10 00:00 (pwid) hostid: 901b0ee3f135
+07/10 00:00 (pwid) ****************************************
+07/10 00:00 (pwid) 
+07/10 00:00 (pwid) Re-reading license files, supporting products:
+07/10 00:00 (pwid) 	pointwise 
+07/10 00:00 (pwid) 
+07/10 00:00 (pwid) License files:
+07/10 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/10 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/10 00:00 (pwid) 
+07/13 09:01 (rlm) RLM License Server Version 12.3BL3
+
+	Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+07/13 09:01 (rlm) License server started on afimgr001
+07/13 09:01 (rlm) Server architecture: x64_l1
+07/13 09:01 (rlm) License files:
+07/13 09:01 (rlm)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/13 09:01 (rlm)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/13 09:01 (rlm) 
+07/13 09:01 (rlm) Using options file rlm.opt
+07/13 09:01 (rlm) Web server starting on port 5154
+07/13 09:01 (rlm) Using TCP/IP port 5153
+07/13 09:01 (rlm) ... error binding TCP port 5053, port in use
+07/13 09:01 (rlm)   This is probably due to another copy of RLM running
+07/13 09:01 (rlm)   While not fatal, this instance of RLM won't respond
+07/13 09:01 (rlm)   to broadcast requests.
+07/13 09:01 (rlm) ... error binding UDP port 5053, port in use
+07/13 09:01 (rlm)   This is probably due to another copy of RLM running
+07/13 09:01 (rlm)   While not fatal, this instance of RLM won't respond
+07/13 09:01 (rlm)   to broadcast requests.
+07/13 09:01 (rlm) Starting ISV server pwid on port 53356
+07/13 09:01 (pwid) RLM License Server Version 12.3BL3 for ISV "pwid"
+07/13 09:01 (pwid) Settings from RLM Version 12.3BL3 for ISV "pwid"
+07/13 09:01 (pwid) Server architecture: x64_l1
+
+    Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+    RLM contains software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit (http://www.openssl.org)
+    Copyright (c) 1998-2008 The OpenSSL Project. All rights reserved.
+    Copyright (c) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+
+07/13 09:01 (pwid) ****************************************
+07/13 09:01 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/13 09:01 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/13 09:01 (pwid) licenses from this license file
+07/13 09:01 (pwid) hostid: 901b0ee3f135
+07/13 09:01 (pwid) ****************************************
+07/13 09:01 (pwid) 
+07/13 09:01 (pwid) Server started on afimgr001 (hostid: 901b0ee43652) for:
+07/13 09:01 (pwid) 	pointwise 
+07/13 09:01 (pwid) 
+07/13 09:01 (pwid) License files:
+07/13 09:01 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/13 09:01 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/13 09:01 (pwid) 
+07/13 09:01 (pwid) File descriptor limit increased from 1024 to 4096
+07/13 11:29 (pwid) OUT: pointwise v18.1 by fj-oda@afifep002 
+07/13 11:32 (pwid) IN: (client exit) pointwise v18.1 by fj-oda@afifep002 
+07/14 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/14 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/14 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/14 00:00 (rlm)   This is probably due to another copy of RLM running
+07/14 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/14 00:00 (rlm)   to broadcast requests.
+07/14 00:00 (rlm) Starting any new ISV servers...
+07/14 00:00 (rlm) Using options file rlm.opt
+07/14 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/14 00:00 (pwid) ****************************************
+07/14 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/14 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/14 00:00 (pwid) licenses from this license file
+07/14 00:00 (pwid) hostid: 901b0ee3f135
+07/14 00:00 (pwid) ****************************************
+07/14 00:00 (pwid) 
+07/14 00:00 (pwid) Re-reading license files, supporting products:
+07/14 00:00 (pwid) 	pointwise 
+07/14 00:00 (pwid) 
+07/14 00:00 (pwid) License files:
+07/14 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/14 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/14 00:00 (pwid) 
+07/15 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/15 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/15 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/15 00:00 (rlm)   This is probably due to another copy of RLM running
+07/15 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/15 00:00 (rlm)   to broadcast requests.
+07/15 00:00 (rlm) Starting any new ISV servers...
+07/15 00:00 (rlm) Using options file rlm.opt
+07/15 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/15 00:00 (pwid) ****************************************
+07/15 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/15 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/15 00:00 (pwid) licenses from this license file
+07/15 00:00 (pwid) hostid: 901b0ee3f135
+07/15 00:00 (pwid) ****************************************
+07/15 00:00 (pwid) 
+07/15 00:00 (pwid) Re-reading license files, supporting products:
+07/15 00:00 (pwid) 	pointwise 
+07/15 00:00 (pwid) 
+07/15 00:00 (pwid) License files:
+07/15 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/15 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/15 00:00 (pwid) 
+07/16 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/16 00:00 (rlm) Error connecting to isv server pwid on port 53356, status: -111
+07/16 00:00 (rlm) rh->error: -111, rh->syserr: 115, rh->msgerr: -4 
+07/16 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/16 00:00 (rlm)   This is probably due to another copy of RLM running
+07/16 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/16 00:00 (rlm)   to broadcast requests.
+07/16 00:00 (rlm) Starting any new ISV servers...
+07/16 00:00 (rlm) Using options file rlm.opt
+07/17 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/17 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/17 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/17 00:00 (rlm)   This is probably due to another copy of RLM running
+07/17 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/17 00:00 (rlm)   to broadcast requests.
+07/17 00:00 (rlm) Starting any new ISV servers...
+07/17 00:00 (rlm) Using options file rlm.opt
+07/17 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/17 00:00 (pwid) ****************************************
+07/17 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/17 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/17 00:00 (pwid) licenses from this license file
+07/17 00:00 (pwid) hostid: 901b0ee3f135
+07/17 00:00 (pwid) ****************************************
+07/17 00:00 (pwid) 
+07/17 00:00 (pwid) Re-reading license files, supporting products:
+07/17 00:00 (pwid) 	pointwise 
+07/17 00:00 (pwid) 
+07/17 00:00 (pwid) License files:
+07/17 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/17 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/17 00:00 (pwid) 
+07/17 16:31 (pwid) OUT: pointwise v18.1 by fj-oda@afirws017 
+07/17 16:32 (pwid) OUT: pointwise v18.1 by fj-oda@afirws017 
+07/17 16:34 (pwid) DENIED: (1) pointwise v18.1 to fj-oda@afirws017 
+07/17 16:34 (pwid)         All licenses in use
+07/17 16:35 (pwid) IN: pointwise v18.1 by fj-oda@afirws017 
+07/17 16:35 (pwid) IN: pointwise v18.1 by fj-oda@afirws017 
+07/18 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/18 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/18 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/18 00:00 (rlm)   This is probably due to another copy of RLM running
+07/18 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/18 00:00 (rlm)   to broadcast requests.
+07/18 00:00 (rlm) Starting any new ISV servers...
+07/18 00:00 (rlm) Using options file rlm.opt
+07/18 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/18 00:00 (pwid) ****************************************
+07/18 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/18 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/18 00:00 (pwid) licenses from this license file
+07/18 00:00 (pwid) hostid: 901b0ee3f135
+07/18 00:00 (pwid) ****************************************
+07/18 00:00 (pwid) 
+07/18 00:00 (pwid) Re-reading license files, supporting products:
+07/18 00:00 (pwid) 	pointwise 
+07/18 00:00 (pwid) 
+07/18 00:00 (pwid) License files:
+07/18 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/18 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/18 00:00 (pwid) 
+07/19 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/19 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/19 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/19 00:00 (rlm)   This is probably due to another copy of RLM running
+07/19 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/19 00:00 (rlm)   to broadcast requests.
+07/19 00:00 (rlm) Starting any new ISV servers...
+07/19 00:00 (rlm) Using options file rlm.opt
+07/19 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/19 00:00 (pwid) ****************************************
+07/19 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/19 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/19 00:00 (pwid) licenses from this license file
+07/19 00:00 (pwid) hostid: 901b0ee3f135
+07/19 00:00 (pwid) ****************************************
+07/19 00:00 (pwid) 
+07/19 00:00 (pwid) Re-reading license files, supporting products:
+07/19 00:00 (pwid) 	pointwise 
+07/19 00:00 (pwid) 
+07/19 00:00 (pwid) License files:
+07/19 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/19 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/19 00:00 (pwid) 
+07/20 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/20 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/20 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/20 00:00 (rlm)   This is probably due to another copy of RLM running
+07/20 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/20 00:00 (rlm)   to broadcast requests.
+07/20 00:00 (rlm) Starting any new ISV servers...
+07/20 00:00 (rlm) Using options file rlm.opt
+07/20 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/20 00:00 (pwid) ****************************************
+07/20 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/20 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/20 00:00 (pwid) licenses from this license file
+07/20 00:00 (pwid) hostid: 901b0ee3f135
+07/20 00:00 (pwid) ****************************************
+07/20 00:00 (pwid) 
+07/20 00:00 (pwid) Re-reading license files, supporting products:
+07/20 00:00 (pwid) 	pointwise 
+07/20 00:00 (pwid) 
+07/20 00:00 (pwid) License files:
+07/20 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/20 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/20 00:00 (pwid) 
+07/21 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/21 00:00 (rlm) Error connecting to isv server pwid on port 53356, status: -111
+07/21 00:00 (rlm) rh->error: -111, rh->syserr: 115, rh->msgerr: -4 
+07/21 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/21 00:00 (rlm)   This is probably due to another copy of RLM running
+07/21 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/21 00:00 (rlm)   to broadcast requests.
+07/21 00:00 (rlm) Starting any new ISV servers...
+07/21 00:00 (rlm) Using options file rlm.opt
+07/22 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/22 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/22 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/22 00:00 (rlm)   This is probably due to another copy of RLM running
+07/22 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/22 00:00 (rlm)   to broadcast requests.
+07/22 00:00 (rlm) Starting any new ISV servers...
+07/22 00:00 (rlm) Using options file rlm.opt
+07/22 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/22 00:00 (pwid) ****************************************
+07/22 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/22 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/22 00:00 (pwid) licenses from this license file
+07/22 00:00 (pwid) hostid: 901b0ee3f135
+07/22 00:00 (pwid) ****************************************
+07/22 00:00 (pwid) 
+07/22 00:00 (pwid) Re-reading license files, supporting products:
+07/22 00:00 (pwid) 	pointwise 
+07/22 00:00 (pwid) 
+07/22 00:00 (pwid) License files:
+07/22 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/22 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/22 00:00 (pwid) 
+07/23 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/23 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/23 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/23 00:00 (rlm)   This is probably due to another copy of RLM running
+07/23 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/23 00:00 (rlm)   to broadcast requests.
+07/23 00:00 (rlm) Starting any new ISV servers...
+07/23 00:00 (rlm) Using options file rlm.opt
+07/23 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/23 00:00 (pwid) ****************************************
+07/23 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/23 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/23 00:00 (pwid) licenses from this license file
+07/23 00:00 (pwid) hostid: 901b0ee3f135
+07/23 00:00 (pwid) ****************************************
+07/23 00:00 (pwid) 
+07/23 00:00 (pwid) Re-reading license files, supporting products:
+07/23 00:00 (pwid) 	pointwise 
+07/23 00:00 (pwid) 
+07/23 00:00 (pwid) License files:
+07/23 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/23 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/23 00:00 (pwid) 
+07/24 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/24 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/24 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/24 00:00 (rlm)   This is probably due to another copy of RLM running
+07/24 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/24 00:00 (rlm)   to broadcast requests.
+07/24 00:00 (rlm) Starting any new ISV servers...
+07/24 00:00 (rlm) Using options file rlm.opt
+07/24 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/24 00:00 (pwid) ****************************************
+07/24 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/24 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/24 00:00 (pwid) licenses from this license file
+07/24 00:00 (pwid) hostid: 901b0ee3f135
+07/24 00:00 (pwid) ****************************************
+07/24 00:00 (pwid) 
+07/24 00:00 (pwid) Re-reading license files, supporting products:
+07/24 00:00 (pwid) 	pointwise 
+07/24 00:00 (pwid) 
+07/24 00:00 (pwid) License files:
+07/24 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/24 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/24 00:00 (pwid) 
+07/25 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/25 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/25 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/25 00:00 (rlm)   This is probably due to another copy of RLM running
+07/25 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/25 00:00 (rlm)   to broadcast requests.
+07/25 00:00 (rlm) Starting any new ISV servers...
+07/25 00:00 (rlm) Using options file rlm.opt
+07/25 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/25 00:00 (pwid) ****************************************
+07/25 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/25 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/25 00:00 (pwid) licenses from this license file
+07/25 00:00 (pwid) hostid: 901b0ee3f135
+07/25 00:00 (pwid) ****************************************
+07/25 00:00 (pwid) 
+07/25 00:00 (pwid) Re-reading license files, supporting products:
+07/25 00:00 (pwid) 	pointwise 
+07/25 00:00 (pwid) 
+07/25 00:00 (pwid) License files:
+07/25 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/25 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/25 00:00 (pwid) 
+07/26 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/26 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/26 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/26 00:00 (rlm)   This is probably due to another copy of RLM running
+07/26 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/26 00:00 (rlm)   to broadcast requests.
+07/26 00:00 (rlm) Starting any new ISV servers...
+07/26 00:00 (rlm) Using options file rlm.opt
+07/26 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/26 00:00 (pwid) ****************************************
+07/26 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/26 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/26 00:00 (pwid) licenses from this license file
+07/26 00:00 (pwid) hostid: 901b0ee3f135
+07/26 00:00 (pwid) ****************************************
+07/26 00:00 (pwid) 
+07/26 00:00 (pwid) Re-reading license files, supporting products:
+07/26 00:00 (pwid) 	pointwise 
+07/26 00:00 (pwid) 
+07/26 00:00 (pwid) License files:
+07/26 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/26 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/26 00:00 (pwid) 
+07/27 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/27 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/27 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/27 00:00 (rlm)   This is probably due to another copy of RLM running
+07/27 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/27 00:00 (rlm)   to broadcast requests.
+07/27 00:00 (rlm) Starting any new ISV servers...
+07/27 00:00 (rlm) Using options file rlm.opt
+07/27 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/27 00:00 (pwid) ****************************************
+07/27 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/27 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/27 00:00 (pwid) licenses from this license file
+07/27 00:00 (pwid) hostid: 901b0ee3f135
+07/27 00:00 (pwid) ****************************************
+07/27 00:00 (pwid) 
+07/27 00:00 (pwid) Re-reading license files, supporting products:
+07/27 00:00 (pwid) 	pointwise 
+07/27 00:00 (pwid) 
+07/27 00:00 (pwid) License files:
+07/27 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/27 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/27 00:00 (pwid) 
+07/28 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/28 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/28 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/28 00:00 (rlm)   This is probably due to another copy of RLM running
+07/28 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/28 00:00 (rlm)   to broadcast requests.
+07/28 00:00 (rlm) Starting any new ISV servers...
+07/28 00:00 (rlm) Using options file rlm.opt
+07/28 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/28 00:00 (pwid) ****************************************
+07/28 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/28 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/28 00:00 (pwid) licenses from this license file
+07/28 00:00 (pwid) hostid: 901b0ee3f135
+07/28 00:00 (pwid) ****************************************
+07/28 00:00 (pwid) 
+07/28 00:00 (pwid) Re-reading license files, supporting products:
+07/28 00:00 (pwid) 	pointwise 
+07/28 00:00 (pwid) 
+07/28 00:00 (pwid) License files:
+07/28 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/28 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/28 00:00 (pwid) 
+07/29 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/29 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/29 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/29 00:00 (rlm)   This is probably due to another copy of RLM running
+07/29 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/29 00:00 (rlm)   to broadcast requests.
+07/29 00:00 (rlm) Starting any new ISV servers...
+07/29 00:00 (rlm) Using options file rlm.opt
+07/29 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/29 00:00 (pwid) ****************************************
+07/29 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/29 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/29 00:00 (pwid) licenses from this license file
+07/29 00:00 (pwid) hostid: 901b0ee3f135
+07/29 00:00 (pwid) ****************************************
+07/29 00:00 (pwid) 
+07/29 00:00 (pwid) Re-reading license files, supporting products:
+07/29 00:00 (pwid) 	pointwise 
+07/29 00:00 (pwid) 
+07/29 00:00 (pwid) License files:
+07/29 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/29 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/29 00:00 (pwid) 
+07/30 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/30 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/30 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/30 00:00 (rlm)   This is probably due to another copy of RLM running
+07/30 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/30 00:00 (rlm)   to broadcast requests.
+07/30 00:00 (rlm) Starting any new ISV servers...
+07/30 00:00 (rlm) Using options file rlm.opt
+07/30 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/30 00:00 (pwid) ****************************************
+07/30 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/30 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/30 00:00 (pwid) licenses from this license file
+07/30 00:00 (pwid) hostid: 901b0ee3f135
+07/30 00:00 (pwid) ****************************************
+07/30 00:00 (pwid) 
+07/30 00:00 (pwid) Re-reading license files, supporting products:
+07/30 00:00 (pwid) 	pointwise 
+07/30 00:00 (pwid) 
+07/30 00:00 (pwid) License files:
+07/30 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/30 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/30 00:00 (pwid) 
+07/31 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+07/31 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+07/31 00:00 (rlm) ... error binding TCP port 5053, port in use
+07/31 00:00 (rlm)   This is probably due to another copy of RLM running
+07/31 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+07/31 00:00 (rlm)   to broadcast requests.
+07/31 00:00 (rlm) Starting any new ISV servers...
+07/31 00:00 (rlm) Using options file rlm.opt
+07/31 00:00 (pwid) ==== Reread request by automatic@midnight ====
+07/31 00:00 (pwid) ****************************************
+07/31 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+07/31 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+07/31 00:00 (pwid) licenses from this license file
+07/31 00:00 (pwid) hostid: 901b0ee3f135
+07/31 00:00 (pwid) ****************************************
+07/31 00:00 (pwid) 
+07/31 00:00 (pwid) Re-reading license files, supporting products:
+07/31 00:00 (pwid) 	pointwise 
+07/31 00:00 (pwid) 
+07/31 00:00 (pwid) License files:
+07/31 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+07/31 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+07/31 00:00 (pwid) 
+08/01 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+08/01 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+08/01 00:00 (rlm) ... error binding TCP port 5053, port in use
+08/01 00:00 (rlm)   This is probably due to another copy of RLM running
+08/01 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+08/01 00:00 (rlm)   to broadcast requests.
+08/01 00:00 (rlm) Starting any new ISV servers...
+08/01 00:00 (rlm) Using options file rlm.opt
+08/01 00:00 (pwid) ==== Reread request by automatic@midnight ====
+08/01 00:00 (pwid) ****************************************
+08/01 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+08/01 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+08/01 00:00 (pwid) licenses from this license file
+08/01 00:00 (pwid) hostid: 901b0ee3f135
+08/01 00:00 (pwid) ****************************************
+08/01 00:00 (pwid) 
+08/01 00:00 (pwid) Re-reading license files, supporting products:
+08/01 00:00 (pwid) 	pointwise 
+08/01 00:00 (pwid) 
+08/01 00:00 (pwid) License files:
+08/01 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+08/01 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+08/01 00:00 (pwid) 
+08/02 00:00 (rlm) Reread request (for everyone) by automatic@midnight
+08/02 00:00 (rlm) Sending reread msg to pwid (pid: 170433)
+08/02 00:00 (rlm) ... error binding TCP port 5053, port in use
+08/02 00:00 (rlm)   This is probably due to another copy of RLM running
+08/02 00:00 (rlm)   While not fatal, this instance of RLM won't respond
+08/02 00:00 (rlm)   to broadcast requests.
+08/02 00:00 (rlm) Starting any new ISV servers...
+08/02 00:00 (rlm) Using options file rlm.opt
+08/02 00:00 (pwid) ==== Reread request by automatic@midnight ====
+08/02 00:00 (pwid) ****************************************
+08/02 00:00 (pwid) /opt/pointwise/linux_x86_64/../licenses/failover_license.lic: not on this host
+08/02 00:00 (pwid) using only uncounted and TOKEN_UNLOCKED
+08/02 00:00 (pwid) licenses from this license file
+08/02 00:00 (pwid) hostid: 901b0ee3f135
+08/02 00:00 (pwid) ****************************************
+08/02 00:00 (pwid) 
+08/02 00:00 (pwid) Re-reading license files, supporting products:
+08/02 00:00 (pwid) 	pointwise 
+08/02 00:00 (pwid) 
+08/02 00:00 (pwid) License files:
+08/02 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/pointwise_license.lic
+08/02 00:00 (pwid)     /opt/pointwise/linux_x86_64/../licenses/failover_license.lic
+08/02 00:00 (pwid) 

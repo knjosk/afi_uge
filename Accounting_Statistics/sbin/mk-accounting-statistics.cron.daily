@@ -3,6 +3,8 @@
 export LANG=C
 export LC_ALL=C
 
+source /etc/profile.d/settings.sh
+
 f_timestamp=`date +%Y%m%d%H%M%S`
 MONTH=`date +%Y%m`
 

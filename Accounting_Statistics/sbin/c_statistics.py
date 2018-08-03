@@ -460,9 +460,8 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                               (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0)) / 60 / 60,
                               (act_prj_tss_cputime_dict.get(key, 0)) / 60 / 60,
                               '{0:.2f}'.format(prj_ratio)])
-        if (prj_limit_dict.get(key, 0) * 60 * 60) <= (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
+        if (prj_limit_dict.get(key, 0) * 60 * 60) < (prj_ocutime_dict.get(key, 0) + act_prj_cputime_dict.get(key, 0) + act_prj_tss_cputime_dict.get(key, 0)):
             prj_exceeded_list.append(key)
-            # print prj_exceeded_list
 
     used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm' + POST_FIX, 'w')
 

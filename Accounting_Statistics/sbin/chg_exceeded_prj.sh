@@ -2,8 +2,6 @@
 
 EXCEEDED_FILE=/opt/uge/Accounting_Statistics/etc/prj_exceeded_pm.txt
 CHG_PRJ_OTICHET_CMD=/opt/uge/Accounting_Statistics/sbin/chg_prj_oticket.sh
-EXCEEDED_FILE=prj_exceeded_pm.txt
-CHG_PRJ_OTICHET_CMD=chg_prj_oticket.sh
 
 cat ${EXCEEDED_FILE} | while read line
 do

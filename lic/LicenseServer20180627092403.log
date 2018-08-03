@@ -1,0 +1,95 @@
+2018/06/27 09:24:03:256 I INITSERVER  Server version 6.420.0 built on Sep 14, 2017 6:02:38 PM
+2018/06/27 09:24:03:257 I INITSERVER  Initializing license server on /var args [-adminPort, 4084, -licensingPort, 4085, -enroll, /home/fjse/fj-oda/abaqus/NDQ-519F141B0EE43652_26PV3-FB4TB-JHC18-HRL24-TP65G_0000_1.LICZ]
+2018/06/27 09:24:03:350 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 3, Features IGF, Quantity 50
+2018/06/27 09:24:03:350 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 1, Features IGD, Quantity 1
+2018/06/27 09:24:03:350 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 2, Features IGE, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 4, Features IGF, Quantity 50
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 5, Features IGR, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 6, Features Q6I, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 7, Features QAE, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 8, Features QAQ, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 9, Features QAS, Quantity 1
+2018/06/27 09:24:03:351 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 10, Features QAX, Quantity 1
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 11, Features QCA, Quantity 1
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 12, Features QCD, Quantity 1
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 13, Features QCF, Quantity 50
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 14, Features QCF, Quantity 50
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 15, Features QCL, Quantity 1
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 18, Features QDP, Quantity 50
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 17, Features QDN, Quantity 1
+2018/06/27 09:24:03:352 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 16, Features QDC, Quantity 1
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 19, Features QDP, Quantity 50
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 21, Features QDS, Quantity 50
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 20, Features QDS, Quantity 50
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 23, Features QDT, Quantity 50
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 22, Features QDT, Quantity 50
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 24, Features QEL, Quantity 1
+2018/06/27 09:24:03:353 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 26, Features QEX, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 25, Features QEX, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 27, Features QFT, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 29, Features QFX, Quantity 1
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 28, Features QFT, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 30, Features QIA, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 32, Features QIF, Quantity 50
+2018/06/27 09:24:03:354 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 31, Features QIA, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 33, Features QIF, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 35, Features QIN, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 34, Features QIN, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 36, Features QIQ, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 38, Features QIS, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 37, Features QIQ, Quantity 50
+2018/06/27 09:24:03:355 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 39, Features QIS, Quantity 50
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 40, Features QMS, Quantity 1
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 41, Features QPF, Quantity 1
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 42, Features QPL, Quantity 16384
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 44, Features QS3, Quantity 50
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 43, Features QPU, Quantity 1
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 45, Features QS3, Quantity 50
+2018/06/27 09:24:03:356 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 46, Features QSA, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 47, Features QSA, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 48, Features QSD, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 49, Features QSD, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 50, Features QSE, Quantity 1
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 51, Features QSH, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 52, Features QSH, Quantity 50
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 53, Features QSI, Quantity 1
+2018/06/27 09:24:03:357 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 54, Features QSL, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 55, Features QSL, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 57, Features QSM, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 56, Features QSM, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 58, Features QSN, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 60, Features QSO, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 59, Features QSN, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 61, Features QSO, Quantity 50
+2018/06/27 09:24:03:358 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 63, Features QSP, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 62, Features QSP, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 64, Features QST, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 65, Features QST, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 66, Features QSZ, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 68, Features QXF, Quantity 50
+2018/06/27 09:24:03:359 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 67, Features QSZ, Quantity 50
+2018/06/27 09:24:03:360 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 69, Features QXF, Quantity 50
+2018/06/27 09:24:03:360 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 71, Features QXT, Quantity 50
+2018/06/27 09:24:03:360 I LICENSEDATA Adding data for license id 26PV3-FB4TB-JHC18-HRL24-TP65G, RepGroupIndex 0, RepFileIndex 70, Features QXT, Quantity 50
+2018/06/27 09:24:03:447 I REPOSITORY  LicenseDB.dat written to disk
+2018/06/27 09:24:03:472 I INITSERVER  Server successfully initialized.
+2018/06/27 09:24:03:473 I INITSERVER  Computer name afimgr001, computerId NDQ-519F141B0EE43652 (based on device eno1)
+2018/06/27 09:24:03:991 I STARTSERVER Server version 6.420.0 built on Sep 14, 2017 6:02:38 PM
+2018/06/27 09:24:03:992 I STARTSERVER Start server options [].
+2018/06/27 09:24:03:992 I STARTSERVER Java version "1.8.0_144" - Red Hat Enterprise Linux Server release 7.3 (Maipo)
+2018/06/27 09:24:03:992 I STARTSERVER Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+2018/06/27 09:24:03:992 I STARTSERVER Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+2018/06/27 09:24:03:993 I STATISTICS  Creation of license usage statistics backup directory /var/DassaultSystemes/LicenseServer/StatBackup.
+2018/06/27 09:24:04:215 I STARTSERVER Computer name afimgr001, computerId NDQ-519F141B0EE43652 (based on device eno1)
+2018/06/27 09:24:04:226 I LICENSESERV Licensing service started
+2018/06/27 09:24:04:227 I STARTSERVER Ready: administration port 4084, licensing port 4085
+2018/06/27 09:34:51:523 I ADMINSERVER Administration connection started with afimgr001(10.2.21.10), console mode
+2018/06/27 09:34:51:523 I ADMINSERVER Connect command issued
+2018/06/27 09:34:56:577 I ADMINSERVER GetMailConfig command issued
+2018/06/27 09:36:08:957 I ADMINSERVER Administration connection ended with afimgr001(10.2.21.10)
+2018/06/27 09:36:27:349 I ADMINSERVER Administration connection started with afimgr001(10.2.21.10), console mode
+2018/06/27 09:36:27:349 I ADMINSERVER Connect command issued
+2018/06/27 09:36:46:361 I ADMINSERVER Administration connection ended with afimgr001(10.2.21.10)
+2018/07/01 09:01:00:002 I LICENSEDATA Activating group 0 for license id 26PV3-FB4TB-JHC18-HRL24-TP65G
+2018/07/01 18:40:11:246 I STOPSERVER  Stopping license server...
+2018/07/01 18:40:11:846 I STOPSERVER  License server stopped.

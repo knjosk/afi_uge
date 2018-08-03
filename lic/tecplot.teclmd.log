@@ -1,0 +1,489 @@
+06/28 09:22 (teclmd) Report log started on ./report.log
+06/28 09:22 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+
+06/28 09:22 (teclmd) 
+06/28 09:22 (teclmd) License files:
+06/28 09:22 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/28 09:22 (teclmd) 
+06/28 09:22 (teclmd) Wrong Hostid - licenses may not be available
+06/28 09:22 (teclmd)  (expected: d4856450f91c, we are: 901b0ee43652)
+06/28 09:22 (teclmd) 
+06/28 09:22 (teclmd) File descriptor limit increased from 1024 to 4096
+06/28 09:24 (teclmd) ==== Reread request by webuser@localhost ====
+06/28 09:24 (teclmd) ****************************************
+06/28 09:24 (teclmd) /opt/tecplot/tecplotlm.lic: not on this host
+06/28 09:24 (teclmd) using only uncounted and TOKEN_UNLOCKED
+06/28 09:24 (teclmd) licenses from this license file
+06/28 09:24 (teclmd) ****************************************
+06/28 09:24 (teclmd) ERROR: No 360ex v2023.06 license found for token-based
+06/28 09:24 (teclmd)        license: 360 v2023.06 license removed
+06/28 09:24 (teclmd) Using options file teclmd.opt
+06/28 09:24 (teclmd) Switching debug log to +./teclmd.log
+06/28 09:24 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+06/28 09:24 (teclmd) 
+06/28 09:24 (teclmd) Re-reading license files, supporting products:
+06/28 09:24 (teclmd) 
+06/28 09:24 (teclmd) License files:
+06/28 09:24 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/28 09:24 (teclmd) 
+06/28 09:45 (teclmd) DENIED: (1) 360ex v2018.04 to fj-oda@afifep002 
+06/28 09:45 (teclmd)         License server does not support this product
+06/28 09:54 (teclmd) DENIED: (1) 360ex v2018.04 to fj-oda@afifep002 
+06/28 09:54 (teclmd)         License server does not support this product
+06/29 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+06/29 00:00 (teclmd) ****************************************
+06/29 00:00 (teclmd) /opt/tecplot/tecplotlm.lic: not on this host
+06/29 00:00 (teclmd) using only uncounted and TOKEN_UNLOCKED
+06/29 00:00 (teclmd) licenses from this license file
+06/29 00:00 (teclmd) ****************************************
+06/29 00:00 (teclmd) ERROR: No 360ex v2023.06 license found for token-based
+06/29 00:00 (teclmd)        license: 360 v2023.06 license removed
+06/29 00:00 (teclmd) Using options file teclmd.opt
+06/29 00:00 (teclmd) Switching debug log to +./teclmd.log
+06/29 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+06/29 00:00 (teclmd) 
+06/29 00:00 (teclmd) Re-reading license files, supporting products:
+06/29 00:00 (teclmd) 
+06/29 00:00 (teclmd) License files:
+06/29 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/29 00:00 (teclmd) 
+06/29 09:24 (teclmd) ==== Reread request by webuser@localhost ====
+06/29 09:24 (teclmd) Using options file teclmd.opt
+06/29 09:24 (teclmd) Switching debug log to +./teclmd.log
+06/29 09:24 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+06/29 09:24 (teclmd) 
+06/29 09:24 (teclmd) Re-reading license files, supporting products:
+06/29 09:24 (teclmd) 	360ex chorus batch 360 rs 
+06/29 09:24 (teclmd) 
+06/29 09:24 (teclmd) License files:
+06/29 09:24 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/29 09:24 (teclmd) 
+06/29 09:35 (teclmd) ==== Reread request by webuser@localhost ====
+06/29 09:35 (teclmd) Using options file teclmd.opt
+06/29 09:35 (teclmd) Switching debug log to +./teclmd.log
+06/29 09:35 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+06/29 09:35 (teclmd) 
+06/29 09:35 (teclmd) Re-reading license files, supporting products:
+06/29 09:35 (teclmd) 	360ex chorus batch 360 rs 
+06/29 09:35 (teclmd) 
+06/29 09:35 (teclmd) License files:
+06/29 09:35 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/29 09:35 (teclmd) 
+06/29 09:45 (teclmd) OUT: 360ex v2018.04 by fj-oda@afiaps026 
+06/29 09:47 (teclmd) IN: 360ex v2018.04 by fj-oda@afiaps026 
+06/30 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+06/30 00:00 (teclmd) Using options file teclmd.opt
+06/30 00:00 (teclmd) Switching debug log to +./teclmd.log
+06/30 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+06/30 00:00 (teclmd) 
+06/30 00:00 (teclmd) Re-reading license files, supporting products:
+06/30 00:00 (teclmd) 	360ex chorus batch 360 rs 
+06/30 00:00 (teclmd) 
+06/30 00:00 (teclmd) License files:
+06/30 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+06/30 00:00 (teclmd) 
+07/01 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/01 00:00 (teclmd) Using options file teclmd.opt
+07/01 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/01 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/01 00:00 (teclmd) 
+07/01 00:00 (teclmd) Re-reading license files, supporting products:
+07/01 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/01 00:00 (teclmd) 
+07/01 00:00 (teclmd) License files:
+07/01 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/01 00:00 (teclmd) 
+07/01 18:40 (teclmd) select() failure: Interrupted system call
+07/01 18:40 (teclmd) Shutdown request by signal@local
+07/03 18:44 (teclmd) Report log started on ./report.log
+07/03 18:44 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/03 18:44 (teclmd) 
+07/03 18:44 (teclmd) Server started on afimgr001 (hostid: 901b0ee43652) for:
+07/03 18:44 (teclmd) 	360ex chorus batch 360 rs 
+07/03 18:44 (teclmd) 
+07/03 18:44 (teclmd) License files:
+07/03 18:44 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/03 18:44 (teclmd) 
+07/03 18:44 (teclmd) File descriptor limit increased from 1024 to 4096
+07/04 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/04 00:00 (teclmd) Using options file teclmd.opt
+07/04 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/04 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/04 00:00 (teclmd) 
+07/04 00:00 (teclmd) Re-reading license files, supporting products:
+07/04 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/04 00:00 (teclmd) 
+07/04 00:00 (teclmd) License files:
+07/04 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/04 00:00 (teclmd) 
+07/04 09:56 (teclmd) OUT: chorus v2018.04 by fj-oda@afifep002 
+07/04 09:58 (teclmd) IN: chorus v2018.04 by fj-oda@afifep002 
+07/04 11:33 (teclmd) OUT: 360ex v2018.04 by fj-oda@afifep002 
+07/04 11:47 (teclmd) IN: (client exit) 360ex v2018.04 by fj-oda@afifep002 
+07/04 11:54 (teclmd) OUT: 360ex v2018.04 by fj-oda@afifep002 
+07/04 12:05 (teclmd) IN: (client exit) 360ex v2018.04 by fj-oda@afifep002 
+07/04 12:07 (teclmd) OUT: chorus v2018.04 by fjse02@afifep002 
+07/04 12:30 (teclmd) IN: chorus v2018.04 by fjse02@afifep002 
+07/05 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/05 00:00 (teclmd) Using options file teclmd.opt
+07/05 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/05 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/05 00:00 (teclmd) 
+07/05 00:00 (teclmd) Re-reading license files, supporting products:
+07/05 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/05 00:00 (teclmd) 
+07/05 00:00 (teclmd) License files:
+07/05 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/05 00:00 (teclmd) 
+07/06 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/06 00:00 (teclmd) Using options file teclmd.opt
+07/06 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/06 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/06 00:00 (teclmd) 
+07/06 00:00 (teclmd) Re-reading license files, supporting products:
+07/06 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/06 00:00 (teclmd) 
+07/06 00:00 (teclmd) License files:
+07/06 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/06 00:00 (teclmd) 
+07/06 18:59 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/06 18:59 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/06 19:01 (teclmd) OUT: chorus v2018.04 by fj-oda@afirws017 
+07/06 19:01 (teclmd) IN: chorus v2018.04 by fj-oda@afirws017 
+07/07 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/07 00:00 (teclmd) Using options file teclmd.opt
+07/07 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/07 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/07 00:00 (teclmd) 
+07/07 00:00 (teclmd) Re-reading license files, supporting products:
+07/07 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/07 00:00 (teclmd) 
+07/07 00:00 (teclmd) License files:
+07/07 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/07 00:00 (teclmd) 
+07/08 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/08 00:00 (teclmd) Using options file teclmd.opt
+07/08 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/08 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/08 00:00 (teclmd) 
+07/08 00:00 (teclmd) Re-reading license files, supporting products:
+07/08 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/08 00:00 (teclmd) 
+07/08 00:00 (teclmd) License files:
+07/08 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/08 00:00 (teclmd) 
+07/09 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/09 00:00 (teclmd) Using options file teclmd.opt
+07/09 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/09 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/09 00:00 (teclmd) 
+07/09 00:00 (teclmd) Re-reading license files, supporting products:
+07/09 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/09 00:00 (teclmd) 
+07/09 00:00 (teclmd) License files:
+07/09 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/09 00:00 (teclmd) 
+07/09 13:27 (teclmd) OUT: 360ex v2018.04 by fjse01@afigws02 
+07/09 13:27 (teclmd) IN: 360ex v2018.04 by fjse01@afigws02 
+07/09 13:28 (teclmd) OUT: chorus v2018.04 by fjse01@afigws02 
+07/09 13:28 (teclmd) IN: chorus v2018.04 by fjse01@afigws02 
+07/09 14:46 (teclmd) OUT: 360ex v2018.04 by fjse01@afigws01 
+07/09 14:46 (teclmd) IN: 360ex v2018.04 by fjse01@afigws01 
+07/09 14:46 (teclmd) OUT: chorus v2018.04 by fjse01@afigws01 
+07/09 14:47 (teclmd) IN: chorus v2018.04 by fjse01@afigws01 
+07/09 15:45 (teclmd) OUT: 360ex v2018.04 by fjse01@afigws02 
+07/09 15:48 (teclmd) IN: 360ex v2018.04 by fjse01@afigws02 
+07/09 15:55 (teclmd) OUT: 360ex v2018.04 by fjse01@afigws02 
+07/09 15:59 (teclmd) IN: 360ex v2018.04 by fjse01@afigws02 
+07/09 15:59 (teclmd) OUT: chorus v2018.04 by fjse01@afigws02 
+07/09 16:00 (teclmd) IN: chorus v2018.04 by fjse01@afigws02 
+07/09 16:00 (teclmd) OUT: chorus v2018.04 by fjse01@afigws02 
+07/09 16:02 (teclmd) IN: chorus v2018.04 by fjse01@afigws02 
+07/09 16:02 (teclmd) OUT: chorus v2018.04 by fjse01@afigws02 
+07/09 16:04 (teclmd) IN: chorus v2018.04 by fjse01@afigws02 
+07/09 17:26 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/09 17:28 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/09 17:28 (teclmd) OUT: chorus v2018.04 by fj-oda@afirws017 
+07/09 17:29 (teclmd) IN: chorus v2018.04 by fj-oda@afirws017 
+07/10 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/10 00:00 (teclmd) Using options file teclmd.opt
+07/10 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/10 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/10 00:00 (teclmd) 
+07/10 00:00 (teclmd) Re-reading license files, supporting products:
+07/10 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/10 00:00 (teclmd) 
+07/10 00:00 (teclmd) License files:
+07/10 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/10 00:00 (teclmd) 
+07/13 09:04 (teclmd) Report log started on ./report.log
+07/13 09:04 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/13 09:04 (teclmd) 
+07/13 09:04 (teclmd) Server started on afimgr001 (hostid: 901b0ee43652) for:
+07/13 09:04 (teclmd) 	360ex chorus batch 360 rs 
+07/13 09:04 (teclmd) 
+07/13 09:04 (teclmd) License files:
+07/13 09:04 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/13 09:04 (teclmd) 
+07/13 09:04 (teclmd) File descriptor limit increased from 1024 to 4096
+07/13 10:40 (teclmd) Shutdown request by fj-oda@afimgr001
+07/13 10:45 (teclmd) Report log started on ./report.log
+07/13 10:45 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/13 10:45 (teclmd) 
+07/13 10:45 (teclmd) Server started on afimgr001 (hostid: 901b0ee43652) for:
+07/13 10:45 (teclmd) 	360ex chorus batch 360 rs 
+07/13 10:45 (teclmd) 
+07/13 10:45 (teclmd) License files:
+07/13 10:45 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/13 10:45 (teclmd) 
+07/13 10:45 (teclmd) File descriptor limit increased from 1024 to 4096
+07/14 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/14 00:00 (teclmd) Using options file teclmd.opt
+07/14 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/14 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/14 00:00 (teclmd) 
+07/14 00:00 (teclmd) Re-reading license files, supporting products:
+07/14 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/14 00:00 (teclmd) 
+07/14 00:00 (teclmd) License files:
+07/14 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/14 00:00 (teclmd) 
+07/15 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/15 00:00 (teclmd) Using options file teclmd.opt
+07/15 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/15 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/15 00:00 (teclmd) 
+07/15 00:00 (teclmd) Re-reading license files, supporting products:
+07/15 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/15 00:00 (teclmd) 
+07/15 00:00 (teclmd) License files:
+07/15 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/15 00:00 (teclmd) 
+07/16 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/16 00:00 (teclmd) Using options file teclmd.opt
+07/16 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/16 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/16 00:00 (teclmd) 
+07/16 00:00 (teclmd) Re-reading license files, supporting products:
+07/16 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/16 00:00 (teclmd) 
+07/16 00:00 (teclmd) License files:
+07/16 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/16 00:00 (teclmd) 
+07/17 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/17 00:00 (teclmd) Using options file teclmd.opt
+07/17 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/17 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/17 00:00 (teclmd) 
+07/17 00:00 (teclmd) Re-reading license files, supporting products:
+07/17 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/17 00:00 (teclmd) 
+07/17 00:00 (teclmd) License files:
+07/17 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/17 00:00 (teclmd) 
+07/17 16:45 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/17 16:46 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/17 16:47 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/17 16:48 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/17 16:49 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/17 16:49 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/18 00:00 (teclmd) Using options file teclmd.opt
+07/18 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/18 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/18 00:00 (teclmd) 
+07/18 00:00 (teclmd) Re-reading license files, supporting products:
+07/18 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/18 00:00 (teclmd) 
+07/18 00:00 (teclmd) License files:
+07/18 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/18 00:00 (teclmd) 
+07/18 17:29 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:32 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:35 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:35 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:35 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:36 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:36 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:36 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:37 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:37 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:37 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:37 (teclmd) OUT: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:38 (teclmd) DENIED: (1) 360ex v2018.04 to fj-oda@afirws017 
+07/18 17:38 (teclmd)         All licenses in use
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:39 (teclmd) IN: 360ex v2018.04 by fj-oda@afirws017 
+07/18 17:43 (teclmd) IN: (client exit) 360ex v2018.04 by fj-oda@afirws017 
+07/19 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/19 00:00 (teclmd) Using options file teclmd.opt
+07/19 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/19 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/19 00:00 (teclmd) 
+07/19 00:00 (teclmd) Re-reading license files, supporting products:
+07/19 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/19 00:00 (teclmd) 
+07/19 00:00 (teclmd) License files:
+07/19 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/19 00:00 (teclmd) 
+07/20 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/20 00:00 (teclmd) Using options file teclmd.opt
+07/20 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/20 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/20 00:00 (teclmd) 
+07/20 00:00 (teclmd) Re-reading license files, supporting products:
+07/20 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/20 00:00 (teclmd) 
+07/20 00:00 (teclmd) License files:
+07/20 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/20 00:00 (teclmd) 
+07/21 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/21 00:00 (teclmd) Using options file teclmd.opt
+07/21 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/21 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/21 00:00 (teclmd) 
+07/21 00:00 (teclmd) Re-reading license files, supporting products:
+07/21 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/21 00:00 (teclmd) 
+07/21 00:00 (teclmd) License files:
+07/21 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/21 00:00 (teclmd) 
+07/22 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/22 00:00 (teclmd) Using options file teclmd.opt
+07/22 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/22 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/22 00:00 (teclmd) 
+07/22 00:00 (teclmd) Re-reading license files, supporting products:
+07/22 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/22 00:00 (teclmd) 
+07/22 00:00 (teclmd) License files:
+07/22 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/22 00:00 (teclmd) 
+07/23 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/23 00:00 (teclmd) Using options file teclmd.opt
+07/23 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/23 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/23 00:00 (teclmd) 
+07/23 00:00 (teclmd) Re-reading license files, supporting products:
+07/23 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/23 00:00 (teclmd) 
+07/23 00:00 (teclmd) License files:
+07/23 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/23 00:00 (teclmd) 
+07/24 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/24 00:00 (teclmd) Using options file teclmd.opt
+07/24 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/24 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/24 00:00 (teclmd) 
+07/24 00:00 (teclmd) Re-reading license files, supporting products:
+07/24 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/24 00:00 (teclmd) 
+07/24 00:00 (teclmd) License files:
+07/24 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/24 00:00 (teclmd) 
+07/25 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/25 00:00 (teclmd) Using options file teclmd.opt
+07/25 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/25 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/25 00:00 (teclmd) 
+07/25 00:00 (teclmd) Re-reading license files, supporting products:
+07/25 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/25 00:00 (teclmd) 
+07/25 00:00 (teclmd) License files:
+07/25 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/25 00:00 (teclmd) 
+07/26 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/26 00:00 (teclmd) Using options file teclmd.opt
+07/26 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/26 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/26 00:00 (teclmd) 
+07/26 00:00 (teclmd) Re-reading license files, supporting products:
+07/26 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/26 00:00 (teclmd) 
+07/26 00:00 (teclmd) License files:
+07/26 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/26 00:00 (teclmd) 
+07/27 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/27 00:00 (teclmd) Using options file teclmd.opt
+07/27 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/27 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/27 00:00 (teclmd) 
+07/27 00:00 (teclmd) Re-reading license files, supporting products:
+07/27 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/27 00:00 (teclmd) 
+07/27 00:00 (teclmd) License files:
+07/27 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/27 00:00 (teclmd) 
+07/28 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/28 00:00 (teclmd) Using options file teclmd.opt
+07/28 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/28 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/28 00:00 (teclmd) 
+07/28 00:00 (teclmd) Re-reading license files, supporting products:
+07/28 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/28 00:00 (teclmd) 
+07/28 00:00 (teclmd) License files:
+07/28 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/28 00:00 (teclmd) 
+07/29 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/29 00:00 (teclmd) Using options file teclmd.opt
+07/29 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/29 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/29 00:00 (teclmd) 
+07/29 00:00 (teclmd) Re-reading license files, supporting products:
+07/29 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/29 00:00 (teclmd) 
+07/29 00:00 (teclmd) License files:
+07/29 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/29 00:00 (teclmd) 
+07/30 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/30 00:00 (teclmd) Using options file teclmd.opt
+07/30 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/30 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/30 00:00 (teclmd) 
+07/30 00:00 (teclmd) Re-reading license files, supporting products:
+07/30 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/30 00:00 (teclmd) 
+07/30 00:00 (teclmd) License files:
+07/30 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/30 00:00 (teclmd) 
+07/31 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+07/31 00:00 (teclmd) Using options file teclmd.opt
+07/31 00:00 (teclmd) Switching debug log to +./teclmd.log
+07/31 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+07/31 00:00 (teclmd) 
+07/31 00:00 (teclmd) Re-reading license files, supporting products:
+07/31 00:00 (teclmd) 	360ex chorus batch 360 rs 
+07/31 00:00 (teclmd) 
+07/31 00:00 (teclmd) License files:
+07/31 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+07/31 00:00 (teclmd) 
+08/01 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+08/01 00:00 (teclmd) Using options file teclmd.opt
+08/01 00:00 (teclmd) Switching debug log to +./teclmd.log
+08/01 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+08/01 00:00 (teclmd) 
+08/01 00:00 (teclmd) Re-reading license files, supporting products:
+08/01 00:00 (teclmd) 	360ex chorus batch 360 rs 
+08/01 00:00 (teclmd) 
+08/01 00:00 (teclmd) License files:
+08/01 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+08/01 00:00 (teclmd) 
+08/02 00:00 (teclmd) ==== Reread request by automatic@midnight ====
+08/02 00:00 (teclmd) Using options file teclmd.opt
+08/02 00:00 (teclmd) Switching debug log to +./teclmd.log
+08/02 00:00 (teclmd) Setting TIMEOUT for all products to 3600 secs.
+08/02 00:00 (teclmd) 
+08/02 00:00 (teclmd) Re-reading license files, supporting products:
+08/02 00:00 (teclmd) 	360ex chorus batch 360 rs 
+08/02 00:00 (teclmd) 
+08/02 00:00 (teclmd) License files:
+08/02 00:00 (teclmd)     /opt/tecplot/tecplotlm.lic
+08/02 00:00 (teclmd) 

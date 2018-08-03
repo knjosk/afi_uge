@@ -1,0 +1,25 @@
+*********************************************************************
+LSTC license server version 111345 started at Mon Jul  9 16:01:53 2018
+*********************************************************************
+Using configuration file /opt/lstc/LSTC_LicenseManager_111345_xeon64_redhat50/server_data
+Opened server status file "server_status_1" for reading at sequence=58
+FYI: No licenses recovered from server_status
+[Mon Jul  9 16:23:12 2018][58] INFO: Exiting on SIGTERM
+*********************************************************************
+LSTC license server version 111345 started at Mon Jul  9 16:24:36 2018
+*********************************************************************
+Using configuration file /opt/lstc/LSTC_LicenseManager_111345_xeon64_redhat50/server_data
+Opened server status file "server_status_1" for reading at sequence=58
+FYI: No licenses recovered from server_status
+[Mon Jul  9 16:30:42 2018][59] LIC: fj-yamad 102268@afidma114 MPPDYNA NCPU=80 IP=10.2.3.123 index=0 started
+[Mon Jul  9 16:30:44 2018][60] LIC: fj-yamad 102268@afidma114 MPPDYNA NCPU=80 IP=10.2.3.123 index=0 completed
+[Mon Jul  9 22:54:30 2018][60] INFO: closing incoming connection from server 3 (Wait for data read error)
+[Mon Jul  9 22:54:30 2018][60] INFO: Lost server connection <- 3
+[Mon Jul  9 22:54:30 2018][60] INFO: closing outgoing connection to server 3 (Wait for data read error)
+[Mon Jul  9 22:54:30 2018][60] INFO: Lost server connection -> 3
+*********************************************************************
+LSTC license server version 111345 started at Tue Jul 31 17:04:23 2018
+*********************************************************************
+Using configuration file /opt/lstc/LSTC_LicenseManager_111345_xeon64_redhat50/server_data
+Opened server status file "server_status_1" for reading at sequence=60
+FYI: No licenses recovered from server_status

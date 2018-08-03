@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<job_info  xmlns:xsd="https://github.com/gridengine/gridengine/raw/master/source/dist/util/resources/schemas/qstat/qstat.xsd">
+  <queue_info>
+    <job_list state="running">
+      <JB_job_number>5173</JB_job_number>
+      <JAT_prio>0.52994</JAT_prio>
+      <JB_name>HybridJ</JB_name>
+      <JB_owner>fjse02</JB_owner>
+      <state>dr</state>
+      <JAT_start_time>2018-07-14T13:25:33.138</JAT_start_time>
+      <queue_name>dma_01@afidma017</queue_name>
+      <jclass_name>dma.A</jclass_name>
+      <slots>40</slots>
+      <full_job_name>HybridJ</full_job_name>
+      <requested_pe name="hybrid-omp40-ompi2">40</requested_pe>
+      <granted_pe name="hybrid-omp40-ompi2">40</granted_pe>
+      <hard_request name="njobinstances" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="njobs" resource_contribution="0.000000">1</hard_request>
+      <hard_request name="h_core" resource_contribution="0.000000">0</hard_request>
+      <hard_request name="h_rt" resource_contribution="0.000000">36000</hard_request>
+      <hard_request name="m_mem_free" resource_contribution="0.000000">2.159G</hard_request>
+      <def_hard_request name="njobs">1</def_hard_request>
+      <hard_req_queue>dma_*</hard_req_queue>
+      <binding>NONE</binding>
+    </job_list>
+  </queue_info>
+  <job_info>
+  </job_info>
+</job_info>
