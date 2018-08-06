@@ -60,6 +60,12 @@ queue_dma_tuple = ('dmaL.q', 'dmaM.q', 'dma_01', 'dma_02', 'dma_03', 'dma_04', '
 queue_cpu_tuple = ('single.q', 'intsmp.q', 'intmpi.q')
 queue_tss_tuple = ('intsmp.q', 'intmpi.q')
 
+queue_cpu_d_tuple = ('single.q', 'intmpi.q')
+queue_cpu_s_tuple = ('intsmp.q')
+
+queue_tss_d_tuple = ('intmpi.q')
+queue_tss_s_tuple = ('intsmp.q')
+
 nodes_dict = {'sma.default': 2, 'sma.A': 2, 'sma.B': 4, 'sma.C': 8, 'sma.D': 12, 'sma.E': 26,
               'smb.default': 2, 'smb.A': 2, 'smb.B': 4, 'smb.C': 8, 'smb.D': 12, 'smb.E': 26,
               'aps.default': 2, 'aps.A': 2, 'aps.B': 4, 'aps.C': 8, 'aps.D': 12, 'aps.E': 24}
@@ -153,6 +159,7 @@ group_used_list = []
 
 user_limit_dict = defaultdict(float)
 user_exceeded_list = []
+#user_used_list = [["username", "limit", "used_total", "used_batch", "used_tss"]]
 user_used_list = []
 
 act_group_cputime_dict = defaultdict(float)
@@ -257,12 +264,18 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                         user_ocutime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_ru_wallclock]) * nodes
                         group_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
                         group_queue_ocutime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    elif queue_name in queue_cpu_tuple:
-                        act_user_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                        act_group_cputime_dict[account_data_list[i_group]] += float(account_data_list[i_cpu])
-                    else:
-                        act_user_tss_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                        act_group_tss_cputime_dict[account_data_list[i_group]] += float(account_data_list[i_cpu])
+                    elif queue_name in queue_cpu_d_tuple:
+                        act_user_cputime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_cpu])
+                        act_group_cputime_dict[account_data_list[i_group] + "-d"] += float(account_data_list[i_cpu])
+                    elif queue_name in queue_cpu_s_tuple:
+                        act_user_cputime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_cpu])
+                        act_group_cputime_dict[account_data_list[i_group] + "-s"] += float(account_data_list[i_cpu])
+                    elif queue_name in queue_tss_d_tuple:
+                        act_user_tss_cputime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_cpu])
+                        act_group_tss_cputime_dict[account_data_list[i_group] * "-d"] += float(account_data_list[i_cpu])
+                    elif queue_name in queue_tss_s_tuple:
+                        act_user_tss_cputime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_cpu])
+                        act_group_tss_cputime_dict[account_data_list[i_group] + "-s"] += float(account_data_list[i_cpu])
 
                 owner_count_dict[account_data_list[i_owner]] += 1
                 owner_utime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_utime])
@@ -472,23 +485,18 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     for x in prj_exceeded_list:
         exceeded_f.write(str(x) + "\n")
 
-    # print "--- Exceeded limit user ---"
+    # print "--- user usage ---"
     for key in user_limit_dict:
-        user_total_sec = (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0))
+        user_total_sec = user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)
         user_ratio = 0.0
         if user_limit_dict.get(key, 0) != 0.0:
             user_ratio = (user_total_sec / (user_limit_dict.get(key, 0) * 60 * 60)) * 100
-
         user_used_list.append([key,
                                user_limit_dict.get(key, 0),
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
                                (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0)) / 60 / 60,
                                (act_user_tss_cputime_dict.get(key, 0)) / 60 / 60,
                                '{0:.2f}'.format(user_ratio)])
-
-        if (user_limit_dict.get(key, 0) * 60 * 60) <= (user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)):
-            user_exceeded_list.append(key)
-            # print user_exceeded_list
 
     user_used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm' + POST_FIX, 'w')
 
