@@ -98,7 +98,7 @@ if __name__ == '__main__':
     from_addr_name = "sc-support"
     to_addr = "sc-support@ifs.tohoku.ac.jp"
     # to_addr = "afi-office@ifs.tohoku.ac.jp"
-    subject = "Accout Report"
+    subject = "Account Report"
 
     body = create_body(filename)
     if len(body) > 0:

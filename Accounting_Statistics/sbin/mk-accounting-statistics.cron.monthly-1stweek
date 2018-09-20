@@ -1,0 +1,53 @@
+#!/usr/bin/bash
+#
+# This script only run at first 1 week of Month
+# to make Acounting and Statistics report for last month.
+#
+
+export LANG=C
+export LC_ALL=C
+
+source /etc/profile.d/settings.sh
+
+f_timestamp=`date +%Y%m%d%H%M%S`
+#
+# MONTH : YYYYMM
+#
+LAST_MONTH=`date --date='1 month ago'  +%Y%m`
+MONTH=`date +%Y%m`
+
+UGE_AS_DIR=/opt/uge/Accounting_Statistics
+UGE_ACCOUNTING_DIR=/opt/uge/8.5.5/default/common
+QSTAT_CMD=/opt/uge/8.5.5/bin/lx-amd64/qstat
+
+LOGS_DIR="/opt/uge/Accounting_Statistics/logs/accounting"
+if [ ! -d ${LOGS_DIR} ]; then
+    mkdir -p ${LOGS_DIR}
+fi
+
+LOGS_DIR2="/opt/uge/Accounting_Statistics/logs/statistics"
+if [ ! -d ${LOGS_DIR2} ]; then
+    mkdir -p ${LOGS_DIR2}
+fi
+
+# Input files
+UGE_ACCOUNTING_FILE=${UGE_ACCOUNTING_DIR}/accounting
+
+#
+# Start Time =< accounting records < End Time
+#
+# Start Time : {YYYYMM}DDhhmmss
+if [ ${MONTH} = "201808" ]; then
+    START_TIME=${LAST_MONTH}06000000
+else
+    START_TIME=${LAST_MONTH}01000000
+fi
+
+# End Time : {YYYYMM}DDhhmmss
+END_TIME=${MONTH}01000000
+
+# Excetute command
+EXEC_CMD=${UGE_AS_DIR}/sbin/c_statistics.py
+
+cd ${UGE_AS_DIR}
+${EXEC_CMD} ${UGE_ACCOUNTING_FILE} -s ${START_TIME} -e ${END_TIME} -p ${LAST_MONTH}
