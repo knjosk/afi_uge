@@ -3,7 +3,7 @@
 export LANG=C
 export LC_ALL=C
 
-LAST_M=`date --date='1 month ago'  +%Y%m`
+LAST_M=`date --date='1 month ago'  +%m`
 MONTH=`date +%m`
 YEAR=`date +%Y`
 
@@ -11,7 +11,7 @@ UGE_AS_DIR="/opt/uge/Accounting_Statistics"
 LOGS_DIR="/opt/uge/Accounting_Statistics/logs/accounting"
 USER_USED_CURRENR_MONTH_FILE=${LOGS_DIR}/user_used_pm.csv
 USER_USED_PER_YEAR_FILE=${LOGS_DIR}/user_used_py.csv
-USER_USED_TOTAL_EXCEPT_CURRENT_MONTH=${LOGS_DIR}/user_userd_total_except_current_month.csv
+USER_USED_TOTAL_EXCEPT_CURRENT_MONTH=${LOGS_DIR}/user_used_total_except_current_month.csv
 
 if [ ${YEAR} = "2018" ]; then
     if [ ${MONTH} = "08" ]; then

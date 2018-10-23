@@ -33,11 +33,14 @@ def parse():
     if args['<prj_name>']:
         prj_name = args['<prj_name>']
         account = subprocess.check_output('whoami')
-        if account.strip() != "root":
-            res = subprocess.check_output('groups')
-            if prj_name not in res.strip():
-                print prj_name + " is not your group"
-                sys.exit()
+        group = subprocess.check_output('groups')
+        if "fjse" not in group.strip():
+            if "ZZa" not in group.strip():
+                if "ZZg" not in group.strip():
+                    if account.strip() != "root":
+                        if prj_name not in group.strip():
+                            print prj_name + " is not your group"
+                            sys.exit()
 
     prj_usage_file_name = "/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm.csv"
     if args['<prj_used_pm.csv>']:

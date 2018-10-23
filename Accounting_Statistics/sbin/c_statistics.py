@@ -190,6 +190,7 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     for row in reader:
         prj_limit_dict[row[0]] = float(row[1])
 
+    '''
     group_limit_f = open('/opt/uge/Accounting_Statistics/etc/group_limit_pm' + POST_FIX, 'r')
 
     reader = csv.reader(group_limit_f)
@@ -199,6 +200,7 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         # print prj_limit_dict
         # print "row"
         # print row
+    '''
 
     user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py' + POST_FIX, 'r')
 
@@ -504,6 +506,7 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     writer.writerows(user_used_list)
 
     # print "--- Exceeded limit group ---"
+    '''
     for key in group_limit_dict:
         # print key
         group_used_list.append([key,
@@ -524,6 +527,7 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     group_exceeded_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_exceeded_pm' + POST_FIX, 'w')
     for x in group_exceeded_list:
         group_exceeded_f.write(str(x) + "\n")
+    '''
 
     # print "--- prj usage by owner ---"
     for key in prj_limit_dict:
@@ -540,8 +544,10 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     f.close()
     limit_f.close()
     used_f.close()
+    '''
     group_limit_f.close()
     group_used_f.close()
+    '''
 
 __doc__ = """{f}
 

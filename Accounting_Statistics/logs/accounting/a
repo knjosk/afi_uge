@@ -1,0 +1,120 @@
++ unset _mlre _mlIFS _mlshdbg
++ '[' 0 = 1 ']'
++ export MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH
++ MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo
++ '[' -n '' ']'
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH='\'''\'' ' ']'
++ _mlre='eval LD_LIBRARY_PATH='\'''\'' '
+++ eval 'LD_LIBRARY_PATH='\'''\''' /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++++ LD_LIBRARY_PATH=
++++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++ eval 'module() {
+   unset _mlre _mlIFS _mlshdbg;
+   if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '\''1'\'' ]; then
+      case "$-" in
+         *v*x*) set +vx; _mlshdbg='\''vx'\'' ;;
+         *v*) set +v; _mlshdbg='\''v'\'' ;;
+         *x*) set +x; _mlshdbg='\''x'\'' ;;
+         *) _mlshdbg='\'''\'' ;;
+      esac;
+   fi;
+   if [ -n "${IFS+x}" ]; then
+      _mlIFS=$IFS;
+   fi;
+   IFS='\'' '\'';
+   for _mlv in ${MODULES_RUN_QUARANTINE:-}; do
+      if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+         if [ -n "`eval '\''echo ${'\''$_mlv'\''+x}'\''`" ]; then
+            _mlre="${_mlre:-}${_mlv}_modquar='\''`eval '\''echo ${'\''$_mlv'\''}'\''`'\'' ";
+         fi;
+         _mlrv="MODULES_RUNENV_${_mlv}";
+         _mlre="${_mlre:-}${_mlv}='\''`eval '\''echo ${'\''$_mlrv'\'':-}'\''`'\'' ";
+      fi;
+   done;
+   if [ -n "${_mlre:-}" ]; then
+      eval `eval ${_mlre}/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '\''"$@"'\''`;
+   else
+      eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+   fi;
+   _mlstatus=$?;
+   if [ -n "${_mlIFS+x}" ]; then
+      IFS=$_mlIFS;
+   else
+      unset IFS;
+   fi;
+   if [ -n "${_mlshdbg:-}" ]; then
+      set -$_mlshdbg;
+   fi;
+   unset _mlre _mlv _mlrv _mlIFS _mlshdbg;
+   return $_mlstatus;
+};
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+MODULEPATH_modshare=/usr/share/modulefiles:6:/etc/modulefiles:6:/usr/share/Modules/modulefiles:6; export MODULEPATH_modshare;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles; export MODULEPATH;
+test 0;'
+++ MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+++ export MODULES_CMD
+++ MODULEPATH_modshare=/usr/share/modulefiles:6:/etc/modulefiles:6:/usr/share/Modules/modulefiles:6
+++ export MODULEPATH_modshare
+++ MODULESHOME=/usr/share/Modules
+++ export MODULESHOME
+++ MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+++ export MODULEPATH
+++ test 0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlIFS
++ unset _mlre _mlv _mlrv
++ '[' 0 = 1 ']'
++ '[' -t 2 ']'
++ export -f module
++ export -f switchml
++ ENV=/usr/share/Modules/init/profile.sh
++ export ENV
++ BASH_ENV=/usr/share/Modules/init/bash
++ export BASH_ENV
++ '[' 4 -ge 3 ']'
++ [[ hxB =~ i ]]
++ [[ ! :/home/osk/miniconda/bin:/home/osk/node/bin:/usr/local/texlive/2018/bin/x86_64-linux:/usr/local/Tao3D:/usr/local/blender:/usr/libexec/python3-sphinx:/usr/lib64/qt-3.3/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/home/osk/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/usr/brlcad/bin: =~ :/usr/share/Modules/bin: ]]
+++ manpath
++ manpath=/usr/local/texlive/2018/texmf-dist/doc:/home/osk/node/share/man:/usr/local/texlive/2018/bin/x86_64-linux/man:/usr/local/man:/usr/local/share/man:/usr/share/man:/usr/brlcad/share/man:/usr/brlcad/share/man
++ [[ ! :/usr/local/texlive/2018/texmf-dist/doc:/home/osk/node/share/man:/usr/local/texlive/2018/bin/x86_64-linux/man:/usr/local/man:/usr/local/share/man:/usr/share/man:/usr/brlcad/share/man:/usr/brlcad/share/man: =~ :/usr/share/man: ]]
++ '[' -n '' ']'
++ export LANG=C
++ LANG=C
++ export LC_ALL=C
++ LC_ALL=C
+++ date '--date=1 month ago' +%m
++ LAST_M=09
+++ date +%m
++ MONTH=10
+++ date +%Y
++ YEAR=2018
++ UGE_AS_DIR=/opt/uge/Accounting_Statistics
++ LOGS_DIR=/opt/uge/Accounting_Statistics/logs/accounting
++ USER_USED_CURRENR_MONTH_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm.csv
++ USER_USED_PER_YEAR_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_py.csv
++ USER_USED_TOTAL_EXCEPT_CURRENT_MONTH=/opt/uge/Accounting_Statistics/logs/accounting/user_used_total_except_current_month.csv
++ '[' 2018 = 2018 ']'
++ '[' 10 = 08 ']'
++ '[' 10 = 09 ']'
+++ seq -f %02g 9 09
++ NUM=09
++ cp /opt/uge/Accounting_Statistics/logs/accounting/user_used_pm.201808 /opt/uge/Accounting_Statistics/logs/accounting/user_used_total_except_current_month.csv
++ for i in $NUM
++ /opt/uge/Accounting_Statistics/sbin/merge2usage.py /opt/uge/Accounting_Statistics/logs/accounting/user_used_pm.201809 /opt/uge/Accounting_Statistics/logs/accounting/user_used_total_except_current_month.csv /opt/uge/Accounting_Statistics/logs/accounting/user_used_total_except_current_month.csv
++ /opt/uge/Accounting_Statistics/sbin/merge2usage.py /opt/uge/Accounting_Statistics/logs/accounting/user_used_total_except_current_month.csv /opt/uge/Accounting_Statistics/logs/accounting/user_used_pm.csv /opt/uge/Accounting_Statistics/logs/accounting/user_used_py.csv

@@ -7,7 +7,7 @@
 export LANG=C
 export LC_ALL=C
 
-source /etc/profile.d/settings.sh
+#source /etc/profile.d/settings.sh
 
 f_timestamp=`date +%Y%m%d%H%M%S`
 #
@@ -37,7 +37,7 @@ UGE_ACCOUNTING_FILE=${UGE_ACCOUNTING_DIR}/accounting
 # Start Time =< accounting records < End Time
 #
 # Start Time : {YYYYMM}DDhhmmss
-if [ ${MONTH} = "201808" ]; then
+if [ ${LAST_MONTH} = "201808" ]; then
     START_TIME=${LAST_MONTH}06000000
 else
     START_TIME=${LAST_MONTH}01000000

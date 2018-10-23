@@ -33,9 +33,16 @@ def parse():
     if args['<user_name>']:
         user_name = args['<user_name>']
         account = subprocess.check_output('whoami')
-        if account.strip() != "root":
-            print user_name + " is not root"
-            sys.exit()
+        account_name = account.strip()
+        group = subprocess.check_output('groups')
+        if user_name != account_name:
+            if "fjse" not in group.strip():
+                if "ZZa" not in group.strip():
+                    if "ZZg" not in group.strip():
+                        if account.strip() != "root":
+                            print user_name + " is not root"
+                            sys.exit()
+
     else:
         res = subprocess.check_output(["whoami"])
         user_name = res.strip()
@@ -46,11 +53,11 @@ def parse():
     now = datetime.datetime.now()
     month = now.strftime('%Y%m')
 
-    user_usage_file_name_base = "/opt/uge/Accounting_Statistics/logs/accounting/user_used_pm."
-    user_usage_file_name = user_usage_file_name_base + month
+    user_usage_file_name_base = "/opt/uge/Accounting_Statistics/logs/accounting/user_used_"
+    user_usage_file_name = user_usage_file_name_base + 'py.csv'
 
     if args['<month>']:
-        user_usage_file_name = user_usage_file_name_base + args['<month>']
+        user_usage_file_name = user_usage_file_name_base + 'pm.' + args['<month>']
 
     user_usage_f = open(user_usage_file_name, 'r')
     reader = csv.reader(user_usage_f)

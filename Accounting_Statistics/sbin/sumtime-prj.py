@@ -33,17 +33,22 @@ def parse():
     if args['<prj_name>']:
         prj_name = args['<prj_name>']
         account = subprocess.check_output('whoami')
-        if account.strip() != "root":
-            res = subprocess.check_output('groups')
-            if prj_name not in res.strip():
-                print prj_name + " is not your group"
-                sys.exit()
+        group = subprocess.check_output('groups')
+        if "fjse" not in group.strip():
+            if "ZZa" not in group.strip():
+                if "ZZg" not in group.strip():
+                    if account.strip() != "root":
+                        if prj_name not in group.strip():
+                            print prj_name + " is not your group"
+                            sys.exit()
+
     now = datetime.datetime.now()
     month = now.strftime('%Y%m')
     prj_usage_file_name_base = "/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm."
-    prj_usage_file_name = prj_usage_file_name_base + month
+    prj_usage_file_name = prj_usage_file_name_base + 'csv'
     if args['<month>']:
         prj_usage_file_name = prj_usage_file_name_base + args['<month>']
+        month = args['<month>']
 
     prj_usage_f = open(prj_usage_file_name, 'r')
     reader = csv.reader(prj_usage_f)
