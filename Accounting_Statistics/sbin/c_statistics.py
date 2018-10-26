@@ -8,37 +8,33 @@ except ImportError:
     import simplejson as json
 from collections import defaultdict
 import csv
+import re
 
-field_tuple = ('qname', 'hostname', 'group', 'owner', 'job_name', 'job_number', 'account', 'priority',
-               'submission_time', 'start_time', 'end_time', 'failed', 'exit_status', 'ru_wallclock',
-               'ru_utime', 'ru_stime', 'ru_maxrss', 'ru_ixrss', 'ru_ismrss', 'ru_idrss', 'ru_isrss',
-               'ru_minflt', 'ru_majflt', 'ru_nswap', 'ru_inblock', 'ru_oublock', 'ru_msgsnd',
-               'ru_msgrcv', 'ru_nsignals', 'ru_nvcsw', 'ru_nivcsw', 'project', 'department',
-               'granted_pe', 'slots', 'task_number', 'cpu', 'mem', 'io', 'category', 'iow',
-               'pe_taskid', 'maxvmem', 'arid', 'ar_submission_time', 'job_class', 'qdel_info',
-               'maxrss', 'maxpss', 'submit_host', 'cwd', 'submit_cmd', 'wallclock', 'ioops')
+field_tuple = ('qname', 'hostname', 'group', 'owner', 'job_name', 'job_number', 'account', 'priority', 'submission_time', 'start_time',
+               'end_time', 'failed', 'exit_status', 'ru_wallclock', 'ru_utime', 'ru_stime', 'ru_maxrss', 'ru_ixrss', 'ru_ismrss', 'ru_idrss',
+               'ru_isrss', 'ru_minflt', 'ru_majflt', 'ru_nswap', 'ru_inblock', 'ru_oublock', 'ru_msgsnd', 'ru_msgrcv', 'ru_nsignals', 'ru_nvcsw',
+               'ru_nivcsw', 'project', 'department', 'granted_pe', 'slots', 'task_number', 'cpu', 'mem', 'io', 'category',
+               'iow', 'pe_taskid', 'maxvmem', 'arid', 'ar_submission_time', 'job_class', 'qdel_info', 'maxrss', 'maxpss', 'submit_host',
+               'cwd', 'submit_cmd', 'wallclock', 'ioops')
 
-i_qname = i_group = i_owner = i_job_name = i_job_number = i_priority = i_start_time = i_end_time = 0
-i_ru_wallclock = i_ru_utime = i_ru_stime = i_project = i_slots = i_cpu = i_mem = i_maxvmem = 0
-i_job_class = 0
-
-i_qname = field_tuple.index("qname")
-i_group = field_tuple.index("group")
-i_owner = field_tuple.index("owner")
-i_job_name = field_tuple.index("job_name")
-i_job_number = field_tuple.index("job_number")
-i_priority = field_tuple.index("priority")
-i_start_time = field_tuple.index("start_time")
-i_end_time = field_tuple.index("end_time")
-i_ru_wallclock = field_tuple.index("ru_wallclock")
-i_ru_utime = field_tuple.index("ru_utime")
-i_ru_stime = field_tuple.index("ru_stime")
-i_project = field_tuple.index("project")
-i_slots = field_tuple.index("slots")
-i_cpu = field_tuple.index("cpu")
-i_mem = field_tuple.index("mem")
-i_maxvmem = field_tuple.index("maxvmem")
-i_job_class = field_tuple.index("job_class")
+idx_qname = field_tuple.index("qname")
+idx_group = field_tuple.index("group")
+idx_owner = field_tuple.index("owner")
+idx_job_name = field_tuple.index("job_name")
+idx_job_number = field_tuple.index("job_number")
+idx_priority = field_tuple.index("priority")
+idx_start_time = field_tuple.index("start_time")
+idx_end_time = field_tuple.index("end_time")
+idx_ru_wallclock = field_tuple.index("ru_wallclock")
+idx_ru_utime = field_tuple.index("ru_utime")
+idx_ru_stime = field_tuple.index("ru_stime")
+idx_project = field_tuple.index("project")
+idx_slots = field_tuple.index("slots")
+idx_cpu = field_tuple.index("cpu")
+idx_mem = field_tuple.index("mem")
+idx_maxvmem = field_tuple.index("maxvmem")
+idx_job_class = field_tuple.index("job_class")
+idx_granted_pe = field_tuple.index("granted_pe")
 
 CORES = 40
 
@@ -79,6 +75,7 @@ q_no_group_tuple = ('sma.q', 'smb.q', 'aps.q', 'single.q', 'intsmp.q', 'intmpi.q
 q_dma_group_tuple = ('dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06', 'dma_07',
                      'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
                      'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37')
+
 jc_dma_group_tuple = ('dma.default', 'dma.A')
 
 queue_cout_dict = defaultdict(int)
@@ -159,7 +156,6 @@ group_used_list = []
 
 user_limit_dict = defaultdict(float)
 user_exceeded_list = []
-#user_used_list = [["username", "limit", "used_total", "used_batch", "used_tss"]]
 user_used_list = []
 
 act_group_cputime_dict = defaultdict(float)
@@ -183,6 +179,10 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         sys.stderr.write("failed to open" + filename + "\n")
         sys.exit(-1)
 
+    calc_pat = r'([+-]?[0-9]+\.?[0-9]*)'
+    one_node_pat = r'^NONE|^OpenMP|^smp|.*pslots.*'
+    per40_pat = r'.*fillup|^hybrid.*'
+
     limit_f = open('/opt/uge/Accounting_Statistics/etc/prj_limit_pm' + POST_FIX, 'r')
 
     reader = csv.reader(limit_f)
@@ -197,9 +197,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     header = next(reader)
     for row in reader:
         group_limit_dict[row[0]] = float(row[1])
-        # print prj_limit_dict
-        # print "row"
-        # print row
     '''
 
     user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py' + POST_FIX, 'r')
@@ -208,12 +205,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     header = next(reader)
     for row in reader:
         user_limit_dict[row[0]] = float(row[1])
-        # print prj_limit_dict
-        # print "row"
-        # print row
-
-    # print start_utime
-    # print end_utime
 
     for line in f:
         if line.startswith("#"):
@@ -221,114 +212,123 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         else:
             account_data_list = line.split(":")
             nodes = 0
-            if start_utime * 1000 <= int(account_data_list[i_start_time]) < end_utime * 1000:
-                queue_name = account_data_list[i_qname]
-                queue_cout_dict[account_data_list[i_qname]] += 1
-                queue_utime_dict[account_data_list[i_qname]] += float(account_data_list[i_ru_utime])
-                queue_stime_dict[account_data_list[i_qname]] += float(account_data_list[i_ru_stime])
-                queue_cputime_dict[account_data_list[i_qname]] += float(account_data_list[i_cpu])
-                queue_wallclock_dict[account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock])
-                queue_slots_dict[account_data_list[i_qname]] += int(account_data_list[i_slots])
+            pe_l = []
+            if start_utime * 1000 <= int(account_data_list[idx_start_time]) < end_utime * 1000:
+                queue_name = account_data_list[idx_qname]
+                queue_cout_dict[account_data_list[idx_qname]] += 1
+                queue_utime_dict[account_data_list[idx_qname]] += float(account_data_list[idx_ru_utime])
+                queue_stime_dict[account_data_list[idx_qname]] += float(account_data_list[idx_ru_stime])
+                queue_cputime_dict[account_data_list[idx_qname]] += float(account_data_list[idx_cpu])
+                queue_wallclock_dict[account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock])
+                queue_slots_dict[account_data_list[idx_qname]] += int(account_data_list[idx_slots])
                 if queue_name not in queue_cpu_tuple:
                     if queue_name in queue_node_dm_tuple:
-                        nodes = -(-int(account_data_list[i_slots]) // CORES)
+                        pe_name = account_data_list[idx_granted_pe]
+                        if re.search(one_node_pat, pe_name) == None:
+                            if re.search(per40_pat, pe_name) == None:
+                                pe_l = re.findall(calc_pat, pe_name)
+                                alloc_rule = int(pe_l[0])
+                                nodes = -(-int(account_data_list[idx_slots]) // alloc_rule)
+                            else:
+                                nodes = -(-int(account_data_list[idx_slots]) // CORES)
+                        else:
+                            nodes = 1
                     elif queue_name in queue_node_sm_tuple:
-                        nodes = nodes_dict[account_data_list[i_job_class]]
-                        queue_ocutime_dict[account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
+                        nodes = nodes_dict[account_data_list[idx_job_class]]
+                        queue_ocutime_dict[account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
 
-                if account_data_list[i_project] == "general":
-                    user_count_dict[account_data_list[i_owner]] += 1
-                    user_utime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_utime])
-                    user_stime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_stime])
-                    user_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                    user_wallclock_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_wallclock])
-                    user_slots_dict[account_data_list[i_owner]] += int(account_data_list[i_slots])
+                if account_data_list[idx_project] == "general":
+                    user_count_dict[account_data_list[idx_owner]] += 1
+                    user_utime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_utime])
+                    user_stime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_stime])
+                    user_cputime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_cpu])
+                    user_wallclock_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_wallclock])
+                    user_slots_dict[account_data_list[idx_owner]] += int(account_data_list[idx_slots])
 
-                    group_count_dict[account_data_list[i_group]] += 1
-                    group_utime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_utime])
-                    group_stime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_stime])
-                    group_cputime_dict[account_data_list[i_group]] += float(account_data_list[i_cpu])
-                    group_wallclock_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock])
-                    group_slots_dict[account_data_list[i_group]] += int(account_data_list[i_slots])
+                    group_count_dict[account_data_list[idx_group]] += 1
+                    group_utime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_utime])
+                    group_stime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_stime])
+                    group_cputime_dict[account_data_list[idx_group]] += float(account_data_list[idx_cpu])
+                    group_wallclock_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_wallclock])
+                    group_slots_dict[account_data_list[idx_group]] += int(account_data_list[idx_slots])
 
-                    group_queue_count_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += 1
-                    group_queue_utime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_utime])
-                    group_queue_stime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_stime])
-                    group_queue_cputime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_cpu])
-                    group_queue_wallclock_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock])
-                    group_queue_slots_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += int(account_data_list[i_slots])
+                    group_queue_count_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += 1
+                    group_queue_utime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_utime])
+                    group_queue_stime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_stime])
+                    group_queue_cputime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_cpu])
+                    group_queue_wallclock_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock])
+                    group_queue_slots_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += int(account_data_list[idx_slots])
 
                     if queue_name in queue_node_sm_tuple:
-                        user_ocutime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_ru_wallclock]) * nodes
-                        group_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
-                        group_queue_ocutime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
+                        user_ocutime_dict[account_data_list[idx_owner] + "-s"] += float(account_data_list[idx_ru_wallclock]) * nodes
+                        group_ocutime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                        group_queue_ocutime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
                     elif queue_name in queue_node_dm_tuple:
-                        user_ocutime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_ru_wallclock]) * nodes
-                        group_ocutime_dict[account_data_list[i_group]] += float(account_data_list[i_ru_wallclock]) * nodes
-                        group_queue_ocutime_dict[account_data_list[i_group] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
+                        user_ocutime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_ru_wallclock]) * nodes
+                        group_ocutime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                        group_queue_ocutime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
                     elif queue_name in queue_cpu_d_tuple:
-                        act_user_cputime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_cpu])
-                        act_group_cputime_dict[account_data_list[i_group] + "-d"] += float(account_data_list[i_cpu])
+                        act_user_cputime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_cpu]) / CORES
+                        act_group_cputime_dict[account_data_list[idx_group] + "-d"] += float(account_data_list[idx_cpu]) / CORES
                     elif queue_name in queue_cpu_s_tuple:
-                        act_user_cputime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_cpu])
-                        act_group_cputime_dict[account_data_list[i_group] + "-s"] += float(account_data_list[i_cpu])
+                        act_user_cputime_dict[account_data_list[idx_owner] + "-s"] += float(account_data_list[idx_cpu]) / CORES
+                        act_group_cputime_dict[account_data_list[idx_group] + "-s"] += float(account_data_list[idx_cpu]) / CORES
                     elif queue_name in queue_tss_d_tuple:
-                        act_user_tss_cputime_dict[account_data_list[i_owner] + "-d"] += float(account_data_list[i_cpu])
-                        act_group_tss_cputime_dict[account_data_list[i_group] * "-d"] += float(account_data_list[i_cpu])
+                        act_user_tss_cputime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_cpu]) / CORES
+                        act_group_tss_cputime_dict[account_data_list[idx_group] * "-d"] += float(account_data_list[idx_cpu]) / CORES
                     elif queue_name in queue_tss_s_tuple:
-                        act_user_tss_cputime_dict[account_data_list[i_owner] + "-s"] += float(account_data_list[i_cpu])
-                        act_group_tss_cputime_dict[account_data_list[i_group] + "-s"] += float(account_data_list[i_cpu])
+                        act_user_tss_cputime_dict[account_data_list[idx_owner] + "-s"] += float(account_data_list[idx_cpu]) / CORES
+                        act_group_tss_cputime_dict[account_data_list[idx_group] + "-s"] += float(account_data_list[idx_cpu]) / CORES
 
-                owner_count_dict[account_data_list[i_owner]] += 1
-                owner_utime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_utime])
-                owner_stime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_stime])
-                owner_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                owner_wallclock_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_wallclock])
-                owner_slots_dict[account_data_list[i_owner]] += int(account_data_list[i_slots])
+                owner_count_dict[account_data_list[idx_owner]] += 1
+                owner_utime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_utime])
+                owner_stime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_stime])
+                owner_cputime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_cpu])
+                owner_wallclock_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_wallclock])
+                owner_slots_dict[account_data_list[idx_owner]] += int(account_data_list[idx_slots])
 
-                jc_count_dict[account_data_list[i_job_class]] += 1
-                jc_utime_dict[account_data_list[i_job_class]] += float(account_data_list[i_ru_utime])
-                jc_stime_dict[account_data_list[i_job_class]] += float(account_data_list[i_ru_stime])
-                jc_cputime_dict[account_data_list[i_job_class]] += float(account_data_list[i_cpu])
-                jc_wallclock_dict[account_data_list[i_job_class]] += float(account_data_list[i_ru_wallclock])
-                jc_slots_dict[account_data_list[i_job_class]] += int(account_data_list[i_slots])
-                jc_maxvmem_dict[account_data_list[i_job_class]] = max(jc_maxvmem_dict[account_data_list[i_job_class]], float(account_data_list[i_maxvmem]))
-                if float(account_data_list[i_cpu]) == 0.0:
-                    jc_avemem_dict[account_data_list[i_job_class]] += 0
+                jc_count_dict[account_data_list[idx_job_class]] += 1
+                jc_utime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_utime])
+                jc_stime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_stime])
+                jc_cputime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_cpu])
+                jc_wallclock_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_wallclock])
+                jc_slots_dict[account_data_list[idx_job_class]] += int(account_data_list[idx_slots])
+                jc_maxvmem_dict[account_data_list[idx_job_class]] = max(jc_maxvmem_dict[account_data_list[idx_job_class]], float(account_data_list[idx_maxvmem]))
+                if float(account_data_list[idx_cpu]) == 0.0:
+                    jc_avemem_dict[account_data_list[idx_job_class]] += 0
                 else:
-                    jc_avemem_dict[account_data_list[i_job_class]] += float(account_data_list[i_mem]) / float(account_data_list[i_cpu])
+                    jc_avemem_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_mem]) / float(account_data_list[idx_cpu])
 
-                prj_count_dict[account_data_list[i_project]] += 1
-                prj_utime_dict[account_data_list[i_project]] += float(account_data_list[i_ru_utime])
-                prj_stime_dict[account_data_list[i_project]] += float(account_data_list[i_ru_stime])
-                prj_cputime_dict[account_data_list[i_project]] += float(account_data_list[i_cpu])
-                prj_wallclock_dict[account_data_list[i_project]] += float(account_data_list[i_ru_wallclock])
-                prj_slots_dict[account_data_list[i_project]] += int(account_data_list[i_slots])
+                prj_count_dict[account_data_list[idx_project]] += 1
+                prj_utime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_utime])
+                prj_stime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_stime])
+                prj_cputime_dict[account_data_list[idx_project]] += float(account_data_list[idx_cpu])
+                prj_wallclock_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock])
+                prj_slots_dict[account_data_list[idx_project]] += int(account_data_list[idx_slots])
 
-                prj_queue_count_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += 1
-                prj_queue_utime_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_utime])
-                prj_queue_stime_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_stime])
-                prj_queue_cputime_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_cpu])
-                prj_queue_wallclock_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock])
-                prj_queue_slots_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += int(account_data_list[i_slots])
+                prj_queue_count_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += 1
+                prj_queue_utime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_utime])
+                prj_queue_stime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_stime])
+                prj_queue_cputime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_cpu])
+                prj_queue_wallclock_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock])
+                prj_queue_slots_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += int(account_data_list[idx_slots])
 
                 if queue_name not in queue_cpu_tuple:
-                    owner_ocutime_dict[account_data_list[i_owner]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    owner_prj_ocutime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    jc_ocutime_dict[account_data_list[i_job_class]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    prj_ocutime_dict[account_data_list[i_project]] += float(account_data_list[i_ru_wallclock]) * nodes
-                    prj_queue_ocutime_dict[account_data_list[i_project] + '_' + account_data_list[i_qname]] += float(account_data_list[i_ru_wallclock]) * nodes
+                    owner_ocutime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                    owner_prj_ocutime_dict[account_data_list[idx_owner] + "_" + account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                    jc_ocutime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                    prj_ocutime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) * nodes
+                    prj_queue_ocutime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
                 elif queue_name not in queue_tss_tuple:
-                    act_prj_cputime_dict[account_data_list[i_project]] += float(account_data_list[i_cpu])
-                    act_owner_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                    act_owner_prj_cputime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_cpu])
+                    act_prj_cputime_dict[account_data_list[idx_project]] += float(account_data_list[idx_cpu]) / CORES
+                    act_owner_cputime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_cpu]) / CORES
+                    act_owner_prj_cputime_dict[account_data_list[idx_owner] + "_" + account_data_list[idx_project]] += float(account_data_list[idx_cpu]) / CORES
                 else:
-                    act_prj_tss_cputime_dict[account_data_list[i_project]] += float(account_data_list[i_cpu])
-                    act_owner_tss_cputime_dict[account_data_list[i_owner]] += float(account_data_list[i_cpu])
-                    act_owner_prj_tss_cputime_dict[account_data_list[i_owner] + "_" + account_data_list[i_project]] += float(account_data_list[i_cpu])
+                    act_prj_tss_cputime_dict[account_data_list[idx_project]] += float(account_data_list[idx_cpu]) / CORES
+                    act_owner_tss_cputime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_cpu]) / CORES
+                    act_owner_prj_tss_cputime_dict[account_data_list[idx_owner] + "_" + account_data_list[idx_project]] += float(account_data_list[idx_cpu]) / CORES
 
     # make Table 2-3-1 CPU usage per group
-    # print "--- Table 2.3 Usage per group ---"
 
     group_out_list = []
     group_list = group_count_dict.keys()
@@ -339,7 +339,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         group_total_cputime += group_cputime_dict.get(grp)
     for grp in group_list:
         group_out_list0 = []
-        # print grp,
         dma_utime_total = 0
         dma_stime_total = 0
         dma_cputime_total = 0
@@ -347,9 +346,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         for q in queue_node_sm_tuple:
             key = grp + '_' + q
             group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
-            # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
-            # print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
-            # print 0, 0, group_queue_cputime_dict.get(key, 0),
 
         for q in queue_dma_tuple:
             key = grp + '_' + q
@@ -359,21 +355,13 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
             dma_ocutime_total += group_queue_ocutime_dict.get(key, 0)
 
         group_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
-        #group_out_list0.extend([0, 0, dma_cputime_total])
-        # print dma_utime_total, dma_stime_total, dma_cputime_total,
-        # print 0, 0, dma_cputime_total,
 
         for q in queue_tss_tuple:
             key = grp + '_' + q
             group_out_list0.extend([group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0)])
-            # group_out_list0.extend([0, 0, group_queue_cputime_dict.get(key, 0)])
-            # print group_queue_utime_dict.get(key, 0), group_queue_stime_dict.get(key, 0), group_queue_cputime_dict.get(key, 0),
-            # print 0, 0, group_queue_cputime_dict.get(key, 0),
 
         group_out_list0.extend([group_cputime_dict.get(grp, 0), (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100])
         group_out_list0.insert(0, grp)
-        # print group_cputime_dict.get(grp, 0),
-        # print (group_cputime_dict.get(grp, 0) / group_total_cputime) * 100
 
         group_out_list.append(group_out_list0)
 
@@ -395,7 +383,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         if prj != "general":
 
             prj_out_list0 = []
-            # print prj,
 
             dma_utime_total = 0
             dma_stime_total = 0
@@ -405,7 +392,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
             for q in queue_node_sm_tuple:
                 key = prj + '_' + q
                 prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
-                # print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
 
             for q in queue_dma_tuple:
                 key = prj + '_' + q
@@ -415,18 +401,13 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                 dma_ocutime_total += prj_queue_ocutime_dict.get(key, 0)
 
             prj_out_list0.extend([dma_utime_total, dma_stime_total, dma_cputime_total])
-            # print dma_utime_total, dma_stime_total, dma_cputime_total,
 
             for q in queue_tss_tuple:
                 key = prj + '_' + q
                 prj_out_list0.extend([prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0)])
-                # print prj_queue_utime_dict.get(key, 0), prj_queue_stime_dict.get(key, 0), prj_queue_cputime_dict.get(key, 0),
 
             prj_out_list0.extend([prj_cputime_dict.get(prj, 0), (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100])
             prj_out_list0.insert(0, prj)
-
-            # print prj_cputime_dict.get(prj, 0),
-            # print (prj_cputime_dict.get(prj, 0) / prj_total_cputime_dict) * 100
 
             prj_out_list.append(prj_out_list0)
 
@@ -444,13 +425,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
         jc_total_cputime_dict += jc_cputime_dict.get(jc)
 
     for key in jc_list:
-        # print key,
-        # print jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
-        # print jc_ocutime_dict.get(key, 0),
-        # print jc_slots_dict.get(key, 0) / jc_count_dict.get(key, 0),
-        # print jc_avemem_dict.get(key, 0) / jc_count_dict.get(key, 0),
-        # print jc_maxvmem_dict.get(key, 0) / 1000000000
-
         jc_out_list.append([key,
                             jc_count_dict.get(key, 0), jc_utime_dict.get(key, 0), jc_stime_dict.get(key, 0), jc_cputime_dict.get(key, 0),
                             jc_ocutime_dict.get(key, 0),
@@ -508,7 +482,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     # print "--- Exceeded limit group ---"
     '''
     for key in group_limit_dict:
-        # print key
         group_used_list.append([key,
                                 group_limit_dict.get(key, 0),
                                 (group_ocutime_dict.get(key, 0) + act_group_cputime_dict.get(key, 0) + act_group_tss_cputime_dict.get(key, 0)) / 60 / 60,
@@ -516,8 +489,6 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                                 (act_group_tss_cputime_dict.get(key, 0)) / 60 / 60])
         if (group_limit_dict.get(key, 0) * 60 * 60) <= (group_ocutime_dict.get(key, 0) + act_group_cputime_dict.get(key, 0) + act_group_tss_cputime_dict.get(key, 0)):
             group_exceeded_list.append(key)
-            # print key, prj_limit_dict.get(key,0),  prj_wallclock_dict.get(key,0)
-            # print group_exceeded_list
 
     group_used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/group_used_pm' + POST_FIX, 'w')
 
@@ -581,11 +552,7 @@ def parse():
         end_utime = int(time.mktime(end_time.timetuple()))
     if args['--post-fix']:
         POST_FIX = "." + args['--post-fix'][0]
-    # print POST_FIX
     filename = args['<fname>']
-
-    # print "start, end"
-    # print start_utime, end_utime
 
     calc_accounting(filename, start_utime, end_utime, POST_FIX)
 
