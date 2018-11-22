@@ -35,6 +35,8 @@ q_dma_group_tuple = ('dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06',
                      'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
                      'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37')
 jc_dma_group_tuple = ('dma.default', 'dma.A')
+jc_dmaM_group_tuple = ('dma.MS', 'dma.M')
+jc_dmaL_group_tuple = ('dma.LS', 'dma.LM', 'dma.L')
 
 
 def parse():
@@ -185,9 +187,9 @@ def parse():
                     waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"][i]["jclass_name"]
                     waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"][i]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
 
-                    if waiting_job_jcl == "dma.L":
+                    if waiting_job_jcl in jc_dmaL_group_tuple:
                         waiting_queue_name = "dmaL.q"
-                    elif waiting_job_jcl == "dma.M":
+                    elif waiting_job_jcl in jc_dmaM_group_tuple:
                         waiting_queue_name = "dmaM.q"
                     else:
                         waiting_queue_name = waiting_job_jcl.split(".")[0] + '.q'
@@ -206,9 +208,9 @@ def parse():
                 waiting_job_jcl = qstat_r_dict["job_info"]["job_info"]["job_list"]["jclass_name"]
                 waiting_job_submission_time = datetime.datetime.strptime(qstat_r_dict["job_info"]["job_info"]["job_list"]["JB_submission_time"], '%Y-%m-%dT%H:%M:%S.%f')
 
-                if waiting_job_jcl == "dma.L":
+                if waiting_job_jcl in jc_dmaL_group_tuple:
                     waiting_queue_name = "dmaL.q"
-                elif waiting_job_jcl == "dma.M":
+                elif waiting_job_jcl in jc_dmaM_group_tuple:
                     waiting_queue_name = "dmaM.q"
                 else:
                     waiting_queue_name = waiting_job_jcl.split(".")[0] + '.q'

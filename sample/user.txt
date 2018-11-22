@@ -1,0 +1,125 @@
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+ods:x:999:998:softhsm private keys owner:/var/lib/softhsm:/sbin/nologin
+systemd-bus-proxy:x:998:996:systemd Bus Proxy:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:997:995:User for polkitd:/:/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+colord:x:996:993:User for colord:/var/lib/colord:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+unbound:x:995:992:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+libstoragemgmt:x:994:991:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+amandabackup:x:33:6:Amanda user:/var/lib/amanda:/bin/bash
+saslauth:x:993:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+dirsrv:x:389:389:389-ds-base:/usr/share/dirsrv:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+pcp:x:388:387:Performance Co-Pilot:/var/lib/pcp:/sbin/nologin
+geoclue:x:387:386:User for geoclue:/var/lib/geoclue:/sbin/nologin
+setroubleshoot:x:386:385::/var/lib/setroubleshoot:/sbin/nologin
+memcached:x:385:384:Memcached daemon:/run/memcached:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+mysql:x:27:27:MariaDB Server:/var/lib/mysql:/sbin/nologin
+chrony:x:384:383::/var/lib/chrony:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+sssd:x:383:382:User for sssd:/:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+pulse:x:171:171:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+hsqldb:x:96:96::/var/lib/hsqldb:/sbin/nologin
+tomcat:x:91:91:Apache Tomcat:/usr/share/tomcat:/sbin/nologin
+pkiuser:x:17:17:Certificate System:/usr/share/pki:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+gnome-initial-setup:x:382:379::/run/gnome-initial-setup/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+dovenull:x:381:378:Dovecot's unauthorized user:/usr/libexec/dovecot:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/var/lib/oprofile:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+fjdev:x:2002:2002::/local/home/fjdev:/bin/bash
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+ldap:x:55:55:OpenLDAP server:/var/lib/ldap:/sbin/nologin
+hacluster:x:189:189:cluster user:/local/home/hacluster:/sbin/nologin
+zabbix:x:380:375:Zabbix Monitoring System:/var/lib/zabbix:/sbin/nologin
+fjse01:x:2001:2001::/local/home/fjse01:/bin/bash
+mailman:x:41:41:GNU Mailing List Manager:/usr/lib/mailman:/sbin/nologin
+snmptt:x:379:374:SNMP Trap Translator:/var/spool/snmptt:/sbin/nologin
+matlab:x:1100:1100::/home/matlab:/bin/bash
+pointwise:x:1101:1101::/home/pointwise:/bin/bash
+jmag:x:1102:1102::/home/jmag:/bin/bash
+fj-hasimoto:*:2028:2000:fj-hasimoto:/home/fjse/fj-hasimoto:/bin/bash
+fj-hiraoka:*:2034:2000:fj-hiraoka:/home/fjse/fj-hiraoka:/bin/bash
+fj-inzali:*:2019:2000:fj-inzali:/home/fjse/fj-inzali:/bin/bash
+fj-sugano:*:2015:2000:fj-sugano:/home/fjse/fj-sugano:/bin/tcsh
+sstc-sudo:*:2035:2000:sstc-sudo:/home/fjse/sstc-sudo:/bin/bash
+fj-nakaj:*:2022:2000:fj-nakaj:/home/fjse/fj-nakaj:/bin/bash
+fj-okada:*:2026:2000:fj-okada:/home/fjse/fj-okada:/bin/bash
+BFa010:*:11010:11000:Hitomi Anzai:/home/BFa/BFa010:/sbin/nologin
+BFa031:*:11031:11000:Simon Tupin:/home/BFa/BFa031:/bin/bash
+BFa032:*:11032:11000:Narendra Kurnia Putra:/home/BFa/BFa032:/bin/bash
+CFb014:*:12614:12600:Anh Le Dinh:/home/CFb/CFb014:/bin/bash
+ENa033:*:14533:14500:Philipp Grajetzki:/home/ENa/ENa033:/bin/bash
+ENa044:*:14544:14500:Takaki Akiba:/home/ENa/ENa044:/bin/zsh
+FIa131:*:15631:15500:Potsawat Boonjaipetch:/home/FIa/FIa131:/bin/bash
+FIa138:*:15638:15500:Kwanjung Yee:/home/FIa/FIa138:/bin/bash
+FIa141:*:15641:15500:Wen Kaiping:/home/FIa/FIa141:/bin/bash
+FIa164:*:15664:15500:Timothy Jim:/home/FIa/FIa164:/bin/bash
+FIa170:*:15670:15500:Shu Iwabuchi:/home/FIa/FIa170:/bin/bash
+FIa173:*:15673:15500:Hiromi Kondo:/home/FIa/FIa173:/bin/bash
+FIg011:*:15941:15930:Pramudita Satria Palar:/home/FIg/FIg011:/bin/bash
+FIp002:*:38202:38200:Viet Huynh:/home/FIp/FIp002:/bin/bash
+FMa027:*:15977:15950:Manish Khandelwal:/home/FMa/FMa027:/bin/bash
+FMa028:*:15978:15950:Ivan Delbende:/home/FMa/FMa028:/bin/bash
+FMa037:*:15987:15950:Akitaka Toyota:/home/FMa/FMa037:/bin/bash
+FMa038:*:15988:15950:Akira Takahashi:/home/FMa/FMa038:/bin/bash
+FMd001:*:15991:15990:Makoto Hirota:/home/FMd/FMd001:/bin/bash
+GEb016:*:16116:16100:Sushella Edayu Binti Mat Kamal:/home/GEb/GEb016:/bin/bash
+GEb021:*:16121:16100:YUTAKA HANADA:/home/GEb/GEb021:/bin/bash
+MDa001:*:22201:22200:YOSHIAKI ABE:/home/MDa/MDa001:/bin/bash
+NIa037:*:19737:19700:Masataka Nakauchi:/home/NIa/NIa037:/bin/bash
+RCa032:*:19832:19800:Takuro Akao:/home/RCa/RCa032:/bin/bash
+RCa033:*:19833:19800:Yudai Narumi:/home/RCa/RCa033:/bin/bash
+RFa004:*:20004:20000:Satoshi Kadowaki:/home/RFa/RFa004:/bin/bash
+RFa053:*:20053:20000:Yuta Hirano:/home/RFa/RFa053:/bin/bash
+RFa054:*:20054:20000:Taisuke Abe:/home/RFa/RFa054:/bin/bash
+RFa056:*:20056:20000:Masaaki Tsukamoto:/home/RFa/RFa056:/bin/bash
+RFa067:*:20067:20000:Kyouhei Nishikawa:/home/RFa/RFa067:/bin/bash
+SMa085:*:21585:21500:Yi Zhou:/home/SMa/SMa085:/bin/bash
+STa004:*:37004:37000:Takuya Adachi:/home/STa/STa004:/bin/bash
+STa018:*:37018:37000:Takumi Hirata:/home/STa/STa018:/bin/bash
+SWb025:*:21825:21800:Shintaro Takeda:/home/SWb/SWb025:/bin/bash
+XXg036:*:29736:29700:Hiroyuki Yoshikawa:/home/XXg/XXg036:/bin/bash
+ZZg001:*:981:980:Hideyuki Okada:/home/ZZg/ZZg001:/bin/bash
+ZZg007:*:2057:980:Masaki Ota:/home/ZZg/ZZg007:/bin/bash
+ZZg014:*:2064:980:Ryuichi Sudo:/home/ZZg/ZZg014:/bin/bash
+ZZg017:*:2067:980:Tsutomu Aoyagi:/home/ZZg/ZZg017:/bin/bash
+ZZg029:*:2079:980:Atsuji Ogasa:/home/ZZg/ZZg029:/bin/bash
+ZZg030:*:2080:980:Yasutoshi Hashimoto :/home/ZZg/ZZg030:/bin/bash
+ZZg034:*:2084:980:Satoru Sugano:/home/ZZg/ZZg034:/bin/bash
+ZZg037:*:2087:980:Kugel Yakov:/home/ZZg/ZZg037:/bin/bash
+fj-abe:*:2017:2000:fj-abe:/home/fjse/fj-abe:/bin/bash
+fj-oda:*:2027:2000:fj-oda:/home/fjse/fj-oda:/bin/bash
+fj-ota:*:2018:2000:fj-ota:/home/fjse/fj-ota:/bin/bash
+fjse02:*:2010:2000:fjse02:/home/fjse02:/bin/bash
