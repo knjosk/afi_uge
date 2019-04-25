@@ -1,0 +1,956 @@
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 1055@afilog001,1055@afijcm002,1055@afimgr001
+    License file(s) on afilog001: /opt/ansys/shared_files/licensing/license_files/ansyslmd.lic:
+
+ afilog001: license server UP (MASTER) v11.13.1
+ afijcm002: license server UP v11.13.1
+ afimgr001: license server UP v11.13.1
+
+Vendor daemon status (on afilog001):
+
+  ansyslmd: UP v11.13.1
+Feature usage info:
+
+Users of aa_mcad:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of aa_r:  (Total of 5 licenses issued;  Total of 5 licenses in use)
+
+  "aa_r" v2023.0630, vendor: ansyslmd, expiry: 1-jan-0
+  floating license
+
+    ENb001 afidma320 afidma320 148152 (v2017.1128) (afilog001/1055 2629), start Thu 4/4 13:31
+    ENb001 afidma320 afidma320 148506 (v2017.1128) (afilog001/1055 585), start Thu 4/4 13:31
+    ENb001 afidma320 afidma320 148781 (v2017.1128) (afilog001/1055 2305), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81710 (v2017.1128) (afilog001/1055 1414), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149182 (v2017.1128) (afilog001/1055 5538), start Thu 4/4 13:32
+
+Users of acfd_vki:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of afsp_gui:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of afsp_optigrid:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of afsp_viewmerical:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of aim_mp1:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of ensight_enterprise:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of envision_pro:  (Total of 55 licenses issued;  Total of 0 licenses in use)
+
+Users of aa_r_cfd:  (Total of 50 licenses issued;  Total of 43 licenses in use)
+
+  "aa_r_cfd" v2023.0630, vendor: ansyslmd, expiry: 1-jan-0
+  floating license
+
+    ENb001 afidma317 afidma317 80652 (v2017.1128) (afilog001/1055 430), start Thu 4/4 13:31
+    ENb001 afidma317 afidma317 80832 (v2017.1128) (afilog001/1055 161), start Thu 4/4 13:31
+    ENb001 afidma316 afidma316 66856 (v2017.1128) (afilog001/1055 4996), start Thu 4/4 13:31
+    ENb001 afidma317 afidma317 81093 (v2017.1128) (afilog001/1055 1729), start Thu 4/4 13:31
+    ENb001 afidma320 afidma320 148536 (v2017.1128) (afilog001/1055 987), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81364 (v2017.1128) (afilog001/1055 4031), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81454 (v2017.1128) (afilog001/1055 5299), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 148625 (v2017.1128) (afilog001/1055 5340), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 67499 (v2017.1128) (afilog001/1055 4492), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 148756 (v2017.1128) (afilog001/1055 3654), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81721 (v2017.1128) (afilog001/1055 3447), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81729 (v2017.1128) (afilog001/1055 3546), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81738 (v2017.1128) (afilog001/1055 4838), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 67886 (v2017.1128) (afilog001/1055 4210), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81796 (v2017.1128) (afilog001/1055 1832), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 148873 (v2017.1128) (afilog001/1055 4645), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81693 (v2017.1128) (afilog001/1055 1360), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81699 (v2017.1128) (afilog001/1055 2959), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81703 (v2017.1128) (afilog001/1055 3299), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81786 (v2017.1128) (afilog001/1055 4101), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 81956 (v2017.1128) (afilog001/1055 5478), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149033 (v2017.1128) (afilog001/1055 4728), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68134 (v2017.1128) (afilog001/1055 784), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68045 (v2017.1128) (afilog001/1055 2413), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68196 (v2017.1128) (afilog001/1055 1083), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68217 (v2017.1128) (afilog001/1055 3968), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149103 (v2017.1128) (afilog001/1055 4371), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68174 (v2017.1128) (afilog001/1055 2522), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68300 (v2017.1128) (afilog001/1055 2823), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 82090 (v2017.1128) (afilog001/1055 1133), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68272 (v2017.1128) (afilog001/1055 2208), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68284 (v2017.1128) (afilog001/1055 4512), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149115 (v2017.1128) (afilog001/1055 817), start Thu 4/4 13:32
+    ENb001 afidma317 afidma317 82045 (v2017.1128) (afilog001/1055 1531), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149160 (v2017.1128) (afilog001/1055 2767), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68317 (v2017.1128) (afilog001/1055 3154), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149143 (v2017.1128) (afilog001/1055 1970), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68361 (v2017.1128) (afilog001/1055 3769), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149185 (v2017.1128) (afilog001/1055 3810), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68323 (v2017.1128) (afilog001/1055 2042), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68365 (v2017.1128) (afilog001/1055 1606), start Thu 4/4 13:32
+    ENb001 afidma320 afidma320 149171 (v2017.1128) (afilog001/1055 219), start Thu 4/4 13:32
+    ENb001 afidma316 afidma316 68329 (v2017.1128) (afilog001/1055 669), start Thu 4/4 13:32
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 1602@afimgr001,1602@afimgr002,1602@afijcm002
+    License file(s) on afimgr001: /opt/fieldview/V17/fv/data/license.dat:
+
+ afimgr001: license server UP v11.13.1
+ afimgr002: license server UP (MASTER) v11.13.1
+ afijcm002: license server UP v11.13.1
+
+Vendor daemon status (on afimgr002):
+
+    ilight: UP v11.13.1
+Feature usage info:
+
+Users of pfv8:  (Total of 6 licenses issued;  Total of 0 licenses in use)
+
+Users of pfv64:  (Total of 3 licenses issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 1715@afimgr001
+    License file(s) on afimgr001: /opt/MaterialsStudio/BIOVIA_LicensePack/Licenses/msi.lic:
+
+ afimgr001: license server UP (MASTER) v11.13.1
+
+Vendor daemon status (on afimgr001):
+
+       msi: UP v11.13.1
+Feature usage info:
+
+Users of License_Holder:  (Total of 999 licenses issued;  Total of 0 licenses in use)
+
+Users of MS_compass_MP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MS_dmol_ui:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MS_dmol_MP:  (Total of 16 licenses issued;  Total of 0 licenses in use)
+
+Users of MS_dsolid_MP:  (Total of 16 licenses issued;  Total of 0 licenses in use)
+
+Users of MS_forciteplus:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MS_forcite:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MS_visualizer:  (Total of 4 licenses issued;  Total of 0 licenses in use)
+
+Users of MS_onetep_ui:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MS_onetep:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 1718@afimgr001
+    License file(s) on afimgr001: /opt/comsol/ver5.3a/license/license.dat:
+
+ afimgr001: license server UP (MASTER) v11.13.1
+
+Vendor daemon status (on afimgr001):
+
+  LMCOMSOL: UP v11.13.1
+Feature usage info:
+
+Users of SERIAL:  (Uncounted, node-locked)
+
+Users of ACDC:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of ACDCBATCH:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of COMSOL:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of COMSOLBATCH:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of STRUCTURALMECHANICS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of STRUCTURALMECHANICSBATCH:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of COMSOLGUI:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of CLIENTSERVER:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of CLUSTERNODE:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27000@afimgr001,27000@afimgr002,27000@afijcm001
+    License file(s) on afimgr001: /opt/pgi/license.dat:
+
+ afimgr001: license server UP (MASTER) v11.14.1
+ afimgr002: license server UP v11.14.1
+ afijcm001: license server UP v11.14.1
+
+Vendor daemon status (on afimgr001):
+
+   pgroupd: UP v11.14.1
+Feature usage info:
+
+Users of PGI2018-532786:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of PGI-legacy-tools:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-prof:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-dbg:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-dbg-gui:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-hpf-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-f95-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-f77-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-cc-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-cpp-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-gpp-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-hpf-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-f95-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-f77-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-cc-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-cpp-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-gpp-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-prof-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-prof-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-dbg-lin64:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgi-dbg-lin32:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pghpf:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgfortran:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgcc:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgc++:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgprof:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of pgdbg:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27009@afimgr001,27009@afimgr002,27009@afijcm001
+    License file(s) on afimgr001: /opt/intel/serverlicenses/server.lic:
+
+ afimgr001: license server UP (MASTER) v11.14.1
+ afimgr002: license server UP v11.14.1
+ afijcm001: license server UP v11.14.1
+
+Vendor daemon status (on afimgr001):
+
+     INTEL: UP v11.14.1
+Feature usage info:
+
+Users of IBDB034BC:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of AdvXEl:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ArBBL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of CCompL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of Comp-CL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of Comp-DCAF:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of Comp-FL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of Comp-OpenMP:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of Comp-PointerChecker:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of DAAL-L:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of DbgL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of FCompL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of IClsTktL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of IClsValL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ITrAnlL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ITrAnlW:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ITrColL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of MKernL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of MPassL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of PerfAnl:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of PerfPrimL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of StaticAnlL:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ThreadAnlGui:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of ThreadBB:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27001@afimgr001
+    License file(s) on afimgr001: /opt/jmag/JRI/FLEXlm/jripro.lic:
+
+ afimgr001: license server UP (MASTER) v11.14.1
+
+Vendor daemon status (on afimgr001):
+
+       jri: UP v11.14.1
+Feature usage info:
+
+Users of JW_Pre_Post:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-Designer:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-Designer_EV:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-Modeller:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-VTB:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-Express:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-Express_EV:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG_SNAPSHOT:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG_MPFE_INTERFACE:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG_MPMAP_INTERFACE:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_ACIS_DEFEATURE:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-RT:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-RT-Viewer:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-RT-EFFICIENCYMAP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JMAG-SPEED:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_LOSS_NNS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_PI:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_TS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of TRANSFORMER_TEMPLATE:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_MAG_ST_NNS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_MAG_TR_NNS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_MAG_FQ_NNS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_MAG_DPL_NNS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_ELEC:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_HEAT:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_DS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_MAG_SMP:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of JW_MPCCI:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_ABAQUS1:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_ABAQUS2:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_VL:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of JW_TOOL_CB:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27100@afimgr001
+    License file(s) on afimgr001: /opt/modefrontier/lic/license.dat:
+
+ afimgr001: license server UP (MASTER) v11.14.1
+
+Vendor daemon status (on afimgr001):
+
+    esteco: UP v11.14.1
+Feature usage info:
+
+Users of cad_cae:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_batch_base_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_base_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_advanced_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_advanced_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_base_rsm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_base_rsm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_advanced_rsm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_advanced_rsm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of ds_base:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of ds_gui:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of wf_base:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of pm_gui:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_pilopt_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_pilopt_sched:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_base_doe:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_base_doe:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_mordo:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_mordo:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_easydriver_base:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_beanshell:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_calculator:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_cygwin:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_dosbatch:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_file:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_jscript:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_jython:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_logic:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_powershell:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_python:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sfu:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sh:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_vbscript:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_classifier:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_designspace:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_doedes:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_rsmtrainer:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_schedprj:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_subproc:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_mcdm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_mcdm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_advanced_mcdm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_advanced_mcdm:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_cluster:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_som:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_cluster:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_som:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_sensitivity:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_gui_sensitivity:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_excel:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_ftp:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sendmail:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sftp:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_somo:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_ssh:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_volta:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_integration_webservice:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of pm_batch:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of mf_batch_npe:  (Total of 4 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_batch_classifier:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of application:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_curvefitting:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_labview:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_lut:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_maplesim:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_mathcad:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_matlab:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_octave:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_openoffice:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_rsm:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_scilab:  (Total of 9 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_abaqus:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_adamscar:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_adamsview:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_amesim:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_ansa:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_avl:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_catia:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_cst:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_flowmaster:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_gtsuite:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_jmag:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_madymo:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_metapost:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_mpi:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_mscnastran:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_powerflow:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_proengineer:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_romax:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sctetra:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_sfe:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_simulationx:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_solidworks:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_spaceclaim:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_vlab:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of mf_integration_workbench:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27300@afimgr001
+    License file(s) on afimgr001: /var/tmp/lm_TMW.dat:
+
+ afimgr001: license server UP (MASTER) v11.14.1
+
+Vendor daemon status (on afimgr001):
+
+       MLM: UP v11.14.1
+Feature usage info:
+
+Users of MATLAB:  (Total of 25 licenses issued;  Total of 5 licenses in use)
+
+  "MATLAB" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    ENb001 afidma316 /dev/tty (v39) (afimgr001/27300 206), start Wed 4/3 16:55
+    ENb001 afidma317 /dev/tty (v39) (afimgr001/27300 301), start Wed 4/3 16:56
+    ENb001 afidma320 /dev/tty (v39) (afimgr001/27300 8901), start Wed 4/3 16:57
+    muku MukuMacPro (v39) (afimgr001/27300 13306), start Thu 4/4 10:05
+    tsuba DESKTOP-VDU20PM DESKTOP-VDU20PM (v39) (afimgr001/27300 13403), start Thu 4/4 11:27
+
+Users of SIMULINK:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Aerospace_Blockset:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Aerospace_Toolbox:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Video_and_Image_Blockset:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Control_Toolbox:  (Total of 3 licenses issued;  Total of 0 licenses in use)
+
+Users of Curve_Fitting_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Signal_Blocks:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Data_Acq_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of GPU_Coder:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of GADS_Toolbox:  (Total of 3 licenses issued;  Total of 3 licenses in use)
+
+  "GADS_Toolbox" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    ENb001 afidma317 /dev/tty (v39) (afimgr001/27300 8701), start Wed 4/3 16:56
+    ENb001 afidma316 /dev/tty (v39) (afimgr001/27300 8801), start Wed 4/3 16:56
+    ENb001 afidma320 /dev/tty (v39) (afimgr001/27300 13201), start Wed 4/3 16:57
+
+Users of Image_Toolbox:  (Total of 7 licenses issued;  Total of 1 license in use)
+
+  "Image_Toolbox" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    tsuba DESKTOP-VDU20PM DESKTOP-VDU20PM (v39) (afimgr001/27300 13501), start Thu 4/4 11:40
+
+Users of Instr_Control_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of MATLAB_Coder:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MATLAB_Builder_for_Java:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Compiler:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Neural_Network_Toolbox:  (Total of 3 licenses issued;  Total of 0 licenses in use)
+
+Users of Optimization_Toolbox:  (Total of 5 licenses issued;  Total of 3 licenses in use)
+
+  "Optimization_Toolbox" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    ENb001 afidma316 /dev/tty (v39) (afimgr001/27300 8501), start Wed 4/3 16:56
+    ENb001 afidma317 /dev/tty (v39) (afimgr001/27300 8601), start Wed 4/3 16:56
+    ENb001 afidma320 /dev/tty (v39) (afimgr001/27300 13101), start Wed 4/3 16:57
+
+Users of Distrib_Computing_Toolbox:  (Total of 10 licenses issued;  Total of 3 licenses in use)
+
+  "Distrib_Computing_Toolbox" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    ENb001 afidma316 /dev/tty (v39) (afimgr001/27300 103), start Wed 4/3 16:55
+    ENb001 afidma317 /dev/tty (v39) (afimgr001/27300 401), start Wed 4/3 16:56
+    ENb001 afidma320 /dev/tty (v39) (afimgr001/27300 9001), start Wed 4/3 16:57
+
+Users of PDE_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Signal_Toolbox:  (Total of 7 licenses issued;  Total of 0 licenses in use)
+
+Users of Simscape:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Real-Time_Workshop:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Simulink_Control_Design:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Simulink_Design_Optim:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Statistics_Toolbox:  (Total of 7 licenses issued;  Total of 1 license in use)
+
+  "Statistics_Toolbox" v39, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    tsuba DESKTOP-VDU20PM DESKTOP-VDU20PM (v39) (afimgr001/27300 13601), start Thu 4/4 12:45
+
+Users of Symbolic_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Identification_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Wavelet_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+
+lmutil - Copyright (c) 1989-2015 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Thu 4/4/2019 13:32
+
+License server status: 27500@afimgr001
+    License file(s) on afimgr001: /opt/msc/MSC.Software/MSC.Licensing/11.13/license.dat:
+
+ afimgr001: license server UP (MASTER) v11.13.1
+
+Vendor daemon status (on afimgr001):
+
+       MSC: UP v11.13.1
+Feature usage info:
+
+Users of DYTRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_Hexmesh:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_CMOLD:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_Mesh2D:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_Mesh3D:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_ITI_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_Electrical:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_MetalCutting:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_ShapeMemory:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_ViewFactor:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_GPU:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_Parallel:  (Total of 32 licenses issued;  Total of 0 licenses in use)
+
+Users of Mentat_Geometry_Translators:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_CATIAV4_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_CATIAV5_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_Creo_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_Inventor_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_JT_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_NX_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of Mentat_SolidWorks_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_MatFit:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MARC_PhaseTrans:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NASTRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_NASTRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Thermal:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Thermal:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_DMAP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_DMAP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Dynamics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Dynamics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Nonlinear:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Nonlinear:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_SMP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_SMP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Parallel:  (Total of 32 licenses issued;  Total of 0 licenses in use)
+
+Users of NA_Optimization:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Optimization:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Superelements:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Superelements:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Connectors:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Connectors:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_ACMS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_ACMS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Acoustics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Acoustics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_MARC_Translator:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_MARC_Translator:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NANL_ShapeMemory:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MDNL_ShapeMemory:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_DDAM:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_DDAM:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_ADAMS_Integration:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_ADAMS_Integration:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NANL_ViewFactor:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MDNL_ViewFactor:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Linear_Contact:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Linear_Contact:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_MultiOpt:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_MultiOpt:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NANL_Solver:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MDNL_Solver:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_DMP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_DMP:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NANL_Parallel:  (Total of 32 licenses issued;  Total of 0 licenses in use)
+
+Users of MDNL_Parallel:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Adv_Nonlinear:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Adv_Nonlinear:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Adv_Thermal:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Adv_Thermal:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Rotor_Dynamics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Rotor_Dynamics:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Aero:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MD_Aero:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_GPU:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Fatigue_Standard:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Fatigue_Advanced_I:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Digimat:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Digimat_DMP:  (Total of 32 licenses issued;  Total of 0 licenses in use)
+
+Users of NA_Modules:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of NA_Explicit_Dytran:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PATRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_QUEUE_MANAGER:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_ANALYSIS_MANAGER:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_BEAM:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_DYTRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_MARC:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_MSC_NASTRAN:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_Adv_Surface_Mesh:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_RandomAnalysis_Tool:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_Geometry_Translators:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_ACIS_SAT_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_CATIAV4_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_CATIAV5_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_Creo_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_NX_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_SolidWorks_Access:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_ABAQUS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_ANSYS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_LS_DYNA3D:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_PAMCRASH:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_MATERIALS:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_Materials_Enterprise:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_PTHERMAL:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_FLDS_BASIC:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of SINDA_Solver:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of SINDA_Rad:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of SINDA_Patran_Plugin:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of SINDA_Office_Toolkit:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MSC_Apex_Modeler:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MSC_Apex_CAD_Access_Pack:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of MSC_Apex_Structures:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+Users of PA_Parasolid_Modeling:  (Total of 1 license issued;  Total of 0 licenses in use)
+
+

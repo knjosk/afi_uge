@@ -29,10 +29,10 @@ used_f1 = open(used_file1, 'r')
 reader = csv.reader(used_f1)
 for row in reader:
     user_name = row[0]
-    user_limit_dict[user_name] = float(row[1])
-    user_used_total_dict[user_name] = float(row[2])
-    user_used_batch_dict[user_name] = float(row[3])
-    user_used_tss_dict[user_name] = float(row[4])
+    user_limit_dict[user_name] += float(row[1])
+    user_used_total_dict[user_name] += float(row[2])
+    user_used_batch_dict[user_name] += float(row[3])
+    user_used_tss_dict[user_name] += float(row[4])
 used_f1.close()
 
 used_file2 = args['<used_file2>']

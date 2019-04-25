@@ -16,6 +16,8 @@ QSTAT_CMD=/opt/uge/8.5.5/bin/lx-amd64/qstat
 ETC_DIR="/opt/uge/Accounting_Statistics/etc"
 cp ${ETC_DIR}/prj_limit_pm.csv ${ETC_DIR}/prj_limit_pm.${MONTH}
 cp ${ETC_DIR}/user_limit_py.csv ${ETC_DIR}/user_limit_py.${MONTH}
+cp ${ETC_DIR}/group_limit_py.csv ${ETC_DIR}/group_limit_py.${MONTH}
+cp ${ETC_DIR}/prj_member.csv ${ETC_DIR}/prj_member.${MONTH}
 
 LOGS_DIR="/opt/uge/Accounting_Statistics/logs/accounting"
 if [ ! -d ${LOGS_DIR} ]; then

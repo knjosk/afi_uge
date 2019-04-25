@@ -1,0 +1,51 @@
+Setting license file path to 5153@afimgr001-m
+rlmutil v12.3
+Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+
+	rlm status on afimgr001-m (port 5153), up 1d 01:16:02
+	rlm software version v12.3 (build:3)
+	rlm comm version: v1.2
+	Startup time: Wed Apr  3 12:16:38 2019
+	Todays Statistics (13:32:30), init time: Thu Apr  4 00:00:10 2019
+	Recent Statistics (00:00:13), init time: Thu Apr  4 13:32:27 2019
+
+	             Recent Stats         Todays Stats         Total Stats
+	              00:00:13             13:32:30          1d 01:16:02
+	Messages:    2 (0/sec)           7 (0/sec)          127 (0/sec)
+	Connections: 1 (0/sec)           5 (0/sec)          101 (0/sec)
+
+	--------- ISV servers ----------
+	   Name           Port Running Restarts
+	pwid             45604   Yes      0
+
+	------------------------
+
+	pwid ISV server status on afimgr001-m (port 45604), up 1d 01:16:02
+	pwid software version v12.3 (build: 3)
+	pwid comm version: v1.2
+	pwid Debug log filename: <stdout>
+	pwid Report log filename: <stdout>
+	Startup time: Wed Apr  3 12:16:38 2019
+	Todays Statistics (13:32:30), init time: Thu Apr  4 00:00:10 2019
+	Recent Statistics (00:19:30), init time: Thu Apr  4 13:13:10 2019
+
+	             Recent Stats         Todays Stats         Total Stats
+	              00:19:30             13:32:30          1d 01:16:02
+	Messages:    8 (0/sec)           10 (0/sec)          154 (0/sec)
+	Connections: 4 (0/sec)           5 (0/sec)          77 (0/sec)
+	Checkouts:   0 (0/sec)           0 (0/sec)          0 (0/sec)
+	Denials:     0 (0/sec)           0 (0/sec)          0 (0/sec)
+	Removals:    0 (0/sec)           0 (0/sec)          0 (0/sec)
+
+
+	------------------------
+
+	pwid license pool status on afimgr001-m (port 45604)
+
+	pointwise v18.1
+		count: 2, # reservations: 0, inuse: 0, exp: 30-jun-2019
+		obsolete: 0, min_remove: 120, total checkouts: 0
+
+
+

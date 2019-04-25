@@ -52,27 +52,22 @@ queue_node_dm_tuple = ('dmaL.q', 'dmaM.q', 'dma_01', 'dma_02', 'dma_03', 'dma_04
 
 queue_dma_tuple = ('dmaL.q', 'dmaM.q', 'dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06', 'dma_07',
                    'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
-                   'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37', 'single.q')
-
-queue_cpu_tuple = ('single.q', 'intsmp.q', 'intmpi.q')
+                   'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37', 'single.q', 'share.q')
+queue_node_share_tuple = ('single.q', 'share.q')
+queue_cpu_tuple = ('intsmp.q', 'intmpi.q')
 queue_tss_tuple = ('intsmp.q', 'intmpi.q')
 
-queue_cpu_d_tuple = ('single.q')
+queue_cpu_d_tuple = ()
 queue_cpu_s_tuple = ()
 
 queue_tss_d_tuple = ('intmpi.q')
 queue_tss_s_tuple = ('intsmp.q')
 
-nodes_dict = {'sma.default': 2, 'sma.A': 2, 'sma.B': 4, 'sma.C': 8, 'sma.D': 12, 'sma.E': 26,
-              'smb.default': 2, 'smb.A': 2, 'smb.B': 4, 'smb.C': 8, 'smb.D': 12, 'smb.E': 26,
-              'aps.default': 2, 'aps.A': 2, 'aps.B': 4, 'aps.C': 8, 'aps.D': 12, 'aps.E': 24}
+nodes_dict = {'sma.default': 2, 'sma.A': 2, 'sma.B': 4, 'sma.C': 8, 'sma.D': 12, 'sma.E': 26, 'sma.AS': 1,
+              'smb.default': 2, 'smb.A': 2, 'smb.B': 4, 'smb.C': 8, 'smb.D': 12, 'smb.E': 26, 'smb.AS': 1,
+              'aps.default': 2, 'aps.A': 2, 'aps.B': 4, 'aps.C': 8, 'aps.D': 12, 'aps.E': 24, 'aps.AS': 1}
 
-jc_sma_tuple = ('sma.default', 'sma.A', 'sma.B', 'sma.C', 'sma.D', 'sma.E')
-jc_smb_tuple = ('smb.default', 'smb.A', 'smb.B', 'smb.C', 'smb.D', 'smb.E')
-jc_dma_tuple = ('dma.default', 'dma.A', 'dma.M' 'dma.L')
-jc_aps_tuple = ('aps.default', 'aps.A', 'aps.B', 'aps.C', 'aps.D', 'aps.E')
-
-q_no_group_tuple = ('sma.q', 'smb.q', 'aps.q', 'single.q', 'intsmp.q', 'intmpi.q', 'dmaL.q', 'dmaM.q')
+q_no_group_tuple = ('sma.q', 'smb.q', 'aps.q', 'single.q', 'intsmp.q', 'intmpi.q', 'dmaL.q', 'dmaM.q', 'share.q')
 q_dma_group_tuple = ('dma_01', 'dma_02', 'dma_03', 'dma_04', 'dma_05', 'dma_06', 'dma_07',
                      'dma_08', 'dma_09', 'dma_10', 'dma_11', 'dma_12', 'dma_13', 'dma_14', 'dma_15', 'dma_16',
                      'dma_17', 'dma_18', 'dma_19', 'dma_20', 'dma_21', 'dma_37')
@@ -209,7 +204,7 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     try:
         user_limit_f = open('/opt/uge/Accounting_Statistics/etc/user_limit_py.csv', 'r')
     except:
-        sys.stderr.write("failed to open: user_limit_py.csv"  + "\n")
+        sys.stderr.write("failed to open: user_limit_py.csv" + "\n")
         sys.exit(-1)
 
     reader = csv.reader(user_limit_f)
@@ -278,7 +273,12 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                         user_ocutime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_ru_wallclock]) * nodes
                         group_ocutime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_wallclock]) * nodes
                         group_queue_ocutime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
-                    elif queue_name in queue_cpu_d_tuple:  # single.q
+                    elif queue_name in queue_node_share_tuple:  # single.q, share.q
+                        user_ocutime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                        group_ocutime_dict[account_data_list[idx_group]] += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                        group_queue_ocutime_dict[account_data_list[idx_group] + '_' + account_data_list[idx_qname]] \
+                            += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                    elif queue_name in queue_cpu_d_tuple:  # no queue
                         act_user_cputime_dict[account_data_list[idx_owner] + "-d"] += float(account_data_list[idx_ru_wallclock]) / CORES
                         act_group_cputime_dict[account_data_list[idx_group] + "-d"] += float(account_data_list[idx_ru_wallclock]) / CORES
                     elif queue_name in queue_cpu_s_tuple:  # no queue
@@ -334,7 +334,15 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
                     jc_ocutime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_wallclock]) * nodes
                     prj_ocutime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) * nodes
                     prj_queue_ocutime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] += float(account_data_list[idx_ru_wallclock]) * nodes
-                elif queue_name not in queue_tss_tuple:  # single,q only
+                elif queue_name in queue_node_share_tuple:  # single.q, share.q
+                    owner_ocutime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                    owner_prj_ocutime_dict[account_data_list[idx_owner] + "_" + account_data_list[idx_project]] \
+                        += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                    jc_ocutime_dict[account_data_list[idx_job_class]] += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                    prj_ocutime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                    prj_queue_ocutime_dict[account_data_list[idx_project] + '_' + account_data_list[idx_qname]] \
+                        += float(account_data_list[idx_ru_wallclock]) * int(account_data_list[idx_slots]) / CORES
+                elif queue_name not in queue_tss_tuple:  # no queue
                     act_prj_cputime_dict[account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) / CORES
                     act_owner_cputime_dict[account_data_list[idx_owner]] += float(account_data_list[idx_ru_wallclock]) / CORES
                     act_owner_prj_cputime_dict[account_data_list[idx_owner] + "_" + account_data_list[idx_project]] += float(account_data_list[idx_ru_wallclock]) / CORES
@@ -471,14 +479,11 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
 
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)
-    
-    '''
 
     exceeded_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_exceeded_pm' + POST_FIX, 'w')
     for x in prj_exceeded_list:
         exceeded_f.write(str(x) + "\n")
-    '''
-    
+
     # print "--- user usage ---"
     for key in user_limit_dict:
         user_total_sec = user_ocutime_dict.get(key, 0) + act_user_cputime_dict.get(key, 0) + act_user_tss_cputime_dict.get(key, 0)
@@ -513,19 +518,60 @@ def calc_accounting(filename, start_utime, end_utime, POST_FIX):
     writer = csv.writer(group_used_f, lineterminator='\n')
     writer.writerows(group_used_list)
 
-    # print "--- prj usage by owner ---"
-    for key in prj_limit_dict:
-        owner_prj_ocutime_dict
-        act_owner_prj_cputime_dict
-        act_owner_prj_tss_cputime_dict
-
     used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm' + POST_FIX, 'w')
 
     # csv: project,limit,total,batch,interactive,ratio
     writer = csv.writer(used_f, lineterminator='\n')
     writer.writerows(prj_used_list)
 
-    # exceeded_f.close()
+    # Project Member's list
+    try:
+        prj_member_list_f = open('/opt/uge/Accounting_Statistics/etc/prj_member' + POST_FIX, 'r')
+    except:
+        sys.stderr.write("failed to open: prj_member" + POST_FIX + "\n")
+        sys.exit(-1)
+
+    reader = csv.reader(prj_member_list_f)
+
+    prj_member_dict = {}
+    prj_member_list = []
+
+    for row in reader:
+        i = 1
+        row_l = len(row)
+        list_of_member = []
+        list_of_member_s = []
+        list_of_member_d = []
+        if row_l > 2:
+            while i < row_l:
+                list_of_member.append(row[i])
+                list_of_member_s.append(row[i] + '_' + row[0] + '-s')
+                list_of_member_d.append(row[i] + '_' + row[0] + '-d')
+                prj_member_list.append(row[i] + '_' + row[0] + '-s')
+                prj_member_list.append(row[i] + '_' + row[0] + '-d')
+                i += 1
+            prj_member_dict[row[0] + '-s'] = list_of_member_s
+            prj_member_dict[row[0] + '-d'] = list_of_member_d
+    # print prj_member_dict
+    print prj_member_list
+    prj_member_used_list = []
+
+    # Project Member's Usages
+    prj_member_used_f = open('/opt/uge/Accounting_Statistics/logs/accounting/prj_member_used_pm' + POST_FIX, 'w')
+    for prj_member in prj_member_list:
+        prj_member_used_list.append([prj_member,
+                                     (owner_prj_ocutime_dict.get(prj_member, 0) + act_owner_prj_cputime_dict.get(prj_member, 0) + act_owner_prj_tss_cputime_dict.get(prj_member, 0)) / 60 / 60,
+                                     (owner_prj_ocutime_dict.get(prj_member, 0) + act_owner_prj_cputime_dict.get(prj_member, 0)) / 60 / 60,
+                                     (act_owner_prj_tss_cputime_dict.get(prj_member, 0)) / 60 / 60])
+    # csv: prj_member,total,batch,interactive,ratio
+    writer = csv.writer(prj_member_used_f, lineterminator='\n')
+    writer.writerows(prj_member_used_list)
+
+    # print owner_prj_ocutime_dict
+    # act_owner_prj_cputime_dict
+    # act_owner_prj_tss_cputime_dict
+
+    exceeded_f.close()
     f.close()
     limit_f.close()
     used_f.close()

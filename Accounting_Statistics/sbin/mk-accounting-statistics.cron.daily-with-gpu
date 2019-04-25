@@ -1,0 +1,103 @@
+#!/usr/bin/bash
+
+export LANG=C
+export LC_ALL=C
+
+source /etc/profile.d/settings.sh
+
+f_timestamp=`date +%Y%m%d%H%M%S`
+MONTH=`date +%Y%m`
+DAY=`date +%d`
+
+UGE_AS_DIR=/opt/uge/Accounting_Statistics
+UGE_ACCOUNTING_DIR=/opt/uge/8.5.5/default/common
+QSTAT_CMD=/opt/uge/8.5.5/bin/lx-amd64/qstat
+
+ETC_DIR="/opt/uge/Accounting_Statistics/etc"
+cp ${ETC_DIR}/prj_limit_pm.csv ${ETC_DIR}/prj_limit_pm.${MONTH}
+cp ${ETC_DIR}/user_limit_py.csv ${ETC_DIR}/user_limit_py.${MONTH}
+
+LOGS_DIR="/opt/uge/Accounting_Statistics/logs/accounting"
+if [ ! -d ${LOGS_DIR} ]; then
+    mkdir -p ${LOGS_DIR}
+fi
+
+LOGS_DIR2="/opt/uge/Accounting_Statistics/logs/statistics"
+if [ ! -d ${LOGS_DIR2} ]; then
+    mkdir -p ${LOGS_DIR2}
+fi
+
+# Reset oticket 0 -> 1000 1st day of Month
+if [ ${DAY} = "01" ]; then
+    # Project Exceeded file
+    PRJ_EXCEEDED_FILE="/opt/uge/Accounting_Statistics/logs/accounting/prj_exceeded_pm.csv"
+
+    if [ -s ${PRJ_EXCEEDED_FILE} ]; then
+        CHG_PRJ_OTICHET_CMD=/opt/uge/Accounting_Statistics/sbin/chg_prj_oticket.sh
+        cat ${PRJ_EXCEEDED_FILE} | while read line
+        do
+            ${CHG_PRJ_OTICHET_CMD} $line 1000
+        done
+    fi
+fi
+
+# Input files
+UGE_ACCOUNTING_FILE=${UGE_ACCOUNTING_DIR}/accounting
+
+# Start Time
+if [ ${MONTH} = "201808" ]; then
+    START_TIME=${MONTH}06000000
+else
+    START_TIME=${MONTH}01000000
+fi
+
+# Excetute command
+EXEC_CMD=${UGE_AS_DIR}/sbin/c_statistics.py
+
+cd ${UGE_AS_DIR}
+${EXEC_CMD} ${UGE_ACCOUNTING_FILE} -s ${START_TIME}
+
+# make prj_used_exceeded_chk.csv
+USED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/prj_used_pm.csv
+GPU_USED_FILLE=/opt/uge/Accounting_Statistics/logs/accounting/prj_gpu_used_pm.csv
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_exceeded_chk.csv
+MERGE4CHEK_CMD=/opt/uge/Accounting_Statistics/sbin/merge4check.py
+${MERGE4CHEK_CMD} ${USED_FILE} ${GPU_USED_FILLE} ${EXCEEDED_FILE}
+
+# Project Usage Check 
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/prj_used_exceeded_chk.csv
+CHK_EXCEED_CMD=/opt/uge/Accounting_Statistics/sbin/chk_exceed_prj.py
+${CHK_EXCEED_CMD} ${EXCEEDED_FILE}
+
+# Project Exceeded file
+PRJ_EXCEEDED_FILE="/opt/uge/Accounting_Statistics/logs/accounting/prj_exceeded_pm.csv"
+
+if [ -s ${PRJ_EXCEEDED_FILE} ]; then
+    CHG_PRJ_OTICHET_CMD=/opt/uge/Accounting_Statistics/sbin/chg_prj_oticket.sh
+    cat ${PRJ_EXCEEDED_FILE} | while read line
+    do
+        ${CHG_PRJ_OTICHET_CMD} $line 0
+    done
+fi
+
+# make user_used_py.csv
+/usr/bin/bash /opt/uge/Accounting_Statistics/sbin/mk-user-used-py.sh
+# make user_gpu_used_py.csv
+/usr/bin/bash /opt/uge/Accounting_Statistics/sbin/mk-user-gpu-used-py.sh
+# make user_used_exceeded_chk.csv
+USED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_py.csv
+GPU_USED_FILLE=/opt/uge/Accounting_Statistics/logs/accounting/user_gpu_used_py.csv
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_exceeded_chk.csv
+MERGE4CHEK_CMD=/opt/uge/Accounting_Statistics/sbin/merge4check.py
+${MERGE4CHEK_CMD} ${USED_FILE} ${GPU_USED_FILLE} ${EXCEEDED_FILE}
+
+# User Usage Check 
+EXCEEDED_FILE=/opt/uge/Accounting_Statistics/logs/accounting/user_used_exceeded_chk.csv
+CHK_EXCEED_CMD=/opt/uge/Accounting_Statistics/sbin/chk_exceed.py
+
+${CHK_EXCEED_CMD} ${EXCEEDED_FILE}
+
+#
+# make group_used_py.csv
+#
+/usr/bin/bash /opt/uge/Accounting_Statistics/sbin/mk-group-used-py.sh

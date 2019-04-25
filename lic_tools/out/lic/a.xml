@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AVS LM Server Status</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">AVS LM Server Status</h1>
+</header>
+<h2 id="avs-lm-server-status-190404-1334">AVS LM Server Status 19/04/04 13:34</h2>
+<h3 id="licenses">Licenses</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Product</th>
+<th>Limit</th>
+<th>Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Limited</td>
+<td>EXPRESS</td>
+<td>25</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="clients">Clients</h3>
+<p>Client</p>
+<p>Started</p>
+<p>Hostname</p>
+<p>IPv4</p>
+<p>IPv6</p>
+<p>Product</p>
+<p>Version</p>
+<p>Platform</p>
+<p>Username</p>
+<p>PID</p>
+<p>MAC Address</p>
+<p>Hostid/VSN</p>
+<p>None</p>
+</body>
+</html>

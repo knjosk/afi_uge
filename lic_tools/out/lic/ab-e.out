@@ -1,0 +1,81 @@
+License Administration Tool Version 6.420.0 Built on Sep 14, 2017 6:02:38 PM.
+admin >c localhost 4084 
+	Software version: 6.420.0
+	Build date: Sep 14, 2017 6:02:38 PM
+	Standalone mode
+	Ready: yes
+	Server name: afimgr001   Server id: NDQ-519F141B0EE43652
+admin > glu
+	Dassault Systemes (5E756A80-1C80-478D-B83A-1D5913677621)
+		IGD  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		IGE  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		IGF  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		IGF  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		IGR  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		Q6I  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QAE  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QAQ  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QAS  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QAX  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QCA  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QCD  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QCF  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QCF  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QCL  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDC  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDN  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDP  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDP  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDS  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDS  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDT  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QDT  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QEL  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QEX  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QEX  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QFT  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QFT  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QFX  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIA  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIA  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIF  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIF  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIN  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIN  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIQ  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIQ  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIS  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QIS  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QMS  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QPF  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QPL  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count: 16384  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QPU  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QS3  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QS3  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSA  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSA  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSD  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSD  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSE  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSH  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSH  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSI  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: ConcurrentUser  count:     1  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSL  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSL  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSM  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSM  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSN  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSN  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSO  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSO  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSP  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSP  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QST  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QST  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSZ  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QSZ  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QXF  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QXF  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QXT  maxReleaseNumber: 23  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+		QXT  maxReleaseNumber: 24  maxReleaseDate: 7/1/23 8:59:00 AM expirationDate: 7/1/23 8:59:00 AM type: Token           count:    50  inuse: 0 customerId: 200000000020938 pricing structure: YLC
+admin >

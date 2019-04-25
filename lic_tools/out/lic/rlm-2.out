@@ -1,0 +1,66 @@
+Setting license file path to 27200@afimgr001-m
+rlmutil v12.3
+Copyright (C) 2006-2017, Reprise Software, Inc. All rights reserved.
+
+
+	rlm status on afimgr001-m (port 27200), up 1d 01:05:42
+	rlm software version v11.2 (build:2)
+	rlm comm version: v1.2
+	Startup time: Wed Apr  3 12:26:58 2019
+	Todays Statistics (13:32:18), init time: Thu Apr  4 00:00:22 2019
+	Recent Statistics (00:19:17), init time: Thu Apr  4 13:13:23 2019
+
+	             Recent Stats         Todays Stats         Total Stats
+	              00:19:17             13:32:18          1d 01:05:42
+	Messages:    7 (0/sec)           9 (0/sec)          89 (0/sec)
+	Connections: 5 (0/sec)           7 (0/sec)          68 (0/sec)
+
+	--------- ISV servers ----------
+	   Name           Port Running Restarts
+	teclmd           27201   Yes      0
+
+	------------------------
+
+	teclmd ISV server status on afimgr001-m (port 27201), up 1d 01:05:40
+	teclmd software version v11.2 (build: 2)
+	teclmd comm version: v1.2
+	teclmd Debug log filename: +./teclmd.log
+	teclmd Report log filename: ./report.log
+	Startup time: Wed Apr  3 12:27:00 2019
+	Todays Statistics (13:32:19), init time: Thu Apr  4 00:00:21 2019
+	Recent Statistics (00:19:25), init time: Thu Apr  4 13:13:15 2019
+
+	             Recent Stats         Todays Stats         Total Stats
+	              00:19:25             13:32:19          1d 01:05:40
+	Messages:    11 (0/sec)           184 (0/sec)          393 (0/sec)
+	Connections: 4 (0/sec)           7 (0/sec)          49 (0/sec)
+	Checkouts:   0 (0/sec)           2 (0/sec)          4 (0/sec)
+	Denials:     0 (0/sec)           0 (0/sec)          0 (0/sec)
+	Removals:    0 (0/sec)           0 (0/sec)          0 (0/sec)
+
+
+	------------------------
+
+	teclmd license pool status on afimgr001-m (port 27201)
+
+	360ex v2023.06 hostid: ANY
+		count: 10, # reservations: 0, inuse: 1, exp: 30-jun-2023
+		obsolete: 0, min_remove: 120, total checkouts: 4
+	chorus v2023.06 hostid: ANY
+		count: 10, # reservations: 0, inuse: 0, exp: 30-jun-2023
+		obsolete: 0, min_remove: 120, total checkouts: 0
+	batch v2023.06 hostid: ANY
+		count: 10, # reservations: 0, inuse: 0, exp: 30-jun-2023
+		obsolete: 0, min_remove: 120, total checkouts: 0
+	360 v2023.06
+		Token-based license
+	rs v2023.06 hostid: ANY
+		count: 10, # reservations: 0, inuse: 0, exp: 30-jun-2023
+		obsolete: 0, min_remove: 120, total checkouts: 0
+
+
+	------------------------
+
+	teclmd license usage status on afimgr001-m (port 27201)
+
+	360ex v2023.06: htc010@afiaps051 1/0 at 04/03 14:23  (handle: 42) 
